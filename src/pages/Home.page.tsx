@@ -1,10 +1,8 @@
-import { Welcome } from '../components/Welcome/Welcome';
-import { ColorSchemeToggle } from '../components/ColorSchemeToggle/ColorSchemeToggle';
-import React, { Suspense, lazy, useEffect, useState } from 'react';
-import { ChineseEra, Emperor } from '../types';
-import { extractYearFromChineseDateString } from '../utils/dateUtils';
+import { Suspense, lazy, useEffect, useState } from 'react';
 import { Converter, ConverterOptions, Locale } from 'opencc-js';
 import { Container, Grid } from '@mantine/core';
+import { ChineseEra, Emperor } from '../types';
+import { extractYearFromChineseDateString } from '../utils/dateUtils';
 
 const converterOptions: ConverterOptions = {
   from: 'cn' as Locale,
@@ -18,12 +16,9 @@ const ChineseEraCard = lazy(() => import('../components/Utils/ChineseEraCard'));
 const Pagination = lazy(() => import('../components/Utils/Pagination'));
 
 export function HomePage() {
+  // Data loaded from JSON files
   const [erasData, setErasData] = useState<ChineseEra[]>([]);
   const [emperorsData, setEmperorsData] = useState<Emperor[]>([]);
-  const [eraResults, setEraResults] = useState<ChineseEra[]>([]);
-  const [emperorResults, setEmperorResults] = useState<Emperor[]>([]);
-  const [currentPage, setCurrentPage] = useState(1);
-  const [itemsPerPage, setItemsPerPage] = useState(10);
 
   useEffect(() => {
     import('../data/eras.json')
@@ -39,10 +34,16 @@ export function HomePage() {
       .catch((error) => console.error('Failed to load emperors data:', error));
   }, []);
 
-  const updateSearchResults = (foundEras: ChineseEra[]) => {
+  const [eraResults, setEraResults] = useState<ChineseEra[]>([]);
+  const [emperorResults, setEmperorResults] = useState<Emperor[]>([]);
+  const [currentPage, setCurrentPage] = useState(1);
+  const [itemsPerPage, setItemsPerPage] = useState(10);
+
+  // Each Chinese era has one and only one emperor.
+  // Filter emperors by 'id' to match the 'emperor_id' from each era.
+  const mapErasToEmperors = (foundEras: ChineseEra[]) => {
     setEraResults(foundEras);
 
-    // Find emperors whose id matches the emperor_id of each era
     const foundEmperors = foundEras
       .map((era) => emperorsData.find((emperor) => emperor.id === era.emperor_id))
       .filter((emperor): emperor is Emperor => !!emperor);
@@ -50,12 +51,13 @@ export function HomePage() {
     setEmperorResults(foundEmperors);
   };
 
+  // Handlers
   const handleChineseEraNameSearch = (eraInput: string) => {
     // Convert Simplified Chinese to Traditional Chinese
     eraInput = convertText(eraInput);
 
     const foundEras = erasData.filter((era) => era.name === eraInput);
-    updateSearchResults(foundEras);
+    mapErasToEmperors(foundEras);
   };
 
   const handleDatesSearch = (startYear: number, endYear: number) => {
@@ -64,19 +66,25 @@ export function HomePage() {
       const end = extractYearFromChineseDateString(era.end);
       return start && end && start <= endYear && end >= startYear;
     });
-    updateSearchResults(foundEras);
+    mapErasToEmperors(foundEras);
   };
 
   const handleEmperorsSearch = (dynastyInput: string, emperorInput: string) => {
+    if (!dynastyInput) {
+      mapErasToEmperors(erasData);
+      return;
+    }
+
     const processEmperors = (filterCondition: (emperor: Emperor) => boolean) => {
       const foundEmperors = emperorsData.filter(filterCondition);
-      setEmperorResults(foundEmperors);
-
+      // Filter eras by 'emperor_id' to match the 'id' from each emperor.
       const foundEras = foundEmperors
-        .map((emp) => erasData.find((era) => era.emperor_id === emp.id))
+        .map((emp) => erasData.filter((era) => era.emperor_id === emp.id))
+        .flat()
         .filter((era): era is ChineseEra => !!era);
+      console.log(foundEras);
 
-      setEraResults(foundEras);
+      mapErasToEmperors(foundEras);
     };
 
     if (!emperorInput) {
@@ -113,14 +121,10 @@ export function HomePage() {
         </Suspense>
         <Grid>
           {currentEraResults.map((era, index) => (
-            <Grid.Col span={6} key={era.name}>
+            <Grid.Col span={6} key={era.id}>
               {' '}
               <Suspense fallback={<div>搜索結果加載中...</div>}>
-                <ChineseEraCard
-                  era={era}
-                  emperor={emperorResults[firstPageIndex + index]}
-                  index={firstPageIndex + index}
-                />
+                <ChineseEraCard era={era} emperor={emperorResults[firstPageIndex + index]} />
               </Suspense>
             </Grid.Col>
           ))}

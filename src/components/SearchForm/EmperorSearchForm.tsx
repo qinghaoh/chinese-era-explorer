@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { Select, Button, Group, Box } from '@mantine/core';
+import { Select, Group, Box } from '@mantine/core';
 import { useForm } from '@mantine/form';
 import SearchButton from './SearchButton';
 
@@ -9,7 +9,7 @@ interface Dynasty {
 }
 
 interface EmperorSearchProps {
-  onSubmit: (dynasty: string, emperor: string) => void; // Simplified onSubmit function
+  onSubmit: (dynasty: string, emperor: string) => void;
 }
 
 const EmperorSearchForm: React.FC<EmperorSearchProps> = ({ onSubmit }) => {

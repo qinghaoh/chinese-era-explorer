@@ -1,7 +1,7 @@
 import { useForm } from '@mantine/form';
+import { Box, Group, Stack } from '@mantine/core';
 import YearInput from '../Utils/YearInput';
 import SearchButton from './SearchButton';
-import { Box, Group, Stack } from '@mantine/core';
 
 interface DateRangeSearchFormProps {
   onSubmit: (startYear: number, endYear: number) => void;

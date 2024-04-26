@@ -145,6 +145,7 @@ CHINESE_TO_ENGLISH = {
     '君主': 'emperor'
 }
 
+era_id = 0
 emperor_id = 0
 prev_emperor = ''
 
@@ -190,13 +191,16 @@ def convert(csv_file, dynasty, dynasties: list[dict]):
     dynasty_emperors = []
 
     global prev_emperor
+    global era_id
     global emperor_id
     for d in data:
         # Add emperor
+        # len(set(d.values())) tests whether the element is a valid era
+        # or a table title (the values of all keys will be identical)
         if len(set(d.values())) == 1 or 'emperor' in d:
-            emperor_id += 1
             emperor = {}
             emperor['id'] = emperor_id
+            emperor_id += 1
             if dynasty:
                 emperor['dynasty'] = dynasty
 
@@ -240,10 +244,15 @@ def convert(csv_file, dynasty, dynasties: list[dict]):
             del d['duration']
             d['emperor_id'] = emperor_id
 
-    eras = [d for d in data if len(set(d.values())) > 1]
+    eras = []
+    for d in data:
+        if len(set(d.values())) > 1:
+            d['id'] = era_id
+            era_id += 1
+            eras.append(d)
 
-    # 唐 is split into two parts and 李旦 appears in both.
-    # So, we need to handle this special case.
+        # 唐 is split into two parts and 李旦 appears in both.
+        # So, we need to handle this special case.
     if dynasty:
         dynasty_data = next(
             (d for d in dynasties if d['name'] == dynasty), None)
