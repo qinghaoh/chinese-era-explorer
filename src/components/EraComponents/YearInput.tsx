@@ -21,6 +21,7 @@ const YearInput: React.FC<YearInputProps> = ({ form, yearField, eraField, label 
       {form.values[eraField]}
     </Button>
     <NumberInput
+      size="sm"
       label={label}
       placeholder={`${label} Year`}
       value={form.values[yearField]}

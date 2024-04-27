@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 import { Tabs } from '@mantine/core';
 import ChineseEraSearchForm from './ChineseEraSearchForm';
 import EmperorSearchForm from './EmperorSearchForm';

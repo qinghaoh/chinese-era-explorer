@@ -1,6 +1,6 @@
 import { useForm } from '@mantine/form';
 import { Box, Group, Stack } from '@mantine/core';
-import YearInput from '../Utils/YearInput';
+import YearInput from '../EraComponents/YearInput';
 import SearchButton from './SearchButton';
 
 interface DateRangeSearchFormProps {
@@ -27,9 +27,9 @@ const DateRangeSearchForm: React.FC<DateRangeSearchFormProps> = ({ onSubmit }) =
   };
 
   return (
-    <Box maw={400} mx="auto">
+    <Box maw={400} mx="auto" mt="md">
       <form onSubmit={form.onSubmit(handleSubmit)}>
-        <Stack justify="center" mt="md" gap="md">
+        <Stack justify="center" gap="md">
           <YearInput form={form} yearField="startYear" eraField="startEra" label="起始年份" />
           <YearInput form={form} yearField="endYear" eraField="endEra" label="終止年份" />
         </Stack>

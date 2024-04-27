@@ -44,7 +44,7 @@ const EmperorSearchForm: React.FC<EmperorSearchProps> = ({ onSubmit }) => {
       })) || [];
 
   return (
-    <Box maw={400} mx="auto">
+    <Box maw={400} mx="auto" mt="md">
       <form onSubmit={form.onSubmit(handleSubmit)}>
         <Group justify="center" mt="md" gap="xl" wrap="nowrap">
           <Select
@@ -58,16 +58,18 @@ const EmperorSearchForm: React.FC<EmperorSearchProps> = ({ onSubmit }) => {
             nothingFoundMessage="無結果..."
           />
 
-          <Select
-            label="君主"
-            value={form.values.emperor}
-            onChange={(value) => form.setFieldValue('emperor', value || '')}
-            placeholder="全部"
-            data={emperorOptions}
-            clearable
-            searchable
-            nothingFoundMessage="無結果..."
-          />
+          {form.values.dynasty && (
+            <Select
+              label="君主"
+              value={form.values.emperor}
+              onChange={(value) => form.setFieldValue('emperor', value || '')}
+              placeholder="全部"
+              data={emperorOptions}
+              clearable
+              searchable
+              nothingFoundMessage="無結果..."
+            />
+          )}
         </Group>
 
         <Group justify="flex-end" mt="md">

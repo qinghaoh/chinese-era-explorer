@@ -1,6 +1,6 @@
 import { Suspense, lazy, useEffect, useState } from 'react';
 import { Converter, ConverterOptions, Locale } from 'opencc-js';
-import { Container, Grid } from '@mantine/core';
+import { Container, Grid, Group, Title } from '@mantine/core';
 import { ChineseEra, Emperor } from '../types';
 import { extractYearFromChineseDateString } from '../utils/dateUtils';
 
@@ -12,8 +12,8 @@ const converterOptions: ConverterOptions = {
 const convertText = Converter(converterOptions);
 
 const SearchTabs = lazy(() => import('../components/SearchForm/SearchTabs'));
-const ChineseEraCard = lazy(() => import('../components/Utils/ChineseEraCard'));
-const Pagination = lazy(() => import('../components/Utils/Pagination'));
+const ChineseEraCard = lazy(() => import('../components/EraComponents/ChineseEraCard'));
+const Pagination = lazy(() => import('../components/EraComponents/Pagination'));
 
 export function HomePage() {
   // Data loaded from JSON files
@@ -82,7 +82,6 @@ export function HomePage() {
         .map((emp) => erasData.filter((era) => era.emperor_id === emp.id))
         .flat()
         .filter((era): era is ChineseEra => !!era);
-      console.log(foundEras);
 
       mapErasToEmperors(foundEras);
     };
@@ -112,6 +111,10 @@ export function HomePage() {
   return (
     <>
       <Container size="xl" mt={40}>
+        <Group justify="center" mb="lg">
+          <Title>中國年號查詢</Title>
+        </Group>
+
         <Suspense fallback={<div>搜索界面加載中...</div>}>
           <SearchTabs
             onSearchChineseEraName={handleChineseEraNameSearch}
@@ -119,6 +122,7 @@ export function HomePage() {
             onSearchEmperors={handleEmperorsSearch}
           />
         </Suspense>
+
         <Grid>
           {currentEraResults.map((era, index) => (
             <Grid.Col span={6} key={era.id}>
@@ -129,6 +133,7 @@ export function HomePage() {
             </Grid.Col>
           ))}
         </Grid>
+
         <Suspense fallback={<div>頁碼加載中...</div>}>
           <Pagination
             itemsPerPage={itemsPerPage}

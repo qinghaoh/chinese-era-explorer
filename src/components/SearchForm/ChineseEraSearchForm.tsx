@@ -24,10 +24,10 @@ const ChineseEraSearchForm: React.FC<ChineseEraSearchFormProps> = ({ onSubmit })
   };
 
   return (
-    <Box maw={200} mx="auto">
+    <Box maw={200} mx="auto" mt="md">
       <form onSubmit={form.onSubmit(handleSubmit)}>
         <TextInput
-          size="md"
+          size="sm"
           label="年號"
           placeholder="請輸入年號..."
           {...form.getInputProps('chinesesEraName')}
