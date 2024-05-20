@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useCallback } from 'react';
 import { Select, Group, Box } from '@mantine/core';
 import { useForm } from '@mantine/form';
 import SearchButton from './SearchButton';
@@ -6,6 +6,7 @@ import SearchButton from './SearchButton';
 interface Dynasty {
   name: string;
   emperors: string[];
+  group: string;
 }
 
 interface EmperorSearchProps {
@@ -23,16 +24,39 @@ const EmperorSearchForm: React.FC<EmperorSearchProps> = ({ onSubmit }) => {
 
   // Load dynasties data
   useEffect(() => {
-    import('../../data/dynasties.json')
-      .then((data) => {
+    const fetchDynastiesData = async () => {
+      try {
+        const data = await import('../../data/dynasties.json');
         setDynastiesData(data.default);
-      })
-      .catch((error) => console.error('Failed to load dynasties data:', error));
+      } catch (error) {
+        console.error('Failed to load dynasties data:', error);
+      }
+    };
+
+    fetchDynastiesData();
   }, []);
 
   const handleSubmit = (values: typeof form.values) => {
     onSubmit(values.dynasty, values.emperor);
   };
+
+  const getDynastyOptions = useCallback(
+    () =>
+      dynastiesData.reduce(
+        (acc, dynasty) => {
+          const group = acc.find((g) => g.group === dynasty.group);
+          const item = { value: dynasty.name, label: dynasty.name };
+          if (group) {
+            group.items.push(item);
+          } else {
+            acc.push({ group: dynasty.group, items: [item] });
+          }
+          return acc;
+        },
+        [] as { group: string; items: { value: string; label: string }[] }[]
+      ),
+    [dynastiesData]
+  );
 
   // Dynamic options for the emperor select based on selected dynasty
   const emperorOptions =
@@ -52,7 +76,7 @@ const EmperorSearchForm: React.FC<EmperorSearchProps> = ({ onSubmit }) => {
             value={form.values.dynasty}
             onChange={(value) => form.setFieldValue('dynasty', value || '')}
             placeholder="全部"
-            data={dynastiesData.map((dynasty) => ({ value: dynasty.name, label: dynasty.name }))}
+            data={getDynastyOptions()}
             clearable
             searchable
             nothingFoundMessage="無結果..."
