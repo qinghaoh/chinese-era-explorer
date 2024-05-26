@@ -123,9 +123,9 @@ export function HomePage() {
           />
         </Suspense>
 
-        <Grid>
+        <Grid gutter={{ base: 5, xs: 'md', md: 'xl', xl: 50 }}>
           {currentEraResults.map((era, index) => (
-            <Grid.Col span={6} key={era.id}>
+            <Grid.Col span={{ base: 12, md: 6, lg: 4 }} key={era.id}>
               {' '}
               <Suspense fallback={<div>搜索結果加載中...</div>}>
                 <ChineseEraCard era={era} emperor={emperorResults[firstPageIndex + index]} />

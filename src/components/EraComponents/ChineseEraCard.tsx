@@ -23,11 +23,10 @@ const ChineseEraCard: React.FC<ChineseEraCardProps> = ({ era, emperor }) => {
         radius="md"
         style={{
           height: '100%',
-          backgroundImage: `linear-gradient(rgba(255, 255, 255, 0.6), rgba(255, 255, 255, 0.6)),
+          backgroundImage: `linear-gradient(rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.7)),
             url(${oldPaper})`,
           backgroundSize: 'cover',
         }}
-        py="sm"
       >
         <Card.Section
           inheritPadding
