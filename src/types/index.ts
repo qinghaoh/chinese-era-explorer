@@ -1,3 +1,5 @@
+export type ElementType = '金' | '木' | '水' | '火' | '土';
+
 export interface ChineseEra {
   id: number;
   name: string;
@@ -5,6 +7,7 @@ export interface ChineseEra {
   end: string;
   remark?: string | null;
   emperor_id: number;
+  element?: string | null;
 }
 
 export interface Emperor {

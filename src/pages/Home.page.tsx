@@ -112,7 +112,7 @@ export function HomePage() {
     <>
       <Container size="xl" mt={40}>
         <Group justify="center" mb="lg">
-          <Title>中國年號查詢</Title>
+          <Title my="xl">中國年號查詢</Title>
         </Group>
 
         <Suspense fallback={<div>搜索界面加載中...</div>}>
