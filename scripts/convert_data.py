@@ -8,7 +8,9 @@ from pathlib import Path
 # attributes: [dynasty name, dynasty group]
 #
 # Elements (德運): https://zh.wikipedia.org/wiki/%E4%BA%94%E5%BE%B7%E7%B5%82%E5%A7%8B%E8%AA%AA
-# 關於金朝的德運，參考：《正統與華夷：中國傳統政治文化研究》，劉浦江，2017
+# 參考
+# - 十六國的德運：《王化與山險》，羅新，2019
+# - 金朝的德運：《正統與華夷：中國傳統政治文化研究》，劉浦江，2017
 CSV_FILES = {
     'western_han.csv': ('西漢', '漢朝', ('火土', -104)),
     'xin.csv': ('新', '漢朝', '土'),
@@ -24,19 +26,19 @@ CSV_FILES = {
     'western_jin_others.csv': ('', '', ''),
     'eastern_jin.csv': ('東晉', '晉朝', '金'),
     'eastern_jin_others.csv': ('', '', ''),
-    'han_zhao.csv': ('漢趙', '十六國', ''),
+    'han_zhao.csv': ('漢趙', '十六國', ('無水', 319)),
     'han_zhao_others.csv': ('', '', ''),
     'cheng_han.csv': ('成漢', '十六國', ''),
     'former_liang.csv': ('前涼', '十六國', ''),
     'former_liang_others.csv': ('', '', ''),
-    'later_zhao.csv': ('後趙', '十六國', ''),
+    'later_zhao.csv': ('後趙', '十六國', '水'),
     'ran_wei.csv': ('冉魏', '十六國', ''),
     'later_zhao_others.csv': ('', '', ''),
     'dai.csv': ('代', '十六國', ''),
-    'former_yan.csv': ('前燕', '十六國', ''),
-    'former_qin.csv': ('前秦', '十六國', ''),
+    'former_yan.csv': ('前燕', '十六國', ('水木', 364)),
+    'former_qin.csv': ('前秦', '十六國', '木'),
     'former_qin_others.csv': ('', '', ''),
-    'later_qin.csv': ('後秦', '十六國', ''),
+    'later_qin.csv': ('後秦', '十六國', '火'),
     'later_yan.csv': ('後燕', '十六國', ''),
     'later_yan_others.csv': ('', '', ''),
     'western_yan.csv': ('西燕', '十六國', ''),
@@ -59,7 +61,7 @@ CSV_FILES = {
     'xiao_liang_others.csv': ('', '', ''),
     'western_xiao_liang.csv': ('西梁', '南北朝', ''),
     'southern_chen.csv': ('南陳', '南北朝', '土'),
-    'northern_wei.csv': ('北魏', '南北朝', '水'),
+    'northern_wei.csv': ('北魏', '南北朝', ('土水', 490)),
     'northern_wei_others.csv': ('', '', ''),
     'eastern_wei.csv': ('東魏', '南北朝', '水'),
     'eastern_wei_others.csv': ('', '', ''),
@@ -273,7 +275,8 @@ def convert(csv_file, attributes, dynasties: list[dict]):
                 if isinstance(attributes[2], tuple):
                     try:
                         if compare_years(d['end'], attributes[2][1]) < 0:
-                            d['element'] = attributes[2][0][0]
+                            if attributes[2][0][0] != '無':
+                                d['element'] = attributes[2][0][0]
                         else:
                             d['element'] = attributes[2][0][1]
                     except ValueError:

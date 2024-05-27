@@ -66,7 +66,7 @@ const ChineseEraCard: React.FC<ChineseEraCardProps> = ({ era, emperor }) => {
             }}
           >
             <Group justify="flex-start" pl="md" pr="md">
-              <Avatar src={avatarSrc} alt={`${emperor.name}`}></Avatar>
+              <Avatar src={avatarSrc} alt={`${emperor.name}`} size="lg" />
               {(emperor.title || emperor.name) && (
                 <Text size="xl">
                   {emperor.title} {emperor.name}
