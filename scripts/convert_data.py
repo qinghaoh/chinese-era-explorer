@@ -29,7 +29,7 @@ CSV_FILES = {
     'cheng_han.csv': ('成漢', '十六國', ''),
     'former_liang.csv': ('前涼', '十六國', ''),
     'former_liang_others.csv': ('', '', ''),
-    'later_zhao.csv': ('后趙', '十六國', ''),
+    'later_zhao.csv': ('後趙', '十六國', ''),
     'ran_wei.csv': ('冉魏', '十六國', ''),
     'later_zhao_others.csv': ('', '', ''),
     'dai.csv': ('代', '十六國', ''),
