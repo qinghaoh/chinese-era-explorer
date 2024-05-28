@@ -59,13 +59,12 @@ const EmperorSearchForm: React.FC<EmperorSearchProps> = ({ onSubmit }) => {
   );
 
   // Dynamic options for the emperor select based on selected dynasty
-  const emperorOptions =
-    dynastiesData
-      .find((d) => d.name === form.values.dynasty)
-      ?.emperors.map((emperor) => ({
-        value: emperor,
-        label: emperor,
-      })) || [];
+  const emperorOptions = [
+    ...new Set(dynastiesData.find((d) => d.name === form.values.dynasty)?.emperors || []),
+  ].map((emperor) => ({
+    value: emperor,
+    label: emperor,
+  }));
 
   return (
     <Box maw={400} mx="auto" mt="md">
