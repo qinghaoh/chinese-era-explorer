@@ -59,7 +59,9 @@ const ChineseEraCard: React.FC<ChineseEraCardProps> = ({ era, emperor }) => {
             inheritPadding
             withBorder
             pt="md"
+            pb="xl"
             my="md"
+            mb="xl"
             style={{
               borderTop: '2px solid black',
               padding: '16px',

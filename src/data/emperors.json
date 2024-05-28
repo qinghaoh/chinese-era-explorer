@@ -2982,13 +2982,21 @@
     {
         "id": 410,
         "dynasty": "後唐",
+        "title": "唐莊宗",
+        "name": "李存勖",
+        "first_regnal_year": "908年",
+        "final_regnal_year": "926年"
+    },
+    {
+        "id": 411,
+        "dynasty": "後唐",
         "title": "唐明宗",
         "name": "李嗣源",
         "first_regnal_year": "926年",
         "final_regnal_year": "933年"
     },
     {
-        "id": 411,
+        "id": 412,
         "dynasty": "後唐",
         "title": "唐閔帝",
         "name": "李從厚",
@@ -2996,7 +3004,7 @@
         "final_regnal_year": "934年"
     },
     {
-        "id": 412,
+        "id": 413,
         "dynasty": "後唐",
         "title": "唐末帝",
         "name": "李從珂",
@@ -3004,7 +3012,7 @@
         "final_regnal_year": "936年"
     },
     {
-        "id": 413,
+        "id": 414,
         "dynasty": "後晉",
         "title": "晉高祖",
         "name": "石敬瑭",
@@ -3012,7 +3020,7 @@
         "final_regnal_year": "942年"
     },
     {
-        "id": 414,
+        "id": 415,
         "dynasty": "後晉",
         "title": "晉出帝",
         "name": "石重貴",
@@ -3020,13 +3028,21 @@
         "final_regnal_year": "946年"
     },
     {
-        "id": 415,
+        "id": 416,
         "name": "劉知遠",
         "first_regnal_year": "？",
         "final_regnal_year": "？"
     },
     {
-        "id": 416,
+        "id": 417,
+        "dynasty": "後漢",
+        "title": "漢高祖",
+        "name": "劉知遠",
+        "first_regnal_year": "947年",
+        "final_regnal_year": "948年"
+    },
+    {
+        "id": 418,
         "dynasty": "後周",
         "title": "周太祖",
         "name": "郭威",
@@ -3034,7 +3050,7 @@
         "final_regnal_year": "954年"
     },
     {
-        "id": 417,
+        "id": 419,
         "dynasty": "吳",
         "title": "吳烈祖",
         "name": "楊渥",
@@ -3042,7 +3058,7 @@
         "final_regnal_year": "908年"
     },
     {
-        "id": 418,
+        "id": 420,
         "dynasty": "吳",
         "title": "吳高祖",
         "name": "楊隆演",
@@ -3050,7 +3066,7 @@
         "final_regnal_year": "920年"
     },
     {
-        "id": 419,
+        "id": 421,
         "dynasty": "吳",
         "title": "吳睿帝",
         "name": "楊溥",
@@ -3058,7 +3074,7 @@
         "final_regnal_year": "937年"
     },
     {
-        "id": 420,
+        "id": 422,
         "dynasty": "南唐",
         "title": "唐烈祖",
         "name": "李昪",
@@ -3066,7 +3082,7 @@
         "final_regnal_year": "943年"
     },
     {
-        "id": 421,
+        "id": 423,
         "dynasty": "南唐",
         "title": "唐元宗",
         "name": "李璟",
@@ -3074,7 +3090,7 @@
         "final_regnal_year": "961年"
     },
     {
-        "id": 422,
+        "id": 424,
         "dynasty": "南唐",
         "title": "唐後主",
         "name": "李煜",
@@ -3082,7 +3098,7 @@
         "final_regnal_year": "975年"
     },
     {
-        "id": 423,
+        "id": 425,
         "dynasty": "吳越",
         "title": "吳越太祖",
         "name": "錢鏐",
@@ -3090,7 +3106,7 @@
         "final_regnal_year": "932年"
     },
     {
-        "id": 424,
+        "id": 426,
         "dynasty": "吳越",
         "title": "吳越世宗",
         "name": "錢元瓘",
@@ -3098,7 +3114,7 @@
         "final_regnal_year": "941年"
     },
     {
-        "id": 425,
+        "id": 427,
         "dynasty": "吳越",
         "title": "吳越成宗",
         "name": "錢弘佐",
@@ -3106,21 +3122,21 @@
         "final_regnal_year": "947年"
     },
     {
-        "id": 426,
+        "id": 428,
         "dynasty": "吳越",
         "name": "吳越忠遜王錢弘倧",
         "first_regnal_year": "947年",
         "final_regnal_year": "947年"
     },
     {
-        "id": 427,
+        "id": 429,
         "dynasty": "吳越",
         "name": "吳越忠懿王錢弘俶",
         "first_regnal_year": "948年",
         "final_regnal_year": "978年"
     },
     {
-        "id": 428,
+        "id": 430,
         "dynasty": "楚",
         "title": "楚武穆王",
         "name": "馬殷",
@@ -3128,7 +3144,7 @@
         "final_regnal_year": "930年"
     },
     {
-        "id": 429,
+        "id": 431,
         "dynasty": "楚",
         "title": "楚衡陽王",
         "name": "馬希聲",
@@ -3136,7 +3152,7 @@
         "final_regnal_year": "932年"
     },
     {
-        "id": 430,
+        "id": 432,
         "dynasty": "楚",
         "title": "楚文昭王",
         "name": "馬希範",
@@ -3144,7 +3160,7 @@
         "final_regnal_year": "947年"
     },
     {
-        "id": 431,
+        "id": 433,
         "dynasty": "楚",
         "title": "楚廢王",
         "name": "馬希廣",
@@ -3152,7 +3168,7 @@
         "final_regnal_year": "950年"
     },
     {
-        "id": 432,
+        "id": 434,
         "dynasty": "楚",
         "title": "楚恭孝王",
         "name": "馬希萼",
@@ -3160,7 +3176,7 @@
         "final_regnal_year": "951年"
     },
     {
-        "id": 433,
+        "id": 435,
         "dynasty": "閩",
         "title": "閩太祖",
         "name": "王審知",
@@ -3168,7 +3184,7 @@
         "final_regnal_year": "925年"
     },
     {
-        "id": 434,
+        "id": 436,
         "dynasty": "閩",
         "title": "閩嗣王",
         "name": "王延翰",
@@ -3176,7 +3192,7 @@
         "final_regnal_year": "926年"
     },
     {
-        "id": 435,
+        "id": 437,
         "dynasty": "閩",
         "title": "閩惠宗",
         "name": "王延鈞",
@@ -3184,7 +3200,7 @@
         "final_regnal_year": "935年"
     },
     {
-        "id": 436,
+        "id": 438,
         "dynasty": "閩",
         "title": "閩康宗",
         "name": "王繼鵬",
@@ -3192,7 +3208,7 @@
         "final_regnal_year": "939年"
     },
     {
-        "id": 437,
+        "id": 439,
         "dynasty": "閩",
         "title": "閩景宗",
         "name": "王延羲",
@@ -3200,7 +3216,7 @@
         "final_regnal_year": "944年"
     },
     {
-        "id": 438,
+        "id": 440,
         "dynasty": "閩",
         "title": "閩天德帝",
         "name": "王延政",
@@ -3208,25 +3224,25 @@
         "final_regnal_year": "945年"
     },
     {
-        "id": 439,
+        "id": 441,
         "name": "朱文進",
         "first_regnal_year": "944年",
         "final_regnal_year": "944年"
     },
     {
-        "id": 440,
+        "id": 442,
         "name": "卓儼明",
         "first_regnal_year": "945年三月",
         "final_regnal_year": "945年五月"
     },
     {
-        "id": 441,
+        "id": 443,
         "name": "李仁達",
         "first_regnal_year": "945年五月",
         "final_regnal_year": "946年"
     },
     {
-        "id": 442,
+        "id": 444,
         "dynasty": "南漢",
         "title": "漢高祖",
         "name": "劉龑",
@@ -3234,7 +3250,7 @@
         "final_regnal_year": "942年"
     },
     {
-        "id": 443,
+        "id": 445,
         "dynasty": "南漢",
         "title": "漢殤帝",
         "name": "劉玢",
@@ -3242,7 +3258,7 @@
         "final_regnal_year": "943年"
     },
     {
-        "id": 444,
+        "id": 446,
         "dynasty": "南漢",
         "title": "漢中宗",
         "name": "劉晟",
@@ -3250,7 +3266,7 @@
         "final_regnal_year": "958年"
     },
     {
-        "id": 445,
+        "id": 447,
         "dynasty": "南漢",
         "title": "漢後主",
         "name": "劉鋹",
@@ -3258,19 +3274,19 @@
         "final_regnal_year": "971年"
     },
     {
-        "id": 446,
+        "id": 448,
         "name": "劉隱",
         "first_regnal_year": "？",
         "final_regnal_year": "？"
     },
     {
-        "id": 447,
+        "id": 449,
         "name": "張遇賢",
         "first_regnal_year": "942年七月",
         "final_regnal_year": "943年十月"
     },
     {
-        "id": 448,
+        "id": 450,
         "dynasty": "前蜀",
         "title": "蜀高祖",
         "name": "王建",
@@ -3278,7 +3294,7 @@
         "final_regnal_year": "918年"
     },
     {
-        "id": 449,
+        "id": 451,
         "dynasty": "前蜀",
         "title": "蜀後主",
         "name": "王衍",
@@ -3286,7 +3302,7 @@
         "final_regnal_year": "925年"
     },
     {
-        "id": 450,
+        "id": 452,
         "dynasty": "後蜀",
         "title": "蜀高祖",
         "name": "孟知祥",
@@ -3294,7 +3310,7 @@
         "final_regnal_year": "934年"
     },
     {
-        "id": 451,
+        "id": 453,
         "dynasty": "後蜀",
         "title": "蜀後主",
         "name": "孟昶",
@@ -3302,7 +3318,7 @@
         "final_regnal_year": "965年"
     },
     {
-        "id": 452,
+        "id": 454,
         "dynasty": "荊南",
         "title": "楚武信王",
         "name": "高季興",
@@ -3310,35 +3326,35 @@
         "final_regnal_year": "929年"
     },
     {
-        "id": 453,
+        "id": 455,
         "dynasty": "荊南",
         "name": "南平文獻王高從誨",
         "first_regnal_year": "928年",
         "final_regnal_year": "948年"
     },
     {
-        "id": 454,
+        "id": 456,
         "dynasty": "荊南",
         "name": "南平貞懿王高保融",
         "first_regnal_year": "948年",
         "final_regnal_year": "960年"
     },
     {
-        "id": 455,
+        "id": 457,
         "dynasty": "荊南",
         "name": "高保勗",
         "first_regnal_year": "960年",
         "final_regnal_year": "962年"
     },
     {
-        "id": 456,
+        "id": 458,
         "dynasty": "荊南",
         "name": "高繼沖",
         "first_regnal_year": "962年",
         "final_regnal_year": "963年"
     },
     {
-        "id": 457,
+        "id": 459,
         "dynasty": "北漢",
         "title": "漢世祖",
         "name": "劉旻",
@@ -3346,7 +3362,7 @@
         "final_regnal_year": "954年"
     },
     {
-        "id": 458,
+        "id": 460,
         "dynasty": "北漢",
         "title": "漢睿宗",
         "name": "劉鈞",
@@ -3354,7 +3370,7 @@
         "final_regnal_year": "968年"
     },
     {
-        "id": 459,
+        "id": 461,
         "dynasty": "北漢",
         "title": "漢英武帝",
         "name": "劉繼元",
@@ -3362,7 +3378,7 @@
         "final_regnal_year": "979年"
     },
     {
-        "id": 460,
+        "id": 462,
         "dynasty": "北宋",
         "title": "宋太祖",
         "name": "趙匡胤",
@@ -3370,7 +3386,7 @@
         "final_regnal_year": "976年"
     },
     {
-        "id": 461,
+        "id": 463,
         "dynasty": "北宋",
         "title": "宋太宗",
         "name": "趙光義",
@@ -3378,7 +3394,7 @@
         "final_regnal_year": "997年"
     },
     {
-        "id": 462,
+        "id": 464,
         "dynasty": "北宋",
         "title": "宋真宗",
         "name": "趙恆",
@@ -3386,7 +3402,7 @@
         "final_regnal_year": "1022年"
     },
     {
-        "id": 463,
+        "id": 465,
         "dynasty": "北宋",
         "title": "宋仁宗",
         "name": "趙禎",
@@ -3394,7 +3410,7 @@
         "final_regnal_year": "1063年"
     },
     {
-        "id": 464,
+        "id": 466,
         "dynasty": "北宋",
         "title": "宋英宗",
         "name": "趙曙",
@@ -3402,7 +3418,7 @@
         "final_regnal_year": "1067年"
     },
     {
-        "id": 465,
+        "id": 467,
         "dynasty": "北宋",
         "title": "宋神宗",
         "name": "趙頊",
@@ -3410,7 +3426,7 @@
         "final_regnal_year": "1085年"
     },
     {
-        "id": 466,
+        "id": 468,
         "dynasty": "北宋",
         "title": "宋哲宗",
         "name": "趙煦",
@@ -3418,7 +3434,7 @@
         "final_regnal_year": "1100年"
     },
     {
-        "id": 467,
+        "id": 469,
         "dynasty": "北宋",
         "title": "宋徽宗",
         "name": "趙佶",
@@ -3426,7 +3442,7 @@
         "final_regnal_year": "1125年"
     },
     {
-        "id": 468,
+        "id": 470,
         "dynasty": "北宋",
         "title": "宋欽宗",
         "name": "趙桓",
@@ -3434,55 +3450,55 @@
         "final_regnal_year": "1127年"
     },
     {
-        "id": 469,
+        "id": 471,
         "name": "李順",
         "first_regnal_year": "994年正月",
         "final_regnal_year": "994年五月"
     },
     {
-        "id": 470,
+        "id": 472,
         "name": "王均",
         "first_regnal_year": "1000年正月",
         "final_regnal_year": "1000年十月"
     },
     {
-        "id": 471,
+        "id": 473,
         "name": "王倫",
         "first_regnal_year": "1043年五月",
         "final_regnal_year": "1043年七月"
     },
     {
-        "id": 472,
+        "id": 474,
         "name": "王則",
         "first_regnal_year": "1047年十一月",
         "final_regnal_year": "1048年閏正月"
     },
     {
-        "id": 473,
+        "id": 475,
         "name": "儂智高",
         "first_regnal_year": "1049年",
         "final_regnal_year": "1052年四月"
     },
     {
-        "id": 474,
+        "id": 476,
         "name": "趙諗",
         "first_regnal_year": "？",
         "final_regnal_year": "？"
     },
     {
-        "id": 475,
+        "id": 477,
         "name": "方臘",
         "first_regnal_year": "1120年十一月",
         "final_regnal_year": "1121年四月"
     },
     {
-        "id": 476,
+        "id": 478,
         "name": "？",
         "first_regnal_year": "？",
         "final_regnal_year": "？"
     },
     {
-        "id": 477,
+        "id": 479,
         "dynasty": "南宋",
         "title": "宋高宗",
         "name": "趙構",
@@ -3490,7 +3506,7 @@
         "final_regnal_year": "1162年"
     },
     {
-        "id": 478,
+        "id": 480,
         "dynasty": "南宋",
         "title": "宋孝宗",
         "name": "趙昚",
@@ -3498,7 +3514,7 @@
         "final_regnal_year": "1189年"
     },
     {
-        "id": 479,
+        "id": 481,
         "dynasty": "南宋",
         "title": "宋光宗",
         "name": "趙惇",
@@ -3506,7 +3522,7 @@
         "final_regnal_year": "1194年"
     },
     {
-        "id": 480,
+        "id": 482,
         "dynasty": "南宋",
         "title": "宋寧宗",
         "name": "趙擴",
@@ -3514,7 +3530,7 @@
         "final_regnal_year": "1224年"
     },
     {
-        "id": 481,
+        "id": 483,
         "dynasty": "南宋",
         "title": "宋理宗",
         "name": "趙昀",
@@ -3522,7 +3538,7 @@
         "final_regnal_year": "1264年"
     },
     {
-        "id": 482,
+        "id": 484,
         "dynasty": "南宋",
         "title": "宋度宗",
         "name": "趙禥",
@@ -3530,7 +3546,7 @@
         "final_regnal_year": "1274年"
     },
     {
-        "id": 483,
+        "id": 485,
         "dynasty": "南宋",
         "title": "宋恭帝",
         "name": "趙㬎",
@@ -3538,7 +3554,7 @@
         "final_regnal_year": "1276年"
     },
     {
-        "id": 484,
+        "id": 486,
         "dynasty": "南宋",
         "title": "宋端宗",
         "name": "趙昰",
@@ -3546,7 +3562,7 @@
         "final_regnal_year": "1278年"
     },
     {
-        "id": 485,
+        "id": 487,
         "dynasty": "南宋",
         "title": "宋少帝",
         "name": "趙昺",
@@ -3554,97 +3570,97 @@
         "final_regnal_year": "1279年"
     },
     {
-        "id": 486,
+        "id": 488,
         "name": "趙旉",
         "first_regnal_year": "1129年三月",
         "final_regnal_year": "1129年四月"
     },
     {
-        "id": 487,
+        "id": 489,
         "name": "鍾相",
         "first_regnal_year": "1130年二月",
         "final_regnal_year": "1130年三月"
     },
     {
-        "id": 488,
+        "id": 490,
         "name": "陳萬",
         "first_regnal_year": "？",
         "final_regnal_year": "？"
     },
     {
-        "id": 489,
+        "id": 491,
         "name": "李合戎、雷進",
         "first_regnal_year": "？",
         "final_regnal_year": "？"
     },
     {
-        "id": 490,
+        "id": 492,
         "name": "雷進",
         "first_regnal_year": "？",
         "final_regnal_year": "？"
     },
     {
-        "id": 491,
+        "id": 493,
         "name": "李婆備",
         "first_regnal_year": "？",
         "final_regnal_year": "？"
     },
     {
-        "id": 492,
+        "id": 494,
         "name": "劉豫",
         "first_regnal_year": "1130年十一月",
         "final_regnal_year": "1137年十一月"
     },
     {
-        "id": 493,
+        "id": 495,
         "name": "楊么",
         "first_regnal_year": "1133年四月",
         "final_regnal_year": "1135年六月"
     },
     {
-        "id": 494,
+        "id": 496,
         "name": "王法恩",
         "first_regnal_year": "1141年六月",
         "final_regnal_year": "1141年六月"
     },
     {
-        "id": 495,
+        "id": 497,
         "name": "阿謝",
         "first_regnal_year": "1176年",
         "final_regnal_year": "1176年"
     },
     {
-        "id": 496,
+        "id": 498,
         "name": "李接",
         "first_regnal_year": "1179年六月",
         "final_regnal_year": "1179年十月"
     },
     {
-        "id": 497,
+        "id": 499,
         "name": "吳曦",
         "first_regnal_year": "1207年正月",
         "final_regnal_year": "1207年二月"
     },
     {
-        "id": 498,
+        "id": 500,
         "name": "廖森",
         "first_regnal_year": "1229年",
         "final_regnal_year": "1229年"
     },
     {
-        "id": 499,
+        "id": 501,
         "name": "李子揚",
         "first_regnal_year": "？",
         "final_regnal_year": "？"
     },
     {
-        "id": 500,
+        "id": 502,
         "name": "徐真一",
         "first_regnal_year": "？",
         "final_regnal_year": "？"
     },
     {
-        "id": 501,
+        "id": 503,
         "dynasty": "遼",
         "title": "遼太祖",
         "name": "耶律億",
@@ -3652,7 +3668,7 @@
         "final_regnal_year": "926年"
     },
     {
-        "id": 502,
+        "id": 504,
         "dynasty": "遼",
         "title": "遼太宗",
         "name": "耶律德光",
@@ -3660,7 +3676,7 @@
         "final_regnal_year": "947年"
     },
     {
-        "id": 503,
+        "id": 505,
         "dynasty": "遼",
         "title": "遼世宗",
         "name": "耶律阮",
@@ -3668,7 +3684,7 @@
         "final_regnal_year": "951年"
     },
     {
-        "id": 504,
+        "id": 506,
         "dynasty": "遼",
         "title": "遼穆宗",
         "name": "耶律璟",
@@ -3676,7 +3692,7 @@
         "final_regnal_year": "969年"
     },
     {
-        "id": 505,
+        "id": 507,
         "dynasty": "遼",
         "title": "遼景宗",
         "name": "耶律賢",
@@ -3684,7 +3700,7 @@
         "final_regnal_year": "982年"
     },
     {
-        "id": 506,
+        "id": 508,
         "dynasty": "遼",
         "title": "遼聖宗",
         "name": "耶律隆緒",
@@ -3692,7 +3708,7 @@
         "final_regnal_year": "1031年"
     },
     {
-        "id": 507,
+        "id": 509,
         "dynasty": "遼",
         "title": "遼興宗",
         "name": "耶律宗真",
@@ -3700,7 +3716,7 @@
         "final_regnal_year": "1055年"
     },
     {
-        "id": 508,
+        "id": 510,
         "dynasty": "遼",
         "title": "遼道宗",
         "name": "耶律洪基",
@@ -3708,7 +3724,7 @@
         "final_regnal_year": "1101年"
     },
     {
-        "id": 509,
+        "id": 511,
         "dynasty": "遼",
         "title": "遼天祚帝",
         "name": "耶律延禧",
@@ -3716,7 +3732,7 @@
         "final_regnal_year": "1125年"
     },
     {
-        "id": 510,
+        "id": 512,
         "dynasty": "北遼",
         "title": "遼宣宗",
         "name": "耶律淳",
@@ -3724,14 +3740,14 @@
         "final_regnal_year": "1122年"
     },
     {
-        "id": 511,
+        "id": 513,
         "dynasty": "北遼",
         "name": "遼德妃蕭普賢女",
         "first_regnal_year": "1122年",
         "final_regnal_year": "1122年"
     },
     {
-        "id": 512,
+        "id": 514,
         "dynasty": "西北遼",
         "title": "遼梁王",
         "name": "耶律雅里",
@@ -3739,31 +3755,31 @@
         "final_regnal_year": "1123年"
     },
     {
-        "id": 513,
+        "id": 515,
         "name": "大延琳",
         "first_regnal_year": "1029年八月",
         "final_regnal_year": "1030年八月"
     },
     {
-        "id": 514,
+        "id": 516,
         "name": "高永昌",
         "first_regnal_year": "1116年正月",
         "final_regnal_year": "1116年五月"
     },
     {
-        "id": 515,
+        "id": 517,
         "name": "回離保",
         "first_regnal_year": "1123年正月",
         "final_regnal_year": "1123年八月"
     },
     {
-        "id": 516,
+        "id": 518,
         "name": "蕭幹",
         "first_regnal_year": "1123年",
         "final_regnal_year": "1123年"
     },
     {
-        "id": 517,
+        "id": 519,
         "dynasty": "西遼",
         "title": "遼德宗",
         "name": "耶律大石",
@@ -3771,14 +3787,14 @@
         "final_regnal_year": "1143年"
     },
     {
-        "id": 518,
+        "id": 520,
         "dynasty": "西遼",
         "name": "遼感天后蕭塔不煙",
         "first_regnal_year": "1143年",
         "final_regnal_year": "1150年"
     },
     {
-        "id": 519,
+        "id": 521,
         "dynasty": "西遼",
         "title": "遼仁宗",
         "name": "耶律夷列",
@@ -3786,14 +3802,14 @@
         "final_regnal_year": "1163年"
     },
     {
-        "id": 520,
+        "id": 522,
         "dynasty": "西遼",
         "name": "遼承天后耶律普速完",
         "first_regnal_year": "1163年",
         "final_regnal_year": "1177年"
     },
     {
-        "id": 521,
+        "id": 523,
         "dynasty": "西遼",
         "title": "遼末主",
         "name": "耶律直魯古",
@@ -3801,7 +3817,7 @@
         "final_regnal_year": "1211年"
     },
     {
-        "id": 522,
+        "id": 524,
         "dynasty": "西夏",
         "title": "夏景宗",
         "name": "李元昊",
@@ -3809,7 +3825,7 @@
         "final_regnal_year": "1048年"
     },
     {
-        "id": 523,
+        "id": 525,
         "dynasty": "西夏",
         "title": "夏毅宗",
         "name": "李諒祚",
@@ -3817,7 +3833,7 @@
         "final_regnal_year": "1067年"
     },
     {
-        "id": 524,
+        "id": 526,
         "dynasty": "西夏",
         "title": "夏惠宗",
         "name": "李秉常",
@@ -3825,7 +3841,7 @@
         "final_regnal_year": "1086年"
     },
     {
-        "id": 525,
+        "id": 527,
         "dynasty": "西夏",
         "title": "夏崇宗",
         "name": "李乾順",
@@ -3833,7 +3849,7 @@
         "final_regnal_year": "1139年"
     },
     {
-        "id": 526,
+        "id": 528,
         "dynasty": "西夏",
         "title": "夏仁宗",
         "name": "李仁孝",
@@ -3841,7 +3857,7 @@
         "final_regnal_year": "1193年"
     },
     {
-        "id": 527,
+        "id": 529,
         "dynasty": "西夏",
         "title": "夏桓宗",
         "name": "李純祐",
@@ -3849,7 +3865,7 @@
         "final_regnal_year": "1206年"
     },
     {
-        "id": 528,
+        "id": 530,
         "dynasty": "西夏",
         "title": "夏襄宗",
         "name": "李安全",
@@ -3857,7 +3873,7 @@
         "final_regnal_year": "1211年"
     },
     {
-        "id": 529,
+        "id": 531,
         "dynasty": "西夏",
         "title": "夏神宗",
         "name": "李遵頊",
@@ -3865,7 +3881,7 @@
         "final_regnal_year": "1223年"
     },
     {
-        "id": 530,
+        "id": 532,
         "dynasty": "西夏",
         "title": "夏獻宗",
         "name": "李德旺",
@@ -3873,7 +3889,7 @@
         "final_regnal_year": "1226年"
     },
     {
-        "id": 531,
+        "id": 533,
         "dynasty": "西夏",
         "title": "夏末主",
         "name": "李睍",
@@ -3881,7 +3897,7 @@
         "final_regnal_year": "1227年"
     },
     {
-        "id": 532,
+        "id": 534,
         "dynasty": "金",
         "title": "金太祖",
         "name": "完顏旻",
@@ -3889,7 +3905,7 @@
         "final_regnal_year": "1123年"
     },
     {
-        "id": 533,
+        "id": 535,
         "dynasty": "金",
         "title": "金太宗",
         "name": "完顏晟",
@@ -3897,7 +3913,7 @@
         "final_regnal_year": " 1135年"
     },
     {
-        "id": 534,
+        "id": 536,
         "dynasty": "金",
         "title": "金熙宗",
         "name": "完顏亶",
@@ -3905,7 +3921,7 @@
         "final_regnal_year": "1149年"
     },
     {
-        "id": 535,
+        "id": 537,
         "dynasty": "金",
         "title": "金海陵王",
         "name": "完顏亮",
@@ -3913,7 +3929,7 @@
         "final_regnal_year": "1161年"
     },
     {
-        "id": 536,
+        "id": 538,
         "dynasty": "金",
         "title": "金世宗",
         "name": "完顏雍",
@@ -3921,7 +3937,7 @@
         "final_regnal_year": "1189年"
     },
     {
-        "id": 537,
+        "id": 539,
         "dynasty": "金",
         "title": "金章宗",
         "name": "完顏璟",
@@ -3929,7 +3945,7 @@
         "final_regnal_year": "1208年"
     },
     {
-        "id": 538,
+        "id": 540,
         "dynasty": "金",
         "title": "金衛紹王",
         "name": "完顏永濟",
@@ -3937,7 +3953,7 @@
         "final_regnal_year": "1213年"
     },
     {
-        "id": 539,
+        "id": 541,
         "dynasty": "金",
         "title": "金宣宗",
         "name": "完顏珣",
@@ -3945,7 +3961,7 @@
         "final_regnal_year": "1224年"
     },
     {
-        "id": 540,
+        "id": 542,
         "dynasty": "金",
         "title": "金哀宗",
         "name": "完顏守緒",
@@ -3953,7 +3969,7 @@
         "final_regnal_year": "1234年"
     },
     {
-        "id": 541,
+        "id": 543,
         "dynasty": "金",
         "title": "金末帝",
         "name": "完顏承麟",
@@ -3961,22 +3977,10 @@
         "final_regnal_year": "1234年"
     },
     {
-        "id": 542,
+        "id": 544,
         "name": "熬羅孛極烈",
         "first_regnal_year": "1147年",
         "final_regnal_year": "1147年"
-    },
-    {
-        "id": 543,
-        "name": "？",
-        "first_regnal_year": "？",
-        "final_regnal_year": "？"
-    },
-    {
-        "id": 544,
-        "name": "完顏允文",
-        "first_regnal_year": "？",
-        "final_regnal_year": "？"
     },
     {
         "id": 545,
@@ -3986,78 +3990,90 @@
     },
     {
         "id": 546,
+        "name": "完顏允文",
+        "first_regnal_year": "？",
+        "final_regnal_year": "？"
+    },
+    {
+        "id": 547,
+        "name": "？",
+        "first_regnal_year": "？",
+        "final_regnal_year": "？"
+    },
+    {
+        "id": 548,
         "name": "移剌窩斡",
         "first_regnal_year": "1161年十二月",
         "final_regnal_year": "1162年九月"
     },
     {
-        "id": 547,
+        "id": 549,
         "name": "耶律德壽",
         "first_regnal_year": "1196年十月",
         "final_regnal_year": "1196年十一月"
     },
     {
-        "id": 548,
+        "id": 550,
         "name": "耶律留哥",
         "first_regnal_year": "1213年三月",
         "final_regnal_year": "1216年"
     },
     {
-        "id": 549,
+        "id": 551,
         "name": "劉永昌",
         "first_regnal_year": "1214年",
         "final_regnal_year": "1214年"
     },
     {
-        "id": 550,
+        "id": 552,
         "name": "楊安兒",
         "first_regnal_year": "1214年五月",
         "final_regnal_year": "1214年十二月"
     },
     {
-        "id": 551,
+        "id": 553,
         "name": "蒲鮮萬奴",
         "first_regnal_year": "1215年十月",
         "final_regnal_year": "1223年"
     },
     {
-        "id": 552,
+        "id": 554,
         "name": "張鯨",
         "first_regnal_year": "1216年",
         "final_regnal_year": "1216年"
     },
     {
-        "id": 553,
+        "id": 555,
         "name": "張致",
         "first_regnal_year": "1216年",
         "final_regnal_year": "1217年"
     },
     {
-        "id": 554,
+        "id": 556,
         "name": "郝定",
         "first_regnal_year": "1216年",
         "final_regnal_year": "1216年"
     },
     {
-        "id": 555,
+        "id": 557,
         "name": "耶律廝不",
         "first_regnal_year": "1216年",
         "final_regnal_year": "1216年"
     },
     {
-        "id": 556,
+        "id": 558,
         "name": "乞奴",
         "first_regnal_year": "？",
         "final_regnal_year": "？"
     },
     {
-        "id": 557,
+        "id": 559,
         "name": "耶律金山",
         "first_regnal_year": "1216年",
         "final_regnal_year": "1217年"
     },
     {
-        "id": 558,
+        "id": 560,
         "dynasty": "元",
         "title": "元世祖",
         "name": "忽必烈",
@@ -4065,7 +4081,7 @@
         "final_regnal_year": "1294年"
     },
     {
-        "id": 559,
+        "id": 561,
         "dynasty": "元",
         "title": "元成宗",
         "name": "鐵穆耳",
@@ -4073,7 +4089,7 @@
         "final_regnal_year": "1307年"
     },
     {
-        "id": 560,
+        "id": 562,
         "dynasty": "元",
         "title": "元武宗",
         "name": "海山",
@@ -4081,7 +4097,7 @@
         "final_regnal_year": "1311年"
     },
     {
-        "id": 561,
+        "id": 563,
         "dynasty": "元",
         "title": "元仁宗",
         "name": "愛育黎拔力八達",
@@ -4089,7 +4105,7 @@
         "final_regnal_year": "1320年"
     },
     {
-        "id": 562,
+        "id": 564,
         "dynasty": "元",
         "title": "元英宗",
         "name": "碩德八剌",
@@ -4097,7 +4113,7 @@
         "final_regnal_year": "1323年"
     },
     {
-        "id": 563,
+        "id": 565,
         "dynasty": "元",
         "title": "元泰定帝",
         "name": "也孫鐵木兒",
@@ -4105,7 +4121,7 @@
         "final_regnal_year": "1328年"
     },
     {
-        "id": 564,
+        "id": 566,
         "dynasty": "元",
         "title": "元天順帝",
         "name": "阿剌吉八",
@@ -4113,7 +4129,7 @@
         "final_regnal_year": "1328年"
     },
     {
-        "id": 565,
+        "id": 567,
         "dynasty": "元",
         "title": "元文宗",
         "name": "圖帖睦爾",
@@ -4121,7 +4137,7 @@
         "final_regnal_year": "1332年"
     },
     {
-        "id": 566,
+        "id": 568,
         "dynasty": "元",
         "title": "元惠宗",
         "name": "妥懽帖睦爾",
@@ -4129,7 +4145,7 @@
         "final_regnal_year": "1370年"
     },
     {
-        "id": 567,
+        "id": 569,
         "dynasty": "北元",
         "title": "元昭宗",
         "name": "愛猷識理達臘",
@@ -4137,7 +4153,7 @@
         "final_regnal_year": "1378年"
     },
     {
-        "id": 568,
+        "id": 570,
         "dynasty": "北元",
         "title": "元後主",
         "name": "脫古思帖木兒",
@@ -4145,127 +4161,127 @@
         "final_regnal_year": "1388年"
     },
     {
-        "id": 569,
+        "id": 571,
         "name": "杜可用",
         "first_regnal_year": "1280年四月",
         "final_regnal_year": "1280年四月"
     },
     {
-        "id": 570,
+        "id": 572,
         "name": "陳吊眼",
         "first_regnal_year": "1281年八月",
         "final_regnal_year": "1281年十一月"
     },
     {
-        "id": 571,
+        "id": 573,
         "name": "林桂方、趙良鈐",
         "first_regnal_year": "1283年三月",
         "final_regnal_year": "1283年三月"
     },
     {
-        "id": 572,
+        "id": 574,
         "name": "黃華",
         "first_regnal_year": "1283年十月",
         "final_regnal_year": "1284年正月"
     },
     {
-        "id": 573,
+        "id": 575,
         "name": "黎德、區將軍",
         "first_regnal_year": "1284年九月",
         "final_regnal_year": "1284年九月"
     },
     {
-        "id": 574,
+        "id": 576,
         "name": "楊鎮龍",
         "first_regnal_year": "1289年二月",
         "final_regnal_year": "1289年十月"
     },
     {
-        "id": 575,
+        "id": 577,
         "name": "陳空崖",
         "first_regnal_year": "1297年十月",
         "final_regnal_year": "1297年十月"
     },
     {
-        "id": 576,
+        "id": 578,
         "name": "陳慶安",
         "first_regnal_year": "1328年五月",
         "final_regnal_year": "1328年五月"
     },
     {
-        "id": 577,
+        "id": 579,
         "name": "周子旺",
         "first_regnal_year": "1336年五月",
         "final_regnal_year": "1336年五月"
     },
     {
-        "id": 578,
+        "id": 580,
         "name": "朱光卿",
         "first_regnal_year": "1337年正月",
         "final_regnal_year": "1337年七月"
     },
     {
-        "id": 579,
+        "id": 581,
         "name": "徐壽輝",
         "first_regnal_year": "1351年十月",
         "final_regnal_year": "1355年"
     },
     {
-        "id": 580,
+        "id": 582,
         "name": "趙普勝",
         "first_regnal_year": "？",
         "final_regnal_year": "？"
     },
     {
-        "id": 581,
+        "id": 583,
         "name": "張士誠",
         "first_regnal_year": "1354年",
         "final_regnal_year": "1357年八月"
     },
     {
-        "id": 582,
+        "id": 584,
         "name": "韓林兒",
         "first_regnal_year": "1355年二月",
         "final_regnal_year": "1366年十二月"
     },
     {
-        "id": 583,
+        "id": 585,
         "name": "陳友諒",
         "first_regnal_year": "1360年閏五月",
         "final_regnal_year": "1363年八月"
     },
     {
-        "id": 584,
+        "id": 586,
         "name": "陳理",
         "first_regnal_year": "1363年九月",
         "final_regnal_year": "1364年二月"
     },
     {
-        "id": 585,
+        "id": 587,
         "name": "明玉珍",
         "first_regnal_year": "1361年十月",
         "final_regnal_year": "1362年"
     },
     {
-        "id": 586,
+        "id": 588,
         "name": "明昇",
         "first_regnal_year": "1367年",
         "final_regnal_year": "1371年六月"
     },
     {
-        "id": 587,
+        "id": 589,
         "name": "朱元璋",
         "first_regnal_year": "？",
         "final_regnal_year": "？"
     },
     {
-        "id": 588,
+        "id": 590,
         "name": "把匝剌瓦爾密",
         "first_regnal_year": "？",
         "final_regnal_year": "？"
     },
     {
-        "id": 589,
+        "id": 591,
         "dynasty": "明",
         "title": "明太祖",
         "name": "朱元璋",
@@ -4273,7 +4289,7 @@
         "final_regnal_year": "1398年"
     },
     {
-        "id": 590,
+        "id": 592,
         "dynasty": "明",
         "title": "明惠宗",
         "name": "朱允炆",
@@ -4281,7 +4297,7 @@
         "final_regnal_year": "1402年"
     },
     {
-        "id": 591,
+        "id": 593,
         "dynasty": "明",
         "title": "明成祖",
         "name": "朱棣",
@@ -4289,7 +4305,7 @@
         "final_regnal_year": "1424年"
     },
     {
-        "id": 592,
+        "id": 594,
         "dynasty": "明",
         "title": "明仁宗",
         "name": "朱高熾",
@@ -4297,7 +4313,7 @@
         "final_regnal_year": "1425年"
     },
     {
-        "id": 593,
+        "id": 595,
         "dynasty": "明",
         "title": "明宣宗",
         "name": "朱瞻基",
@@ -4305,7 +4321,7 @@
         "final_regnal_year": "1435年"
     },
     {
-        "id": 594,
+        "id": 596,
         "dynasty": "明",
         "title": "明英宗",
         "name": "朱祁鎮",
@@ -4313,7 +4329,7 @@
         "final_regnal_year": "1449年"
     },
     {
-        "id": 595,
+        "id": 597,
         "dynasty": "明",
         "title": "明代宗",
         "name": "朱祁鈺",
@@ -4321,7 +4337,7 @@
         "final_regnal_year": "1457年"
     },
     {
-        "id": 596,
+        "id": 598,
         "dynasty": "明",
         "title": "明英宗",
         "name": "朱祁鎮",
@@ -4329,7 +4345,7 @@
         "final_regnal_year": "1464年"
     },
     {
-        "id": 597,
+        "id": 599,
         "dynasty": "明",
         "title": "明憲宗",
         "name": "朱見深",
@@ -4337,7 +4353,7 @@
         "final_regnal_year": "1487年"
     },
     {
-        "id": 598,
+        "id": 600,
         "dynasty": "明",
         "title": "明孝宗",
         "name": "朱祐樘",
@@ -4345,7 +4361,7 @@
         "final_regnal_year": "1505年"
     },
     {
-        "id": 599,
+        "id": 601,
         "dynasty": "明",
         "title": "明武宗",
         "name": "朱厚照",
@@ -4353,7 +4369,7 @@
         "final_regnal_year": "1521年"
     },
     {
-        "id": 600,
+        "id": 602,
         "dynasty": "明",
         "title": "明世宗",
         "name": "朱厚熜",
@@ -4361,7 +4377,7 @@
         "final_regnal_year": "1566年"
     },
     {
-        "id": 601,
+        "id": 603,
         "dynasty": "明",
         "title": "明穆宗",
         "name": "朱載坖",
@@ -4369,7 +4385,7 @@
         "final_regnal_year": "1572年"
     },
     {
-        "id": 602,
+        "id": 604,
         "dynasty": "明",
         "title": "明神宗",
         "name": "朱祤鈞",
@@ -4377,7 +4393,7 @@
         "final_regnal_year": "1620年"
     },
     {
-        "id": 603,
+        "id": 605,
         "dynasty": "明",
         "title": "明光宗",
         "name": "朱常洛",
@@ -4385,7 +4401,7 @@
         "final_regnal_year": "1620年"
     },
     {
-        "id": 604,
+        "id": 606,
         "dynasty": "明",
         "title": "明熹宗",
         "name": "朱由校",
@@ -4393,7 +4409,7 @@
         "final_regnal_year": "1627年"
     },
     {
-        "id": 605,
+        "id": 607,
         "dynasty": "明",
         "title": "明思宗",
         "name": "朱由檢",
@@ -4401,247 +4417,248 @@
         "final_regnal_year": "1644年"
     },
     {
-        "id": 606,
+        "id": 608,
         "name": "彭玉琳",
         "first_regnal_year": "1386年四月或五月",
         "final_regnal_year": "1386年四月或五月"
     },
     {
-        "id": 607,
+        "id": 609,
         "name": "田九成",
         "first_regnal_year": "1397年正月",
         "final_regnal_year": "1397年九月"
     },
     {
-        "id": 608,
+        "id": 610,
         "name": "范玉",
         "first_regnal_year": "1419年",
         "final_regnal_year": "1420年四月"
     },
     {
-        "id": 609,
+        "id": 611,
         "name": "黎餓",
         "first_regnal_year": "1420年",
         "final_regnal_year": "1420年"
     },
     {
-        "id": 610,
+        "id": 612,
         "name": "明本",
         "first_regnal_year": "1430年正月",
         "final_regnal_year": "1430年正月"
     },
     {
-        "id": 611,
+        "id": 613,
         "name": "陳鑑胡",
         "first_regnal_year": "1448年",
         "final_regnal_year": "1449年六月"
     },
     {
-        "id": 612,
+        "id": 614,
         "name": "黃蕭養",
         "first_regnal_year": "1449年九月",
         "final_regnal_year": "1450年五月"
     },
     {
-        "id": 613,
+        "id": 615,
         "name": "朱徽煠",
         "first_regnal_year": "1451年八月",
         "final_regnal_year": "1451年八月"
     },
     {
-        "id": 614,
+        "id": 616,
         "name": "也先",
         "first_regnal_year": "1453年",
         "final_regnal_year": "1454年"
     },
     {
-        "id": 615,
+        "id": 617,
         "name": "李珍",
         "first_regnal_year": "1456年六月",
         "final_regnal_year": "1456年六月"
     },
     {
-        "id": 616,
+        "id": 618,
         "name": "王斌",
         "first_regnal_year": "1457年正月",
         "final_regnal_year": "1457年正月"
     },
     {
-        "id": 617,
+        "id": 619,
         "name": "李添保",
         "first_regnal_year": "1460年",
         "final_regnal_year": "1460年"
     },
     {
-        "id": 618,
+        "id": 620,
         "name": "李真、宋普貴",
         "first_regnal_year": "1462年",
         "final_regnal_year": "1462年"
     },
     {
-        "id": 619,
+        "id": 621,
         "name": "劉通",
         "first_regnal_year": "1465年",
         "final_regnal_year": "1466年閏三月"
     },
     {
-        "id": 620,
+        "id": 622,
         "name": "曹甫",
         "first_regnal_year": "？",
         "final_regnal_year": "？"
     },
     {
-        "id": 621,
+        "id": 623,
         "name": "朱宸濠",
         "first_regnal_year": "1519年六月",
         "final_regnal_year": "1519年七月"
     },
     {
-        "id": 622,
+        "id": 624,
         "name": "段鋹",
         "first_regnal_year": "？",
         "final_regnal_year": "？"
     },
     {
-        "id": 623,
+        "id": 625,
         "name": "樊紳",
         "first_regnal_year": "1525年八月",
         "final_regnal_year": "1525年九月"
     },
     {
-        "id": 624,
+        "id": 626,
         "name": "田斌",
         "first_regnal_year": "1546年",
         "final_regnal_year": "1546年"
     },
     {
-        "id": 625,
+        "id": 627,
         "name": "張璉",
         "first_regnal_year": "？",
         "final_regnal_year": "？"
     },
     {
-        "id": 626,
+        "id": 628,
         "name": "馬相",
         "first_regnal_year": "？",
         "final_regnal_year": "？"
     },
     {
-        "id": 627,
+        "id": 629,
         "name": "蔡伯貫",
         "first_regnal_year": "1565年十二月",
         "final_regnal_year": "1566年正月"
     },
     {
-        "id": 628,
+        "id": 630,
         "name": "僧省悟",
         "first_regnal_year": "1582年",
         "final_regnal_year": "1582年"
     },
     {
-        "id": 629,
+        "id": 631,
         "name": "李新",
         "first_regnal_year": "1619年四月",
         "final_regnal_year": "1619年四月"
     },
     {
-        "id": 630,
+        "id": 632,
         "name": "李文",
         "first_regnal_year": "1619年十二月",
         "final_regnal_year": "1619年十二月"
     },
     {
-        "id": 631,
+        "id": 633,
         "name": "奢崇明",
         "first_regnal_year": "1621年九月",
         "final_regnal_year": "1629年八月"
     },
     {
-        "id": 632,
+        "id": 634,
         "name": "劉應選",
         "first_regnal_year": "1621年十二月",
         "final_regnal_year": "1621年十二月"
     },
     {
-        "id": 633,
+        "id": 635,
         "name": "徐鴻儒",
         "first_regnal_year": "1622年五月",
         "final_regnal_year": "1622年十月"
     },
     {
-        "id": 634,
+        "id": 636,
         "name": "鄭振明",
         "first_regnal_year": "預定1622年十一月啟用",
         "final_regnal_year": "預定1622年十一月啟用"
     },
     {
-        "id": 635,
+        "id": 637,
         "name": "万俟德",
         "first_regnal_year": "1622年",
         "final_regnal_year": "1622年"
     },
     {
-        "id": 636,
+        "id": 638,
         "name": "楊桓、楊從儒",
         "first_regnal_year": "1624年九月",
         "final_regnal_year": "1624年九月"
     },
     {
-        "id": 637,
+        "id": 639,
         "name": "不可考",
         "first_regnal_year": "1625年三月",
         "final_regnal_year": "1625年三月"
     },
     {
-        "id": 638,
+        "id": 640,
         "name": "張惟元",
         "first_regnal_year": "1628年",
         "final_regnal_year": "1628年"
     },
     {
-        "id": 639,
+        "id": 641,
         "name": "李盛明",
         "first_regnal_year": "1629年十一月",
         "final_regnal_year": "1629年十一月"
     },
     {
-        "id": 640,
+        "id": 642,
         "name": "高迎祥",
         "first_regnal_year": "1635年",
         "final_regnal_year": "1636年七月"
     },
     {
-        "id": 641,
+        "id": 643,
         "name": "張普薇",
         "first_regnal_year": "1637年",
         "final_regnal_year": "1637年"
     },
     {
-        "id": 642,
+        "id": 644,
         "name": "李自成",
         "first_regnal_year": "1644年",
-        "final_regnal_year": "1645年五月"
+        "final_regnal_year": "1645年五月",
+        "dynasty": "大順"
     },
     {
-        "id": 643,
+        "id": 645,
         "name": "朱慈烺",
         "first_regnal_year": "？",
         "final_regnal_year": "？"
     },
     {
-        "id": 644,
+        "id": 646,
         "name": "朱慈炯",
         "first_regnal_year": "？",
         "final_regnal_year": "？"
     },
     {
-        "id": 645,
+        "id": 647,
         "name": "張獻忠",
         "first_regnal_year": "？",
         "final_regnal_year": "？"
     },
     {
-        "id": 646,
+        "id": 648,
         "dynasty": "南明",
         "title": "明安宗",
         "name": "朱由崧",
@@ -4649,7 +4666,7 @@
         "final_regnal_year": "1645年"
     },
     {
-        "id": 647,
+        "id": 649,
         "dynasty": "南明",
         "title": "明紹宗",
         "name": "朱聿鍵",
@@ -4657,7 +4674,7 @@
         "final_regnal_year": "1646年"
     },
     {
-        "id": 648,
+        "id": 650,
         "dynasty": "南明",
         "title": "明昭宗",
         "name": "朱由榔",
@@ -4665,43 +4682,43 @@
         "final_regnal_year": "1662年"
     },
     {
-        "id": 649,
+        "id": 651,
         "name": "朱亨嘉",
         "first_regnal_year": "1645年八月",
         "final_regnal_year": "1645年八月"
     },
     {
-        "id": 650,
+        "id": 652,
         "name": "朱常瀛",
         "first_regnal_year": "？",
         "final_regnal_year": "？"
     },
     {
-        "id": 651,
+        "id": 653,
         "name": "朱以海",
         "first_regnal_year": "？",
         "final_regnal_year": "？"
     },
     {
-        "id": 652,
+        "id": 654,
         "name": "？",
         "first_regnal_year": "1646年",
         "final_regnal_year": "1663年"
     },
     {
-        "id": 653,
+        "id": 655,
         "name": "朱聿𨮁",
         "first_regnal_year": "預定1647年啟用",
         "final_regnal_year": "預定1647年啟用"
     },
     {
-        "id": 654,
+        "id": 656,
         "name": "朱常清",
         "first_regnal_year": "1648年正月",
         "final_regnal_year": "1648年十月"
     },
     {
-        "id": 655,
+        "id": 657,
         "dynasty": "明鄭",
         "title": "延平武王",
         "name": "鄭成功",
@@ -4709,7 +4726,7 @@
         "final_regnal_year": "1662年"
     },
     {
-        "id": 656,
+        "id": 658,
         "dynasty": "明鄭",
         "title": "延平文王",
         "name": "鄭經",
@@ -4717,34 +4734,42 @@
         "final_regnal_year": "1681年"
     },
     {
-        "id": 657,
+        "id": 659,
         "dynasty": "明鄭",
         "name": "鄭克塽",
         "first_regnal_year": "1681年",
         "final_regnal_year": "1683年"
     },
     {
-        "id": 658,
+        "id": 660,
         "name": "劉公顯",
         "first_regnal_year": "1645年六月",
         "final_regnal_year": "1645年十月"
     },
     {
-        "id": 659,
+        "id": 661,
         "dynasty": "後金",
         "name": "努爾哈赤",
         "first_regnal_year": "1616年",
         "final_regnal_year": "1626年"
     },
     {
-        "id": 660,
+        "id": 662,
         "dynasty": "後金",
         "name": "皇太極",
         "first_regnal_year": "1626年",
         "final_regnal_year": "1643年"
     },
     {
-        "id": 661,
+        "id": 663,
+        "dynasty": "清",
+        "title": "清太宗",
+        "name": "皇太極",
+        "first_regnal_year": "1626年",
+        "final_regnal_year": "1643年"
+    },
+    {
+        "id": 664,
         "dynasty": "清",
         "title": "清世祖",
         "name": "福臨",
@@ -4752,7 +4777,7 @@
         "final_regnal_year": "1661年"
     },
     {
-        "id": 662,
+        "id": 665,
         "dynasty": "清",
         "title": "清聖祖",
         "name": "玄燁",
@@ -4760,7 +4785,7 @@
         "final_regnal_year": "1722年"
     },
     {
-        "id": 663,
+        "id": 666,
         "dynasty": "清",
         "title": "清世宗",
         "name": "胤禛",
@@ -4768,7 +4793,7 @@
         "final_regnal_year": "1735年"
     },
     {
-        "id": 664,
+        "id": 667,
         "dynasty": "清",
         "title": "清高宗",
         "name": "弘曆",
@@ -4776,7 +4801,7 @@
         "final_regnal_year": "1796年"
     },
     {
-        "id": 665,
+        "id": 668,
         "dynasty": "清",
         "title": "清仁宗",
         "name": "顒琰",
@@ -4784,7 +4809,7 @@
         "final_regnal_year": "1820年"
     },
     {
-        "id": 666,
+        "id": 669,
         "dynasty": "清",
         "title": "清宣宗",
         "name": "旻寧",
@@ -4792,7 +4817,7 @@
         "final_regnal_year": "1850年"
     },
     {
-        "id": 667,
+        "id": 670,
         "dynasty": "清",
         "title": "清文宗",
         "name": "奕詝",
@@ -4800,7 +4825,7 @@
         "final_regnal_year": "1861年"
     },
     {
-        "id": 668,
+        "id": 671,
         "dynasty": "清",
         "title": "清穆宗",
         "name": "載淳",
@@ -4808,7 +4833,7 @@
         "final_regnal_year": "1875年"
     },
     {
-        "id": 669,
+        "id": 672,
         "dynasty": "清",
         "title": "清德宗",
         "name": "載湉",
@@ -4816,7 +4841,7 @@
         "final_regnal_year": "1908年"
     },
     {
-        "id": 670,
+        "id": 673,
         "dynasty": "清",
         "title": "清宣統帝",
         "name": "溥儀",
@@ -4824,466 +4849,466 @@
         "final_regnal_year": "1911年"
     },
     {
-        "id": 671,
+        "id": 674,
         "name": "秦尚行",
         "first_regnal_year": "1644年九月",
         "final_regnal_year": "1644年十二月"
     },
     {
-        "id": 672,
+        "id": 675,
         "name": "劉守分",
         "first_regnal_year": "1644年九月",
         "final_regnal_year": "1644年九月"
     },
     {
-        "id": 673,
+        "id": 676,
         "name": "宮文彩",
         "first_regnal_year": "1644年九月",
         "final_regnal_year": "1645年六月"
     },
     {
-        "id": 674,
+        "id": 677,
         "name": "胡守龍",
         "first_regnal_year": "1645年六月",
         "final_regnal_year": "1645年六月"
     },
     {
-        "id": 675,
+        "id": 678,
         "name": "蔣爾恂",
         "first_regnal_year": "1647年",
         "final_regnal_year": "1647年"
     },
     {
-        "id": 676,
+        "id": 679,
         "name": "王光代",
         "first_regnal_year": "1647年六月",
         "final_regnal_year": "1647年七月"
     },
     {
-        "id": 677,
+        "id": 680,
         "name": "張華山",
         "first_regnal_year": "1647年九月",
         "final_regnal_year": "1647年九月"
     },
     {
-        "id": 678,
+        "id": 681,
         "name": "郭應銓",
         "first_regnal_year": "1647年十二月",
         "final_regnal_year": "1647年十二月"
     },
     {
-        "id": 679,
+        "id": 682,
         "name": "孫可望",
         "first_regnal_year": "？",
         "final_regnal_year": "？"
     },
     {
-        "id": 680,
+        "id": 683,
         "name": "金聲桓",
         "first_regnal_year": "1648年二月",
         "final_regnal_year": "1649年正月"
     },
     {
-        "id": 681,
+        "id": 684,
         "name": "朱鴻基",
         "first_regnal_year": "1648年五月",
         "final_regnal_year": "1648年九月"
     },
     {
-        "id": 682,
+        "id": 685,
         "name": "虞允",
         "first_regnal_year": "1649年八月",
         "final_regnal_year": "1649年八月"
     },
     {
-        "id": 683,
+        "id": 686,
         "name": "蕭惟堂",
         "first_regnal_year": "1661年",
         "final_regnal_year": "1661年"
     },
     {
-        "id": 684,
+        "id": 687,
         "name": "王耀祖",
         "first_regnal_year": "1665年四月",
         "final_regnal_year": "1665年四月"
     },
     {
-        "id": 685,
+        "id": 688,
         "name": "楊起隆",
         "first_regnal_year": "1673年十二月",
         "final_regnal_year": "1673年十二月"
     },
     {
-        "id": 686,
+        "id": 689,
         "name": "吳三桂",
         "first_regnal_year": "？",
         "final_regnal_year": "？"
     },
     {
-        "id": 687,
+        "id": 690,
         "name": "吳世璠",
         "first_regnal_year": "1679年",
         "final_regnal_year": "1681年十月"
     },
     {
-        "id": 688,
+        "id": 691,
         "name": "耿精忠",
         "first_regnal_year": "？",
         "final_regnal_year": "？"
     },
     {
-        "id": 689,
+        "id": 692,
         "name": "魏枝葉",
         "first_regnal_year": "1704年",
         "final_regnal_year": "1706年九月"
     },
     {
-        "id": 690,
+        "id": 693,
         "name": "李天極、朱六非",
         "first_regnal_year": "？",
         "final_regnal_year": "？"
     },
     {
-        "id": 691,
+        "id": 694,
         "name": "錢寶通",
         "first_regnal_year": "1708年冬季",
         "final_regnal_year": "1708年冬季"
     },
     {
-        "id": 692,
+        "id": 695,
         "name": "張念一",
         "first_regnal_year": "1708年",
         "final_regnal_year": "1708年"
     },
     {
-        "id": 693,
+        "id": 696,
         "name": "朱一貴",
         "first_regnal_year": "1721年五月",
         "final_regnal_year": "1721年閏六月"
     },
     {
-        "id": 694,
+        "id": 697,
         "name": "林爽文",
         "first_regnal_year": "1786年十一月",
         "final_regnal_year": "1786年十一月"
     },
     {
-        "id": 695,
+        "id": 698,
         "name": "陳周全",
         "first_regnal_year": "1795年三月",
         "final_regnal_year": "1795年三月"
     },
     {
-        "id": 696,
+        "id": 699,
         "name": "聶傑人、張正謨",
         "first_regnal_year": "1796年正月",
         "final_regnal_year": "1796年八月"
     },
     {
-        "id": 697,
+        "id": 700,
         "name": "林之華、覃加耀",
         "first_regnal_year": "1796年二月",
         "final_regnal_year": "1798年正月"
     },
     {
-        "id": 698,
+        "id": 701,
         "name": "王聰兒",
         "first_regnal_year": "1796年三月",
         "final_regnal_year": "1798年二月"
     },
     {
-        "id": 699,
+        "id": 702,
         "name": "王囊仙",
         "first_regnal_year": "1797年正月",
         "final_regnal_year": "1797年八月"
     },
     {
-        "id": 700,
+        "id": 703,
         "name": "韋朝元",
         "first_regnal_year": "1797年正月",
         "final_regnal_year": "1797年八月"
     },
     {
-        "id": 701,
+        "id": 704,
         "name": "黎樹",
         "first_regnal_year": "1797年",
         "final_regnal_year": "1797年"
     },
     {
-        "id": 702,
+        "id": 705,
         "name": "王大叔",
         "first_regnal_year": "1797年二月",
         "final_regnal_year": "1797年二月"
     },
     {
-        "id": 703,
+        "id": 706,
         "name": "蔡牽",
         "first_regnal_year": "1805年四月",
         "final_regnal_year": "1809年八月"
     },
     {
-        "id": 704,
+        "id": 707,
         "name": "陳紀傳",
         "first_regnal_year": "1811年",
         "final_regnal_year": "1811年"
     },
     {
-        "id": 705,
+        "id": 708,
         "name": "李文成",
         "first_regnal_year": "1813年九月",
         "final_regnal_year": "1813年十一月"
     },
     {
-        "id": 706,
+        "id": 709,
         "name": "朱毛俚",
         "first_regnal_year": "1814年",
         "final_regnal_year": "1814年"
     },
     {
-        "id": 707,
+        "id": 710,
         "name": "馬進忠",
         "first_regnal_year": "1823年十月",
         "final_regnal_year": "1823年十一月"
     },
     {
-        "id": 708,
+        "id": 711,
         "name": "楊良斌",
         "first_regnal_year": "？",
         "final_regnal_year": "？"
     },
     {
-        "id": 709,
+        "id": 712,
         "name": "趙金龍",
         "first_regnal_year": "1832年",
         "final_regnal_year": "1832年"
     },
     {
-        "id": 710,
+        "id": 713,
         "name": "張丙、許成",
         "first_regnal_year": "1832年十月",
         "final_regnal_year": "1832年十二月"
     },
     {
-        "id": 711,
+        "id": 714,
         "name": "黃城",
         "first_regnal_year": "1832年十月",
         "final_regnal_year": "1832年十二月"
     },
     {
-        "id": 712,
+        "id": 715,
         "name": "梁辦、吳扁、陳委",
         "first_regnal_year": "1832年十月",
         "final_regnal_year": "1832年十二月"
     },
     {
-        "id": 713,
+        "id": 716,
         "name": "劉仲、蔡恭",
         "first_regnal_year": "1832年十月",
         "final_regnal_year": "1832年十二月"
     },
     {
-        "id": 714,
+        "id": 717,
         "name": "藍正樽",
         "first_regnal_year": "1836年二月",
         "final_regnal_year": "1836年二月"
     },
     {
-        "id": 715,
+        "id": 718,
         "name": "洪秀全",
         "first_regnal_year": "？",
         "final_regnal_year": "？"
     },
     {
-        "id": 716,
+        "id": 719,
         "name": "彭運洪",
         "first_regnal_year": "1852年春季",
         "final_regnal_year": "1852年春季"
     },
     {
-        "id": 717,
+        "id": 720,
         "name": "黃德美",
         "first_regnal_year": "1853年四月",
         "final_regnal_year": "1853年十月"
     },
     {
-        "id": 718,
+        "id": 721,
         "name": "林恭",
         "first_regnal_year": "1853年四月",
         "final_regnal_year": "1853年七月"
     },
     {
-        "id": 719,
+        "id": 722,
         "name": "劉麗川",
         "first_regnal_year": "1853年八月",
         "final_regnal_year": "1853年八月"
     },
     {
-        "id": 720,
+        "id": 723,
         "name": "林萬青",
         "first_regnal_year": "1853年十月",
         "final_regnal_year": "1853年十月"
     },
     {
-        "id": 721,
+        "id": 724,
         "name": "陳開",
         "first_regnal_year": "1854年",
         "final_regnal_year": "1854年"
     },
     {
-        "id": 722,
+        "id": 725,
         "name": "楊龍喜",
         "first_regnal_year": "1854八月",
         "final_regnal_year": "1855年三月"
     },
     {
-        "id": 723,
+        "id": 726,
         "name": "朱洪英、胡有祿",
         "first_regnal_year": "1854年",
         "final_regnal_year": "1856年"
     },
     {
-        "id": 724,
+        "id": 727,
         "name": "鄺經全至",
         "first_regnal_year": "1854年",
         "final_regnal_year": "1854年"
     },
     {
-        "id": 725,
+        "id": 728,
         "name": "杜文秀",
         "first_regnal_year": "？",
         "final_regnal_year": "？"
     },
     {
-        "id": 726,
+        "id": 729,
         "name": "朱明月",
         "first_regnal_year": "1859年",
         "final_regnal_year": "1864年春"
     },
     {
-        "id": 727,
+        "id": 730,
         "name": "李永和",
         "first_regnal_year": "1860年正月",
         "final_regnal_year": "1865年四月"
     },
     {
-        "id": 728,
+        "id": 731,
         "name": "宋繼鵬",
         "first_regnal_year": "1860年",
         "final_regnal_year": "1863年七月"
     },
     {
-        "id": 729,
+        "id": 732,
         "name": "黃正倫",
         "first_regnal_year": "1861年二月",
         "final_regnal_year": "1861年二月"
     },
     {
-        "id": 730,
+        "id": 733,
         "name": "王守清",
         "first_regnal_year": "1862年閏八月",
         "final_regnal_year": "1862年閏八月"
     },
     {
-        "id": 731,
+        "id": 734,
         "name": "穆生華",
         "first_regnal_year": "1863年八月",
         "final_regnal_year": "1863年八月"
     },
     {
-        "id": 732,
+        "id": 735,
         "name": "唐景崧、劉永福",
         "first_regnal_year": "1895年五月",
         "final_regnal_year": "1895年九月"
     },
     {
-        "id": 733,
+        "id": 736,
         "name": "朱紅燈",
         "first_regnal_year": "？",
         "final_regnal_year": "？"
     },
     {
-        "id": 734,
+        "id": 737,
         "name": "溥儁",
         "first_regnal_year": "？",
         "final_regnal_year": "？"
     },
     {
-        "id": 735,
+        "id": 738,
         "name": "大開、陳魁鰲",
         "first_regnal_year": "1905年",
         "final_regnal_year": "1905年"
     },
     {
-        "id": 736,
+        "id": 739,
         "name": "龔春臺",
         "first_regnal_year": "1906年十月",
         "final_regnal_year": "1906年十月"
     },
     {
-        "id": 737,
+        "id": 740,
         "dynasty": "民國",
         "name": "八世哲布尊丹巴呼圖克圖",
         "first_regnal_year": "1911年12月",
         "final_regnal_year": "1924年11月"
     },
     {
-        "id": 738,
+        "id": 741,
         "dynasty": "民國",
         "name": "袁世凱",
         "first_regnal_year": "1916年1月",
         "final_regnal_year": "1916年3月"
     },
     {
-        "id": 739,
+        "id": 742,
         "dynasty": "民國",
         "name": "呂光",
         "first_regnal_year": "1916年2月",
         "final_regnal_year": "1917年5月"
     },
     {
-        "id": 740,
+        "id": 743,
         "dynasty": "民國",
         "name": "察都·若巴",
         "first_regnal_year": "1917年4月",
         "final_regnal_year": "1917年8月"
     },
     {
-        "id": 741,
+        "id": 744,
         "dynasty": "民國",
         "name": "溥儀",
         "first_regnal_year": "1917年",
         "final_regnal_year": "1917年"
     },
     {
-        "id": 742,
+        "id": 745,
         "dynasty": "民國",
         "name": "聶真娃",
         "first_regnal_year": "1921年",
         "final_regnal_year": "1921年"
     },
     {
-        "id": 743,
+        "id": 746,
         "dynasty": "民國",
         "name": "韓欲明",
         "first_regnal_year": "1926年",
         "final_regnal_year": "1928年"
     },
     {
-        "id": 744,
+        "id": 747,
         "dynasty": "民國",
         "name": "馬士偉",
         "first_regnal_year": "1929年2月",
         "final_regnal_year": "1929年8月"
     },
     {
-        "id": 745,
+        "id": 748,
         "dynasty": "民國",
         "name": "薛幹臣",
         "first_regnal_year": "1929年4月",
         "final_regnal_year": "1929年4月"
     },
     {
-        "id": 746,
+        "id": 749,
         "dynasty": "民國",
         "name": "溥儀",
         "first_regnal_year": "1932年3月",

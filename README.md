@@ -1,34 +1,13 @@
-# Mantine Vite template
+# 中國年號查詢
 
-## Features
+[中國年號查詢](https://qinghaoh.github.io/chinese-era-explorer)是一個用於探索和學習中國歷史年號的交互式工具。這個項目旨在幫助用戶更好地了解中國豐富的歷史，通過直觀的界面和詳細的信息展示各個年號的起止時間和當時的君主。
 
-This template comes with the following features:
+## 功能
 
-- [PostCSS](https://postcss.org/) with [mantine-postcss-preset](https://mantine.dev/styles/postcss-preset)
-- [TypeScript](https://www.typescriptlang.org/)
-- [Storybook](https://storybook.js.org/)
-- [Vitest](https://vitest.dev/) setup with [React Testing Library](https://testing-library.com/docs/react-testing-library/intro)
-- ESLint setup with [eslint-config-mantine](https://github.com/mantinedev/eslint-config-mantine)
+該工具支持三種搜索方式:
 
-## npm scripts
+- 按年號搜索
+- 按起訖年搜索
+- 按朝代和君主搜索
 
-## Build and dev scripts
-
-- `dev` – start development server
-- `build` – build production version of the app
-- `preview` – locally preview production build
-
-### Testing scripts
-
-- `typecheck` – checks TypeScript types
-- `lint` – runs ESLint
-- `prettier:check` – checks files with Prettier
-- `vitest` – runs vitest tests
-- `vitest:watch` – starts vitest watch
-- `test` – runs `vitest`, `prettier:check`, `lint` and `typecheck` scripts
-
-### Other scripts
-
-- `storybook` – starts storybook dev server
-- `storybook:build` – build production storybook bundle to `storybook-static`
-- `prettier:write` – formats all files with Prettier
+歡迎探索和學習中國歷史年號！
