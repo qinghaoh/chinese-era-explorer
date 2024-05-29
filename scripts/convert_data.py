@@ -1,3 +1,4 @@
+import copy
 import csv
 import json
 import re
@@ -153,13 +154,18 @@ CHINESE_TO_ENGLISH = {
 
 era_id = 0
 emperor_id = 0
-prev_emperor = ""
+prev_emperor = None
+prev_emperor_name = ""
 prev_title = ""
 
 
 def parse_emperor_name(emperor_name):
     if len(emperor_name) <= 3:
         return None, emperor_name
+
+    # Special cases
+    if emperor_name == "齊安德王高延宗":
+        return "齊安德王", "高延宗"
 
     for title in ("帝", "可汗", "祖", "宗"):
         index = emperor_name.find(title)
@@ -180,7 +186,7 @@ def parse_duration(duration_str, d, start_key="start", end_key="end"):
     duration = duration_str.split("－")
     start = duration[0]
     end = duration[-1]
-    # If `end`` doesn't contain '年', it's in the same year as `start`
+    # If `end` doesn't contain '年', it's in the same year as `start`
     if "年" not in end:
         index = start.find("年")
         end = start[: index + 1] + end
@@ -205,98 +211,93 @@ def compare_years(literal_year: str, digit_year: int):
     return (year > digit_year) - (year < digit_year)
 
 
-def convert(csv_file, attributes, dynasties: list[dict]):
-    # Read the CSV file and convert it to a dictionary
-    data = []
-    with open(csv_file, mode="r", encoding="utf-8-sig") as csv_file:
-        csv_reader = csv.DictReader(csv_file)
-        for row in csv_reader:
-            data.append(
-                {
-                    CHINESE_TO_ENGLISH[k]: v
-                    for k, v in row.items()
-                    if k in CHINESE_TO_ENGLISH
-                }
-            )
-
-    emperors = []
-    dynasty_emperors = []
-
-    global prev_emperor
-    global prev_title
-    global era_id
+def process_emperor_row(d, attributes):
     global emperor_id
-    for d in data:
-        # Add emperor
-        # len(set(d.values())) tests whether the element is a valid era
-        # or a table title (the values of all keys will be identical)
-        if len(set(d.values())) == 1 or "emperor" in d:
-            emperor = {}
-            emperor["id"] = emperor_id
-            if attributes[0]:
-                emperor["dynasty"] = attributes[0]
 
-            # In *_others.csv, emperor name is in a column
-            if "emperor" in d:
-                emperor["name"] = d["emperor"]
+    emperor = {"id": emperor_id}
+    if attributes[0]:
+        emperor["dynasty"] = attributes[0]
+
+    if "emperor" in d:
+        emperor["name"] = d["emperor"]
+        parse_duration(d["duration"], emperor, "first_regnal_year", "final_regnal_year")
+        del d["emperor"]
+    else:
+        match = re.match(r"(.+)（([^）]+)）", d["name"])
+        if match:
+            name, reign_duration = match.groups()
+            name_tuple = parse_emperor_name(name)
+            if name_tuple[0]:
+                emperor["title"] = name_tuple[0]
+            emperor["name"] = name_tuple[1]
+
+            parts = reign_duration.split("：")
+            if len(parts) > 1:
                 parse_duration(
-                    d["duration"], emperor, "first_regnal_year", "final_regnal_year"
+                    parts[1], emperor, "first_regnal_year", "final_regnal_year"
                 )
-                del d["emperor"]
-            else:
-                # In all the other tables, emperor takes the entire row
-                match = re.match(r"(.+)（([^）]+)）", d["name"])
-                if match:
-                    name, reign_duration = match.groups()
-                    name_tuple = parse_emperor_name(name)
-                    if name_tuple[0]:
-                        emperor["title"] = name_tuple[0]
-                    emperor["name"] = name_tuple[1]
+        else:
+            emperor["name"] = d["name"]
 
-                    parts = reign_duration.split("：")
-                    if len(parts) > 1:
-                        parse_duration(
-                            parts[1], emperor, "first_regnal_year", "final_regnal_year"
-                        )
-                else:
-                    # If no '在位' in the emperor row
-                    emperor["name"] = d["name"]
+    return emperor
 
-            # Deduplicate emperors
-            # The unique key of an emperor is 'title' + 'name'
-            if (
-                emperor["name"] != prev_emperor
-                or emperor.get("title", "") != prev_title
-            ):
-                emperors.append(emperor)
-                emperor_id += 1
 
-            if attributes[0]:
-                dynasty_emperors += [
-                    ((emperor["title"] + " ") if "title" in emperor else "")
-                    + emperor["name"]
-                ]
+def is_duplicate_emperor(emperor):
+    global prev_emperor_name, prev_title
+    return (
+        emperor["name"] == prev_emperor_name and emperor.get("title", "") == prev_title
+    )
 
-            prev_emperor = emperor["name"]
-            prev_title = emperor["title"] if "title" in emperor else ""
 
-        if len(set(d.values())) > 1:
-            parse_duration(d["duration"], d)
-            del d["duration"]
-            d["emperor_id"] = emperor_id - 1
+def process_era_row(d):
+    parse_duration(d["duration"], d)
+    del d["duration"]
+    d["emperor_id"] = emperor_id - 1
 
-        # Special cases
-        if d["name"] == "永昌" and emperor["name"] == "李自成":
-            # 大順 （1643年—1646年）
-            dynasties.append(
-                {"name": "大順", "emperors": [emperor["name"]], "group": "其它"}
-            )
-            emperor["dynasty"] = "大順"
-            # 《甲申纪事》“贼云以水德王，衣服尚蓝。故军中俱穿蓝，官帽亦用蓝。”
-            d["element"] = "水"
+
+def handle_special_cases(d, emperor, emperors, data_copy, dynasties):
+    global emperor_id
+
+    if d["name"] == "乾祐" and emperor and emperor["name"] == "劉知遠":
+        d["start"] = "948年正月"
+        d["end"] = "948年正月"
+        data_copy.append(d)
+
+        d_copy = copy.deepcopy(d)
+        d_copy["start"] = "948年正月"
+        d_copy["end"] = "950年"
+        d_copy["emperor_id"] = emperor_id
+        data_copy.append(d_copy)
+
+        emperors.append(
+            {
+                "id": emperor_id,
+                "dynasty": "後漢",
+                "title": "漢隱帝",
+                "name": "劉承祐",
+                "first_regnal_year": "948年",
+                "final_regnal_year": "951年",
+            }
+        )
+        emperor_id += 1
+    elif d["name"] == "永昌" and emperor and emperor["name"] == "李自成":
+        # 大順 （1643年—1646年）
+        dynasties.append(
+            {"name": "大順", "emperors": [emperor["name"]], "group": "其它"}
+        )
+        emperor["dynasty"] = "大順"
+        # 《甲申纪事》“贼云以水德王，衣服尚蓝。故军中俱穿蓝，官帽亦用蓝。”
+        d["element"] = "水"
+        data_copy.append(d)
+    else:
+        data_copy.append(d)
+
+
+def process_eras(data_copy, attributes):
+    global era_id
 
     eras = []
-    for d in data:
+    for d in data_copy:
         if len(set(d.values())) > 1:
             d["id"] = era_id
             era_id += 1
@@ -315,9 +316,12 @@ def convert(csv_file, attributes, dynasties: list[dict]):
                     d["element"] = attributes[2]
 
             eras.append(d)
+    return eras
 
-    # 唐 is split into two parts and 李旦 appears in both.
-    # So, we need to handle this special case.
+
+# 唐 is split into two parts and 李旦 appears in both.
+# So, we need to handle this special case.
+def update_dynasties(dynasties, attributes, dynasty_emperors):
     if attributes[0]:
         dynasty_data = next((d for d in dynasties if d["name"] == attributes[0]), None)
 
@@ -333,6 +337,52 @@ def convert(csv_file, attributes, dynasties: list[dict]):
                     "group": attributes[1],
                 }
             )
+
+
+def convert(csv_file, attributes, dynasties: list[dict]):
+    global prev_emperor, prev_emperor_name, prev_title, era_id, emperor_id
+
+    # Read the CSV file and convert it to a list of dictionaries
+    with open(csv_file, mode="r", encoding="utf-8-sig") as file:
+        data = [
+            {
+                CHINESE_TO_ENGLISH[k]: v
+                for k, v in row.items()
+                if k in CHINESE_TO_ENGLISH
+            }
+            for row in csv.DictReader(file)
+        ]
+
+    emperors = []
+    dynasty_emperors = []
+
+    data_copy = []
+    for d in data:
+        emperor = None
+        # A row can represent an emperor or an era
+        if len(set(d.values())) == 1 or "emperor" in d:
+            emperor = process_emperor_row(d, attributes)
+            if emperor and not is_duplicate_emperor(emperor):
+                emperors.append(emperor)
+                emperor_id += 1
+
+            if attributes[0]:
+                dynasty_emperors.append(
+                    f"{emperor.get('title', '')} {emperor['name']}".strip()
+                )
+
+            prev_emperor_name = emperor["name"]
+            prev_title = emperor.get("title", "")
+            prev_emperor = emperor
+
+        if len(set(d.values())) > 1:
+            process_era_row(d)
+
+        handle_special_cases(d, prev_emperor, emperors, data_copy, dynasties)
+
+    eras = process_eras(data_copy, attributes)
+
+    update_dynasties(dynasties, attributes, dynasty_emperors)
 
     return eras, emperors
 
