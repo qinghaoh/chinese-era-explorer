@@ -119,11 +119,11 @@ CSV_FILES = {
     "northern_song_others.csv": ("", "", ""),
     "southern_song.csv": ("南宋", "宋朝", "火"),
     "southern_song_others.csv": ("", "", ""),
-    "liao.csv": ("遼", "遼朝", ""),
-    "northern_liao.csv": ("北遼", "遼朝", ""),
-    "northwestern_liao.csv": ("西北遼", "遼朝", ""),
+    "liao.csv": ("遼", "遼朝", "水"),
+    "northern_liao.csv": ("北遼", "遼朝", "水"),
+    "northwestern_liao.csv": ("西北遼", "遼朝", "水"),
     "liao_others.csv": ("", "", ""),
-    "western_liao.csv": ("西遼", "遼朝", ""),
+    "western_liao.csv": ("西遼", "遼朝", "水"),
     "western_xia.csv": ("西夏", "西夏", ""),
     "western_xia_others.csv": ("", "", ""),
     "jin.csv": ("金", "金朝", ("金土", 1202)),
@@ -155,8 +155,6 @@ CHINESE_TO_ENGLISH = {
 era_id = 0
 emperor_id = 0
 prev_emperor = None
-prev_emperor_name = ""
-prev_title = ""
 
 
 def parse_emperor_name(emperor_name):
@@ -220,7 +218,6 @@ def process_emperor_row(d, attributes):
 
     if "emperor" in d:
         emperor["name"] = d["emperor"]
-        parse_duration(d["duration"], emperor, "first_regnal_year", "final_regnal_year")
         del d["emperor"]
     else:
         match = re.match(r"(.+)（([^）]+)）", d["name"])
@@ -243,10 +240,12 @@ def process_emperor_row(d, attributes):
 
 
 def is_duplicate_emperor(emperor):
-    global prev_emperor_name, prev_title
-    return (
-        emperor["name"] == prev_emperor_name and emperor.get("title", "") == prev_title
-    )
+    global prev_emperor
+    if prev_emperor:
+        return emperor["name"] == prev_emperor["name"] and emperor.get(
+            "title", ""
+        ) == prev_emperor.get("title", "")
+    return emperor is None
 
 
 def process_era_row(d):
@@ -258,6 +257,12 @@ def process_era_row(d):
 def handle_special_cases(d, emperor, emperors, data_copy, dynasties):
     global emperor_id
 
+    if emperor and emperor["name"] == "董昌":
+        # 大越羅平國
+        dynasties.append(
+            {"name": "大越羅平", "emperors": [emperor["name"]], "group": "其它"}
+        )
+        emperor["dynasty"] = "大越羅平"
     if d["name"] == "乾祐" and emperor and emperor["name"] == "劉知遠":
         d["start"] = "948年正月"
         d["end"] = "948年正月"
@@ -340,7 +345,7 @@ def update_dynasties(dynasties, attributes, dynasty_emperors):
 
 
 def convert(csv_file, attributes, dynasties: list[dict]):
-    global prev_emperor, prev_emperor_name, prev_title, era_id, emperor_id
+    global prev_emperor, era_id, emperor_id
 
     # Read the CSV file and convert it to a list of dictionaries
     with open(csv_file, mode="r", encoding="utf-8-sig") as file:
@@ -371,8 +376,6 @@ def convert(csv_file, attributes, dynasties: list[dict]):
                     f"{emperor.get('title', '')} {emperor['name']}".strip()
                 )
 
-            prev_emperor_name = emperor["name"]
-            prev_title = emperor.get("title", "")
             prev_emperor = emperor
 
         if len(set(d.values())) > 1:
