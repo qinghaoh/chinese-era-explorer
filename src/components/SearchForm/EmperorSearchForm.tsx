@@ -40,23 +40,25 @@ const EmperorSearchForm: React.FC<EmperorSearchProps> = ({ onSubmit }) => {
     onSubmit(values.dynasty, values.emperor);
   };
 
-  const getDynastyOptions = useCallback(
-    () =>
-      dynastiesData.reduce(
-        (acc, dynasty) => {
-          const group = acc.find((g) => g.group === dynasty.group);
-          const item = { value: dynasty.name, label: dynasty.name };
-          if (group) {
-            group.items.push(item);
-          } else {
-            acc.push({ group: dynasty.group, items: [item] });
-          }
-          return acc;
-        },
-        [] as { group: string; items: { value: string; label: string }[] }[]
-      ),
-    [dynastiesData]
-  );
+  const getDynastyOptions = useCallback(() => {
+    const result = dynastiesData.reduce(
+      (acc, dynasty) => {
+        const group = acc.find((g) => g.group === dynasty.group);
+        const item = { value: dynasty.name, label: dynasty.name };
+        if (group) {
+          group.items.push(item);
+        } else {
+          acc.push({ group: dynasty.group, items: [item] });
+        }
+        return acc;
+      },
+      [] as { group: string; items: { value: string; label: string }[] }[]
+    );
+
+    const others = result.filter((g) => g.group === '其它');
+    const rest = result.filter((g) => g.group !== '其它');
+    return [...rest, ...others];
+  }, [dynastiesData]);
 
   // Dynamic options for the emperor select based on selected dynasty
   const emperorOptions = [

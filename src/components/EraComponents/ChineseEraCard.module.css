@@ -87,5 +87,9 @@ body {
   writing-mode: vertical-rl;
   text-orientation: upright;
   font-family: 'Lishu', sans-serif;
-  font-size: 20px;
+  font-size: 22px;
+  white-space: normal;
+  height: 70px;
+  word-wrap: break-word;
+  text-align: center;
 }

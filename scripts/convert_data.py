@@ -10,8 +10,8 @@ from pathlib import Path
 #
 # Elements (德運): https://zh.wikipedia.org/wiki/%E4%BA%94%E5%BE%B7%E7%B5%82%E5%A7%8B%E8%AA%AA
 # 參考
-# - 十六國的德運：《王化與山險》，羅新，2019
-# - 金朝的德運：《正統與華夷：中國傳統政治文化研究》，劉浦江，2017
+# - 十六國德運：《王化與山險》，羅新，2019
+# - 金朝德運：《正統與華夷：中國傳統政治文化研究》，劉浦江，2017
 CSV_FILES = {
     "western_han.csv": ("西漢", "漢朝", ("火土", -104)),
     "xin.csv": ("新", "漢朝", "土"),
@@ -257,12 +257,36 @@ def process_era_row(d):
 def handle_special_cases(d, emperor, emperors, data_copy, dynasties):
     global emperor_id
 
+    if emperor and emperor["name"] == "劉守光":
+        # 大燕
+        dynasties.append(
+            {"name": "大燕", "emperors": [emperor["name"]], "group": "其它"}
+        )
+        emperor["dynasty"] = "大燕"
+
     if emperor and emperor["name"] == "董昌":
         # 大越羅平國
         dynasties.append(
-            {"name": "大越羅平", "emperors": [emperor["name"]], "group": "其它"}
+            {"name": "大越羅平國", "emperors": [emperor["name"]], "group": "其它"}
         )
-        emperor["dynasty"] = "大越羅平"
+        emperor["dynasty"] = "大越羅平國"
+
+    if d["name"] == "永昌" and emperor and emperor["name"] == "李自成":
+        # 大順 （1643年—1646年）
+        dynasties.append(
+            {"name": "大順", "emperors": [emperor["name"]], "group": "其它"}
+        )
+        emperor["dynasty"] = "大順"
+        # 《甲申纪事》“贼云以水德王，衣服尚蓝。故军中俱穿蓝，官帽亦用蓝。”
+        d["element"] = "水"
+
+    if emperor and emperor["name"] == "洪秀全":
+        # 太平天國
+        dynasties.append(
+            {"name": "太平天國", "emperors": [emperor["name"]], "group": "其它"}
+        )
+        emperor["dynasty"] = "太平天國"
+
     if d["name"] == "乾祐" and emperor and emperor["name"] == "劉知遠":
         d["start"] = "948年正月"
         d["end"] = "948年正月"
@@ -285,15 +309,6 @@ def handle_special_cases(d, emperor, emperors, data_copy, dynasties):
             }
         )
         emperor_id += 1
-    elif d["name"] == "永昌" and emperor and emperor["name"] == "李自成":
-        # 大順 （1643年—1646年）
-        dynasties.append(
-            {"name": "大順", "emperors": [emperor["name"]], "group": "其它"}
-        )
-        emperor["dynasty"] = "大順"
-        # 《甲申纪事》“贼云以水德王，衣服尚蓝。故军中俱穿蓝，官帽亦用蓝。”
-        d["element"] = "水"
-        data_copy.append(d)
     else:
         data_copy.append(d)
 
