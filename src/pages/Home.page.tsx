@@ -112,7 +112,9 @@ export function HomePage() {
     <>
       <Container size="xl" mt={40}>
         <Group justify="center" mb="lg">
-          <Title my="xl">中國年號查詢</Title>
+          <Title py="xl" my="xl">
+            中國年號查詢
+          </Title>
         </Group>
 
         <Suspense fallback={<div>搜索界面加載中...</div>}>
@@ -123,7 +125,7 @@ export function HomePage() {
           />
         </Suspense>
 
-        <Grid gutter={{ base: 5, xs: 'md', md: 'xl', xl: 50 }}>
+        <Grid gutter={{ base: 5, xs: 'md', md: 'xl', xl: 50 }} my="xl">
           {currentEraResults.map((era, index) => (
             <Grid.Col span={{ base: 12, md: 6, lg: 4 }} key={era.id}>
               {' '}

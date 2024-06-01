@@ -26,7 +26,7 @@ const Pagination: React.FC<PaginationProps> = ({
           onChange={paginate}
           total={totalPages}
           color="blue"
-          size="sm"
+          withEdges
         />
 
         <Select
@@ -37,7 +37,7 @@ const Pagination: React.FC<PaginationProps> = ({
             { value: '20', label: '20' },
             { value: '50', label: '50' },
           ]}
-          style={{ width: 100 }} // Adjust width as needed
+          style={{ width: 100 }}
         />
       </Group>
     </nav>

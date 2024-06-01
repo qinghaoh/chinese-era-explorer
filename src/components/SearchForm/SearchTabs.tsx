@@ -37,18 +37,24 @@ const SearchTabs: React.FC<SearchTabsProps> = ({
       classNames={classes}
     >
       <Tabs.List justify="center">
-        <Tabs.Tab value="chineseEraName">按年號搜索</Tabs.Tab>
-        <Tabs.Tab value="dates">按年份範圍搜索</Tabs.Tab>
-        <Tabs.Tab value="emperors">按朝代/君主搜索</Tabs.Tab>
+        <Tabs.Tab value="chineseEraName" py="md">
+          按年號搜索
+        </Tabs.Tab>
+        <Tabs.Tab value="dates" py="md">
+          按年份範圍搜索
+        </Tabs.Tab>
+        <Tabs.Tab value="emperors" py="md">
+          按朝代/君主搜索
+        </Tabs.Tab>
       </Tabs.List>
 
-      <Tabs.Panel value="chineseEraName" pt="xs">
+      <Tabs.Panel value="chineseEraName" py="md">
         <ChineseEraSearchForm onSubmit={handleEraSubmit} />
       </Tabs.Panel>
-      <Tabs.Panel value="dates" pt="xs">
+      <Tabs.Panel value="dates" py="md">
         <DateRangeSearchForm onSubmit={handleDateRangeSubmit} />
       </Tabs.Panel>
-      <Tabs.Panel value="emperors" pt="xs">
+      <Tabs.Panel value="emperors" py="md">
         <EmperorSearchForm onSubmit={handleEmperorSubmit} />
       </Tabs.Panel>
     </Tabs>

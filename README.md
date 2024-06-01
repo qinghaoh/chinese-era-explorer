@@ -1,13 +1,13 @@
-# 中國年號查詢
+# Chinese Era Explorer
 
-[中國年號查詢](https://qinghaoh.github.io/chinese-era-explorer)是一個用於探索和學習中國歷史年號的交互式工具。這個項目旨在幫助用戶更好地了解中國豐富的歷史，通過直觀的界面和詳細的信息展示各個年號的起止時間和當時的君主。
+[Chinese Era Explorer](https://qinghaoh.github.io/chinese-era-explorer) is an interactive tool for exploring and learning about Chinese historical era names. This project aims to help users gain a better understanding of China's rich history by providing an intuitive interface and detailed information on the start and end times of various era names and the reigning monarchs during those times.
 
-## 功能
+## Features
 
-該工具支持三種搜索方式:
+This tool supports three search methods:
 
-- 按年號搜索
-- 按起訖年搜索
-- 按朝代和君主搜索
+- Search by era name
+- Search by year range
+- Search by dynasty/monarch
 
-歡迎探索和學習中國歷史年號！
+Welcome to explore and learn about the Chinese historical era names!

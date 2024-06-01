@@ -15,6 +15,7 @@ function SearchButton({ type = 'button', disabled }: SearchButtonProps) {
       radius="md"
       leftSection={<IconSearch size={18} />}
       autoContrast
+      size="md"
     >
       搜索
     </Button>

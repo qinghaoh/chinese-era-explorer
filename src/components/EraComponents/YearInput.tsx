@@ -17,11 +17,12 @@ const YearInput: React.FC<YearInputProps> = ({ form, yearField, eraField, label 
       onClick={() =>
         form.setFieldValue(eraField, form.values[eraField] === '公元' ? '公元前' : '公元')
       }
+      mt="lg"
     >
       {form.values[eraField]}
     </Button>
     <NumberInput
-      size="sm"
+      size="md"
       label={label}
       placeholder={`${label} Year`}
       value={form.values[yearField]}

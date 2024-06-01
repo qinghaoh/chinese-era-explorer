@@ -62,7 +62,11 @@ const EmperorSearchForm: React.FC<EmperorSearchProps> = ({ onSubmit }) => {
 
   // Dynamic options for the emperor select based on selected dynasty
   const emperorOptions = [
-    ...new Set(dynastiesData.find((d) => d.name === form.values.dynasty)?.emperors || []),
+    ...new Set(
+      (dynastiesData.find((d) => d.name === form.values.dynasty)?.emperors || []).filter(
+        (emperor) => emperor !== '？'
+      )
+    ),
   ].map((emperor) => ({
     value: emperor,
     label: emperor,
@@ -81,6 +85,7 @@ const EmperorSearchForm: React.FC<EmperorSearchProps> = ({ onSubmit }) => {
             clearable
             searchable
             nothingFoundMessage="無結果..."
+            size="md"
           />
 
           {form.values.dynasty && (
@@ -93,11 +98,12 @@ const EmperorSearchForm: React.FC<EmperorSearchProps> = ({ onSubmit }) => {
               clearable
               searchable
               nothingFoundMessage="無結果..."
+              size="md"
             />
           )}
         </Group>
 
-        <Group justify="flex-end" mt="md">
+        <Group justify="flex-end" my="md">
           <SearchButton type="submit" disabled={!form.isValid} />
         </Group>
       </form>

@@ -27,13 +27,13 @@ const DateRangeSearchForm: React.FC<DateRangeSearchFormProps> = ({ onSubmit }) =
   };
 
   return (
-    <Box maw={400} mx="auto" mt="md">
+    <Box maw={400} mx="auto">
       <form onSubmit={form.onSubmit(handleSubmit)}>
         <Stack justify="center" gap="md">
           <YearInput form={form} yearField="startYear" eraField="startEra" label="起始年份" />
           <YearInput form={form} yearField="endYear" eraField="endEra" label="終止年份" />
         </Stack>
-        <Group justify="flex-end" mt="md">
+        <Group justify="flex-end" my="md">
           <SearchButton type="submit" disabled={!form.isValid} />
         </Group>
       </form>

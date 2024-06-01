@@ -155,6 +155,7 @@ CHINESE_TO_ENGLISH = {
 era_id = 0
 emperor_id = 0
 prev_emperor = None
+emperors_in_others = []
 
 
 def parse_emperor_name(emperor_name):
@@ -209,7 +210,7 @@ def compare_years(literal_year: str, digit_year: int):
     return (year > digit_year) - (year < digit_year)
 
 
-def process_emperor_row(d, attributes):
+def process_emperors(d, attributes):
     global emperor_id
 
     emperor = {"id": emperor_id}
@@ -219,6 +220,8 @@ def process_emperor_row(d, attributes):
     if "emperor" in d:
         emperor["name"] = d["emperor"]
         del d["emperor"]
+        emperor["dynasty"] = "其它"
+        emperors_in_others.append(emperor["name"])
     else:
         match = re.match(r"(.+)（([^）]+)）", d["name"])
         if match:
@@ -257,12 +260,25 @@ def process_era_row(d):
 def handle_special_cases(d, emperor, emperors, data_copy, dynasties):
     global emperor_id
 
-    if emperor and emperor["name"] == "劉守光":
+    if emperor and emperor["name"] == "安祿山":
         # 大燕
         dynasties.append(
-            {"name": "大燕", "emperors": [emperor["name"]], "group": "其它"}
+            {"name": "大燕", "emperors": ["安祿山", "安慶緒"], "group": "其它"}
         )
         emperor["dynasty"] = "大燕"
+        emperors_in_others.remove(emperor["name"])
+
+    if emperor and emperor["name"] == "安慶緒":
+        emperor["dynasty"] = "大燕"
+        emperors_in_others.remove(emperor["name"])
+
+    if emperor and emperor["name"] == "劉守光":
+        # 桀燕
+        dynasties.append(
+            {"name": "桀燕", "emperors": [emperor["name"]], "group": "其它"}
+        )
+        emperor["dynasty"] = "桀燕"
+        emperors_in_others.remove(emperor["name"])
 
     if emperor and emperor["name"] == "董昌":
         # 大越羅平國
@@ -270,6 +286,7 @@ def handle_special_cases(d, emperor, emperors, data_copy, dynasties):
             {"name": "大越羅平國", "emperors": [emperor["name"]], "group": "其它"}
         )
         emperor["dynasty"] = "大越羅平國"
+        emperors_in_others.remove(emperor["name"])
 
     if d["name"] == "永昌" and emperor and emperor["name"] == "李自成":
         # 大順 （1643年—1646年）
@@ -279,6 +296,7 @@ def handle_special_cases(d, emperor, emperors, data_copy, dynasties):
         emperor["dynasty"] = "大順"
         # 《甲申纪事》“贼云以水德王，衣服尚蓝。故军中俱穿蓝，官帽亦用蓝。”
         d["element"] = "水"
+        emperors_in_others.remove(emperor["name"])
 
     if emperor and emperor["name"] == "洪秀全":
         # 太平天國
@@ -286,6 +304,7 @@ def handle_special_cases(d, emperor, emperors, data_copy, dynasties):
             {"name": "太平天國", "emperors": [emperor["name"]], "group": "其它"}
         )
         emperor["dynasty"] = "太平天國"
+        emperors_in_others.remove(emperor["name"])
 
     if d["name"] == "乾祐" and emperor and emperor["name"] == "劉知遠":
         d["start"] = "948年正月"
@@ -379,9 +398,11 @@ def convert(csv_file, attributes, dynasties: list[dict]):
     data_copy = []
     for d in data:
         emperor = None
-        # A row can represent an emperor or an era
+        # Check if a row has any cell value that is duplicated across all columns,
+        # or if the row contains a cell in a column named "emperor".
+        # If either condition is met, process the emperor data.
         if len(set(d.values())) == 1 or "emperor" in d:
-            emperor = process_emperor_row(d, attributes)
+            emperor = process_emperors(d, attributes)
             if emperor and not is_duplicate_emperor(emperor):
                 emperors.append(emperor)
                 emperor_id += 1
@@ -440,6 +461,9 @@ def main():
         era_data, emperor_data = convert(filepath, attributes, dynasties)
         eras.extend(era_data)
         emperors.extend(emperor_data)
+
+    # Add "其它" dynasty
+    dynasties.append({"name": "其它", "emperors": emperors_in_others, "group": "其它"})
 
     files_to_save = {
         output_dir / "emperors.json": emperors,
