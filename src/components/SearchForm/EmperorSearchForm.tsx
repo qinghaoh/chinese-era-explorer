@@ -2,12 +2,7 @@ import React, { useState, useEffect, useCallback } from 'react';
 import { Select, Group, Box } from '@mantine/core';
 import { useForm } from '@mantine/form';
 import SearchButton from './SearchButton';
-
-interface Dynasty {
-  name: string;
-  emperors: string[];
-  group: string;
-}
+import { Dynasty } from '@/types';
 
 interface EmperorSearchProps {
   onSubmit: (dynasty: string, emperor: string) => void;
@@ -44,7 +39,7 @@ const EmperorSearchForm: React.FC<EmperorSearchProps> = ({ onSubmit }) => {
     const result = dynastiesData.reduce(
       (acc, dynasty) => {
         const group = acc.find((g) => g.group === dynasty.group);
-        const item = { value: dynasty.name, label: dynasty.name };
+        const item = { value: String(dynasty.id), label: dynasty.display_name || dynasty.name };
         if (group) {
           group.items.push(item);
         } else {
@@ -55,15 +50,15 @@ const EmperorSearchForm: React.FC<EmperorSearchProps> = ({ onSubmit }) => {
       [] as { group: string; items: { value: string; label: string }[] }[]
     );
 
-    const others = result.filter((g) => g.group === '其它');
-    const rest = result.filter((g) => g.group !== '其它');
+    const others = result.filter((g) => g.group === '其他');
+    const rest = result.filter((g) => g.group !== '其他');
     return [...rest, ...others];
   }, [dynastiesData]);
 
   // Dynamic options for the emperor select based on selected dynasty
   const emperorOptions = [
     ...new Set(
-      (dynastiesData.find((d) => d.name === form.values.dynasty)?.emperors || []).filter(
+      (dynastiesData.find((d) => String(d.id) === form.values.dynasty)?.emperors || []).filter(
         (emperor) => emperor !== '？'
       )
     ),

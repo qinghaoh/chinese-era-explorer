@@ -12,9 +12,18 @@ export interface ChineseEra {
 
 export interface Emperor {
   id: number;
-  dynasty?: string;
+  dynasty_id: number;
+  dynasty_name: string;
   title?: string;
   name: string;
   first_regnal_year?: string;
   final_regnal_year?: string;
+}
+
+export interface Dynasty {
+  id: number;
+  name: string;
+  emperors: string[];
+  group: string;
+  display_name?: string;
 }

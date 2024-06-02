@@ -88,7 +88,7 @@ export function HomePage() {
 
     if (!emperorInput) {
       // Find all emperors of the dynasty if emperorInput is empty.
-      processEmperors((emp) => emp.dynasty === dynastyInput);
+      processEmperors((emp) => String(emp.dynasty_id) === dynastyInput);
       return;
     }
 

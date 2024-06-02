@@ -154,8 +154,11 @@ CHINESE_TO_ENGLISH = {
 
 era_id = 0
 emperor_id = 0
+dynasty_id = 0
 prev_emperor = None
 emperors_in_others = []
+# 唐 is split into two parts; 李顯 and 李旦 appear in both
+tang_dynasty = None
 
 
 def parse_emperor_name(emperor_name):
@@ -210,17 +213,24 @@ def compare_years(literal_year: str, digit_year: int):
     return (year > digit_year) - (year < digit_year)
 
 
+def get_dynasty_id(dynasty_name):
+    global dynasty_id
+    if not dynasty_name:
+        return "其他", "其他"
+    if dynasty_name == "唐" and tang_dynasty:
+        return dynasty_id - 2, "唐"
+    return dynasty_id, dynasty_name
+
+
 def process_emperors(d, attributes):
-    global emperor_id
+    global emperor_id, dynasty_id
 
     emperor = {"id": emperor_id}
-    if attributes[0]:
-        emperor["dynasty"] = attributes[0]
+    emperor["dynasty_id"], emperor["dynasty_name"] = get_dynasty_id(attributes[0])
 
     if "emperor" in d:
         emperor["name"] = d["emperor"]
         del d["emperor"]
-        emperor["dynasty"] = "其它"
         emperors_in_others.append(emperor["name"])
     else:
         match = re.match(r"(.+)（([^）]+)）", d["name"])
@@ -258,42 +268,90 @@ def process_era_row(d):
 
 
 def handle_special_cases(d, emperor, emperors, data_copy, dynasties):
-    global emperor_id
+    global emperor_id, dynasty_id
+
+    if emperor and emperor["name"] == "侯景":
+        # 漢（侯景）
+        dynasties.append(
+            {
+                "id": dynasty_id,
+                "name": "漢",
+                "emperors": [emperor["name"]],
+                "group": "其他",
+                "display_name": "漢（侯景）",
+            }
+        )
+        emperor["dynasty_id"] = dynasty_id
+        emperor["dynasty_name"] = "漢"
+        dynasty_id += 1
+        emperors_in_others.remove(emperor["name"])
 
     if emperor and emperor["name"] == "安祿山":
-        # 大燕
+        # 大燕（安祿山）
         dynasties.append(
-            {"name": "大燕", "emperors": ["安祿山", "安慶緒"], "group": "其它"}
+            {
+                "id": dynasty_id,
+                "name": "大燕",
+                "emperors": ["安祿山", "安慶緒"],
+                "group": "其他",
+                "display_name": "大燕（安祿山）",
+            }
         )
-        emperor["dynasty"] = "大燕"
+        emperor["dynasty_id"] = dynasty_id
+        emperor["dynasty_name"] = "大燕"
         emperors_in_others.remove(emperor["name"])
 
     if emperor and emperor["name"] == "安慶緒":
-        emperor["dynasty"] = "大燕"
+        emperor["dynasty_id"] = dynasty_id
+        emperor["dynasty_name"] = "大燕"
         emperors_in_others.remove(emperor["name"])
+        if d["name"] == "天成":
+            dynasty_id += 1
 
     if emperor and emperor["name"] == "劉守光":
         # 桀燕
         dynasties.append(
-            {"name": "桀燕", "emperors": [emperor["name"]], "group": "其它"}
+            {
+                "id": dynasty_id,
+                "name": "大燕",
+                "emperors": [emperor["name"]],
+                "group": "其他",
+                "display_name": "大燕（劉守光）",
+            }
         )
-        emperor["dynasty"] = "桀燕"
+        emperor["dynasty_id"] = dynasty_id
+        emperor["dynasty_name"] = "大燕"
+        dynasty_id += 1
         emperors_in_others.remove(emperor["name"])
 
     if emperor and emperor["name"] == "董昌":
         # 大越羅平國
         dynasties.append(
-            {"name": "大越羅平國", "emperors": [emperor["name"]], "group": "其它"}
+            {
+                "id": dynasty_id,
+                "name": "大越羅平國",
+                "emperors": [emperor["name"]],
+                "group": "其他",
+            }
         )
-        emperor["dynasty"] = "大越羅平國"
+        emperor["dynasty_id"] = dynasty_id
+        emperor["dynasty_name"] = "大越羅平國"
+        dynasty_id += 1
         emperors_in_others.remove(emperor["name"])
 
     if d["name"] == "永昌" and emperor and emperor["name"] == "李自成":
         # 大順 （1643年—1646年）
         dynasties.append(
-            {"name": "大順", "emperors": [emperor["name"]], "group": "其它"}
+            {
+                "id": dynasty_id,
+                "name": "大順",
+                "emperors": [emperor["name"]],
+                "group": "其他",
+            }
         )
-        emperor["dynasty"] = "大順"
+        emperor["dynasty_id"] = dynasty_id
+        emperor["dynasty_name"] = "大順"
+        dynasty_id += 1
         # 《甲申纪事》“贼云以水德王，衣服尚蓝。故军中俱穿蓝，官帽亦用蓝。”
         d["element"] = "水"
         emperors_in_others.remove(emperor["name"])
@@ -301,9 +359,16 @@ def handle_special_cases(d, emperor, emperors, data_copy, dynasties):
     if emperor and emperor["name"] == "洪秀全":
         # 太平天國
         dynasties.append(
-            {"name": "太平天國", "emperors": [emperor["name"]], "group": "其它"}
+            {
+                "id": dynasty_id,
+                "name": "太平天國",
+                "emperors": [emperor["name"]],
+                "group": "其他",
+            }
         )
-        emperor["dynasty"] = "太平天國"
+        emperor["dynasty_id"] = dynasty_id
+        emperor["dynasty_name"] = "太平天國"
+        dynasty_id += 1
         emperors_in_others.remove(emperor["name"])
 
     if d["name"] == "乾祐" and emperor and emperor["name"] == "劉知遠":
@@ -320,7 +385,8 @@ def handle_special_cases(d, emperor, emperors, data_copy, dynasties):
         emperors.append(
             {
                 "id": emperor_id,
-                "dynasty": "後漢",
+                "dynasty_id": dynasty_id,
+                "dynasty_name": "後漢",
                 "title": "漢隱帝",
                 "name": "劉承祐",
                 "first_regnal_year": "948年",
@@ -358,24 +424,24 @@ def process_eras(data_copy, attributes):
     return eras
 
 
-# 唐 is split into two parts and 李旦 appears in both.
-# So, we need to handle this special case.
 def update_dynasties(dynasties, attributes, dynasty_emperors):
-    if attributes[0]:
-        dynasty_data = next((d for d in dynasties if d["name"] == attributes[0]), None)
+    global dynasty_id, tang_dynasty
 
-        if dynasty_data:
-            for emperor in dynasty_emperors:
-                if emperor not in dynasty_data["emperors"]:
-                    dynasty_data["emperors"].append(emperor)
-        else:
-            dynasties.append(
-                {
-                    "name": attributes[0],
-                    "emperors": dynasty_emperors,
-                    "group": attributes[1],
-                }
-            )
+    if attributes[0] == "唐" and tang_dynasty:
+        for emperor in dynasty_emperors:
+            if emperor not in tang_dynasty["emperors"]:
+                tang_dynasty["emperors"].append(emperor)
+    else:
+        dynasty = {
+            "id": dynasty_id,
+            "name": attributes[0],
+            "emperors": dynasty_emperors,
+            "group": attributes[1],
+        }
+        dynasties.append(dynasty)
+        if attributes[0] == "唐":
+            tang_dynasty = dynasty
+        dynasty_id += 1
 
 
 def convert(csv_file, attributes, dynasties: list[dict]):
@@ -421,7 +487,8 @@ def convert(csv_file, attributes, dynasties: list[dict]):
 
     eras = process_eras(data_copy, attributes)
 
-    update_dynasties(dynasties, attributes, dynasty_emperors)
+    if attributes[0]:
+        update_dynasties(dynasties, attributes, dynasty_emperors)
 
     return eras, emperors
 
@@ -462,8 +529,25 @@ def main():
         eras.extend(era_data)
         emperors.extend(emperor_data)
 
-    # Add "其它" dynasty
-    dynasties.append({"name": "其它", "emperors": emperors_in_others, "group": "其它"})
+    # Special cases
+    # Add "其他" dynasty
+    dynasties.append(
+        {
+            "id": dynasty_id,
+            "name": "其他",
+            "emperors": emperors_in_others,
+            "group": "其他",
+        }
+    )
+
+    for emperor in emperors:
+        if emperor["dynasty_id"] == "其他":
+            emperor["dynasty_id"] = dynasty_id
+
+    # 後漢
+    for dynasty in dynasties:
+        if dynasty["name"] == "後漢":
+            dynasty["emperors"].append("漢隱帝 劉承祐")
 
     files_to_save = {
         output_dir / "emperors.json": emperors,

@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { Card, Text, Title, Group, Box, Avatar } from '@mantine/core';
-import { ChineseEra, ElementType, Emperor } from '../../types';
+import { ChineseEra, Dynasty, ElementType, Emperor } from '../../types';
 import styles from './ChineseEraCard.module.css';
 import { elementColors, textColorForBackground } from '@/utils/colorUtils';
 import oldPaper from '../../assets/images/grunge-stained-old-paper-texture.jpg';
@@ -85,7 +85,7 @@ const ChineseEraCard: React.FC<ChineseEraCardProps> = ({ era, emperor }) => {
       </Card>
       <Box className={styles['quarter-circle']} style={{ backgroundColor }}>
         <Text className={styles['quarter-circle-text']} style={{ color: textColor }}>
-          {emperor.dynasty}
+          {emperor.dynasty_name}
         </Text>
       </Box>
     </Box>
