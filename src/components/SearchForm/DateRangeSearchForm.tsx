@@ -10,9 +10,9 @@ interface DateRangeSearchFormProps {
 const DateRangeSearchForm: React.FC<DateRangeSearchFormProps> = ({ onSubmit }) => {
   const form = useForm({
     initialValues: {
-      startYear: 0,
+      startYear: 1,
       startEra: '公元',
-      endYear: 0,
+      endYear: 1,
       endEra: '公元',
     },
   });

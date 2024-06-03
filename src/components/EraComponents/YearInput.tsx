@@ -26,7 +26,14 @@ const YearInput: React.FC<YearInputProps> = ({ form, yearField, eraField, label 
       label={label}
       placeholder={`${label} Year`}
       value={form.values[yearField]}
-      onChange={(value) => form.setFieldValue(yearField, value)}
+      onChange={(value) => {
+        // 公元0年 is undefined
+        if (value === 0) {
+          form.setFieldValue(yearField, 1);
+        } else {
+          form.setFieldValue(yearField, value);
+        }
+      }}
       // The year range of Chinese eras is: 公元前140年 - 公元1945年.
       // The input number is the absolute value of a year.
       min={0}

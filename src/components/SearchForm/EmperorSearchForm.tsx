@@ -74,7 +74,10 @@ const EmperorSearchForm: React.FC<EmperorSearchProps> = ({ onSubmit }) => {
           <Select
             label="朝代"
             value={form.values.dynasty}
-            onChange={(value) => form.setFieldValue('dynasty', value || '')}
+            onChange={(value) => {
+              form.setFieldValue('dynasty', value || '');
+              form.setFieldValue('emperor', ''); // Reset the emperor value
+            }}
             placeholder="全部"
             data={getDynastyOptions()}
             clearable
@@ -85,6 +88,7 @@ const EmperorSearchForm: React.FC<EmperorSearchProps> = ({ onSubmit }) => {
 
           {form.values.dynasty && (
             <Select
+              key={form.values.dynasty}
               label="君主"
               value={form.values.emperor}
               onChange={(value) => form.setFieldValue('emperor', value || '')}
