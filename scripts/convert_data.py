@@ -169,7 +169,7 @@ def parse_emperor_name(emperor_name):
     if emperor_name == "齊安德王高延宗":
         return "齊安德王", "高延宗"
 
-    for title in ("帝", "可汗", "祖", "宗"):
+    for title in ("帝", "可汗", "祖", "宗", "公"):
         index = emperor_name.find(title)
         if index >= 0:
             return (
@@ -178,7 +178,7 @@ def parse_emperor_name(emperor_name):
             )
 
     for idx in range(2, 4):
-        if emperor_name[idx] in ("子主王侯公"):
+        if emperor_name[idx] in ("子主王侯"):
             return emperor_name[: idx + 1], emperor_name[idx + 1 :]
 
     return None, emperor_name

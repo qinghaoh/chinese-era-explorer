@@ -14,11 +14,11 @@ const ChineseEraCard: React.FC<ChineseEraCardProps> = ({ era, emperor }) => {
   const backgroundColor = era.element ? elementColors[era.element as ElementType] : 'transparent';
   const textColor = era.element ? textColorForBackground[era.element as ElementType] : 'black';
 
-  const [avatarSrc, setAvatarSrc] = useState('avatar.png');
+  const [avatarSrc, setAvatarSrc] = useState(null);
   useEffect(() => {
     import(`../../assets/avatars/${emperor.id}.png`)
       .then((module) => setAvatarSrc(module.default))
-      .catch(() => setAvatarSrc('avatar.png'));
+      .catch(() => setAvatarSrc(null));
   }, [emperor.id]);
 
   return (

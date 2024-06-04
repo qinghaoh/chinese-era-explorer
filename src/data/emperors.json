@@ -278,7 +278,8 @@
         "id": 33,
         "dynasty_id": 4,
         "dynasty_name": "曹魏",
-        "name": "魏高貴鄉公曹髦",
+        "title": "魏高貴鄉公",
+        "name": "曹髦",
         "first_regnal_year": "254年",
         "final_regnal_year": "260年"
     },
