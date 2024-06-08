@@ -23,7 +23,7 @@ export interface Emperor {
 export interface Dynasty {
   id: number;
   name: string;
-  emperors: string[];
+  emperors: [number, string][];
   group: string;
   display_name?: string;
 }

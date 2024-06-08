@@ -22,7 +22,7 @@ const EmperorSearchForm: React.FC<EmperorSearchProps> = ({ onSubmit }) => {
     const fetchDynastiesData = async () => {
       try {
         const data = await import('../../data/dynasties.json');
-        setDynastiesData(data.default);
+        setDynastiesData(data.default as Dynasty[]);
       } catch (error) {
         console.error('Failed to load dynasties data:', error);
       }
@@ -57,15 +57,18 @@ const EmperorSearchForm: React.FC<EmperorSearchProps> = ({ onSubmit }) => {
 
   // Dynamic options for the emperor select based on selected dynasty
   const emperorOptions = [
-    ...new Set(
-      (dynastiesData.find((d) => String(d.id) === form.values.dynasty)?.emperors || []).filter(
-        (emperor) => emperor !== '？'
-      )
-    ),
-  ].map((emperor) => ({
-    value: emperor,
-    label: emperor,
-  }));
+    ...new Map(
+      (dynastiesData.find((d) => String(d.id) === form.values.dynasty)?.emperors || [])
+        .filter((emperor) => emperor[1] !== '？')
+        .map((emperor) => [emperor[1], emperor])
+    ).values(),
+  ].map((emperor) => {
+    console.log(`${emperor[0]} ${emperor[1]}`);
+    return {
+      value: String(emperor[0]),
+      label: emperor[1],
+    };
+  });
 
   return (
     <Box maw={400} mx="auto" mt="md">

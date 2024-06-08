@@ -70,6 +70,7 @@ export function HomePage() {
   };
 
   const handleEmperorsSearch = (dynastyInput: string, emperorInput: string) => {
+    console.log(emperorInput);
     if (!dynastyInput) {
       mapErasToEmperors(erasData);
       return;
@@ -92,12 +93,8 @@ export function HomePage() {
       return;
     }
 
-    const words = emperorInput.trim().split(' ');
-    const name = words.pop() || '';
-    const title = words[0] || '';
-
     // Find emperors that match the name and, if provided, the title
-    processEmperors((emp) => emp.name === name && (title === '' || emp.title === title));
+    processEmperors((emp) => String(emp.id) === emperorInput);
   };
 
   // Pagination controls

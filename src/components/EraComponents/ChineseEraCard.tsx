@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { Card, Text, Title, Group, Box, Avatar } from '@mantine/core';
-import { ChineseEra, Dynasty, ElementType, Emperor } from '../../types';
+import { ChineseEra, ElementType, Emperor } from '../../types';
 import styles from './ChineseEraCard.module.css';
 import { elementColors, textColorForBackground } from '@/utils/colorUtils';
 import oldPaper from '../../assets/images/grunge-stained-old-paper-texture.jpg';

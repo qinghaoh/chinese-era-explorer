@@ -1,4 +1,4 @@
-import { Group, Stack, TextInput, Button, Box } from '@mantine/core';
+import { Group, TextInput, Box } from '@mantine/core';
 import { useForm } from '@mantine/form';
 import React from 'react';
 import SearchButton from './SearchButton';
