@@ -1254,6 +1254,7 @@
         "remark": "《晉書·惠帝紀》記載：永寧元年正月趙王倫篡帝位。《趙王倫傳》說篡帝位，大赦，改元建始。",
         "start": "301年正月",
         "end": "301年四月",
+        "element": "金",
         "emperor_id": 47,
         "id": 140
     },
@@ -1450,6 +1451,7 @@
         "remark": "",
         "start": "319年四月",
         "end": "320年五月",
+        "element": "金",
         "emperor_id": 60,
         "id": 162
     },
@@ -3933,14 +3935,14 @@
         "name": "永康",
         "start": "？",
         "end": "？",
-        "emperor_id": 253,
+        "emperor_id": 754,
         "id": 456
     },
     {
         "name": "□熙",
         "start": "？",
         "end": "？",
-        "emperor_id": 253,
+        "emperor_id": 754,
         "id": 457
     },
     {
@@ -4132,7 +4134,7 @@
         "remark": "吐魯番地區曾出土高昌時期的白雀年號。至於此白雀年號為高昌本身之年號或奉後秦之年號則仍然待考。",
         "start": "？",
         "end": "？",
-        "emperor_id": 272,
+        "emperor_id": 754,
         "id": 481
     },
     {
@@ -4273,8 +4275,8 @@
         "remark": "或作鳳鳴。",
         "start": "617年十月",
         "end": "621年十月",
-        "emperor_id": 287,
         "element": "火",
+        "emperor_id": 287,
         "id": 498
     },
     {
@@ -8734,28 +8736,28 @@
         "name": "廣僖",
         "start": "？",
         "end": "？",
-        "emperor_id": 537,
+        "emperor_id": 754,
         "id": 1035
     },
     {
         "name": "清平",
         "start": "？",
         "end": "？",
-        "emperor_id": 537,
+        "emperor_id": 754,
         "id": 1036
     },
     {
         "name": "成都",
         "start": "？",
         "end": "？",
-        "emperor_id": 537,
+        "emperor_id": 754,
         "id": 1037
     },
     {
         "name": "大禮平定",
         "start": "？",
         "end": "？",
-        "emperor_id": 537,
+        "emperor_id": 754,
         "id": 1038
     },
     {
@@ -9920,8 +9922,8 @@
         "remark": "",
         "start": "1644年",
         "end": "1645年五月",
-        "emperor_id": 648,
         "element": "水",
+        "emperor_id": 648,
         "id": 1181
     },
     {
