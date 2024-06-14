@@ -19,19 +19,24 @@ export function HomePage() {
   // Data loaded from JSON files
   const [erasData, setErasData] = useState<ChineseEra[]>([]);
   const [emperorsData, setEmperorsData] = useState<Emperor[]>([]);
+  const [error, setError] = useState<string | null>(null);
 
   useEffect(() => {
     import('../data/eras.json')
       .then((data) => {
         setErasData(data.default);
       })
-      .catch((error) => console.error('Failed to load eras data:', error));
+      .catch((err) => {
+        setError(`Failed to load eras data: ${err.message}`);
+      });
 
     import('../data/emperors.json')
       .then((data) => {
         setEmperorsData(data.default);
       })
-      .catch((error) => console.error('Failed to load emperors data:', error));
+      .catch((err) => {
+        setError(`Failed to load emperors data: ${err.message}`);
+      });
   }, []);
 
   const [eraResults, setEraResults] = useState<ChineseEra[]>([]);
@@ -70,7 +75,6 @@ export function HomePage() {
   };
 
   const handleEmperorsSearch = (dynastyInput: string, emperorInput: string) => {
-    console.log(emperorInput);
     if (!dynastyInput) {
       mapErasToEmperors(erasData);
       return;
@@ -104,6 +108,10 @@ export function HomePage() {
 
   // Function to change page
   const paginate = (pageNumber: number) => setCurrentPage(pageNumber);
+
+  if (error) {
+    return <div>Error: {error}</div>; // Displaying the error in the UI
+  }
 
   return (
     <>

@@ -90,25 +90,25 @@
     },
     {
         "id": 10,
-        "dynasty_id": 111,
+        "dynasty_id": 124,
         "dynasty_name": "其他",
         "name": "隗囂"
     },
     {
         "id": 11,
-        "dynasty_id": 111,
-        "dynasty_name": "其他",
+        "dynasty_id": 3,
+        "dynasty_name": "成家",
         "name": "公孫述"
     },
     {
         "id": 12,
-        "dynasty_id": 111,
+        "dynasty_id": 124,
         "dynasty_name": "其他",
         "name": "劉盆子"
     },
     {
         "id": 13,
-        "dynasty_id": 3,
+        "dynasty_id": 4,
         "dynasty_name": "東漢",
         "title": "漢光武帝",
         "name": "劉秀",
@@ -117,7 +117,7 @@
     },
     {
         "id": 14,
-        "dynasty_id": 3,
+        "dynasty_id": 4,
         "dynasty_name": "東漢",
         "title": "漢明帝",
         "name": "劉莊",
@@ -126,7 +126,7 @@
     },
     {
         "id": 15,
-        "dynasty_id": 3,
+        "dynasty_id": 4,
         "dynasty_name": "東漢",
         "title": "漢章帝",
         "name": "劉炟",
@@ -135,7 +135,7 @@
     },
     {
         "id": 16,
-        "dynasty_id": 3,
+        "dynasty_id": 4,
         "dynasty_name": "東漢",
         "title": "漢和帝",
         "name": "劉肇",
@@ -144,7 +144,7 @@
     },
     {
         "id": 17,
-        "dynasty_id": 3,
+        "dynasty_id": 4,
         "dynasty_name": "東漢",
         "title": "漢殤帝",
         "name": "劉隆",
@@ -153,7 +153,7 @@
     },
     {
         "id": 18,
-        "dynasty_id": 3,
+        "dynasty_id": 4,
         "dynasty_name": "東漢",
         "title": "漢安帝",
         "name": "劉祜",
@@ -162,7 +162,7 @@
     },
     {
         "id": 19,
-        "dynasty_id": 3,
+        "dynasty_id": 4,
         "dynasty_name": "東漢",
         "title": "漢順帝",
         "name": "劉保",
@@ -171,7 +171,7 @@
     },
     {
         "id": 20,
-        "dynasty_id": 3,
+        "dynasty_id": 4,
         "dynasty_name": "東漢",
         "title": "漢沖帝",
         "name": "劉炳",
@@ -180,7 +180,7 @@
     },
     {
         "id": 21,
-        "dynasty_id": 3,
+        "dynasty_id": 4,
         "dynasty_name": "東漢",
         "title": "漢質帝",
         "name": "劉纘",
@@ -189,7 +189,7 @@
     },
     {
         "id": 22,
-        "dynasty_id": 3,
+        "dynasty_id": 4,
         "dynasty_name": "東漢",
         "title": "漢桓帝",
         "name": "劉志",
@@ -198,7 +198,7 @@
     },
     {
         "id": 23,
-        "dynasty_id": 3,
+        "dynasty_id": 4,
         "dynasty_name": "東漢",
         "title": "漢靈帝",
         "name": "劉宏",
@@ -207,7 +207,7 @@
     },
     {
         "id": 24,
-        "dynasty_id": 3,
+        "dynasty_id": 4,
         "dynasty_name": "東漢",
         "title": "漢少帝",
         "name": "劉辯",
@@ -216,7 +216,7 @@
     },
     {
         "id": 25,
-        "dynasty_id": 3,
+        "dynasty_id": 4,
         "dynasty_name": "東漢",
         "title": "漢獻帝",
         "name": "劉協",
@@ -225,31 +225,31 @@
     },
     {
         "id": 26,
-        "dynasty_id": 111,
+        "dynasty_id": 124,
         "dynasty_name": "其他",
         "name": "竇融"
     },
     {
         "id": 27,
-        "dynasty_id": 111,
+        "dynasty_id": 124,
         "dynasty_name": "其他",
         "name": "馬勉"
     },
     {
         "id": 28,
-        "dynasty_id": 111,
+        "dynasty_id": 124,
         "dynasty_name": "其他",
         "name": "張曼成"
     },
     {
         "id": 29,
-        "dynasty_id": 111,
+        "dynasty_id": 124,
         "dynasty_name": "其他",
         "name": "宋建"
     },
     {
         "id": 30,
-        "dynasty_id": 4,
+        "dynasty_id": 5,
         "dynasty_name": "曹魏",
         "title": "魏文帝",
         "name": "曹丕",
@@ -258,7 +258,7 @@
     },
     {
         "id": 31,
-        "dynasty_id": 4,
+        "dynasty_id": 5,
         "dynasty_name": "曹魏",
         "title": "魏明帝",
         "name": "曹叡",
@@ -267,7 +267,7 @@
     },
     {
         "id": 32,
-        "dynasty_id": 4,
+        "dynasty_id": 5,
         "dynasty_name": "曹魏",
         "title": "魏齊王",
         "name": "曹芳",
@@ -276,7 +276,7 @@
     },
     {
         "id": 33,
-        "dynasty_id": 4,
+        "dynasty_id": 5,
         "dynasty_name": "曹魏",
         "title": "魏高貴鄉公",
         "name": "曹髦",
@@ -285,7 +285,7 @@
     },
     {
         "id": 34,
-        "dynasty_id": 4,
+        "dynasty_id": 5,
         "dynasty_name": "曹魏",
         "title": "魏元帝",
         "name": "曹奐",
@@ -294,13 +294,13 @@
     },
     {
         "id": 35,
-        "dynasty_id": 5,
+        "dynasty_id": 6,
         "dynasty_name": "燕",
         "name": "公孫淵"
     },
     {
         "id": 36,
-        "dynasty_id": 6,
+        "dynasty_id": 7,
         "dynasty_name": "蜀漢",
         "title": "漢昭烈帝",
         "name": "劉備",
@@ -309,7 +309,7 @@
     },
     {
         "id": 37,
-        "dynasty_id": 6,
+        "dynasty_id": 7,
         "dynasty_name": "蜀漢",
         "title": "漢後主",
         "name": "劉禪",
@@ -318,7 +318,7 @@
     },
     {
         "id": 38,
-        "dynasty_id": 7,
+        "dynasty_id": 8,
         "dynasty_name": "孫吳",
         "title": "吳大帝",
         "name": "孫權",
@@ -327,7 +327,7 @@
     },
     {
         "id": 39,
-        "dynasty_id": 7,
+        "dynasty_id": 8,
         "dynasty_name": "孫吳",
         "title": "吳會稽王",
         "name": "孫亮",
@@ -336,7 +336,7 @@
     },
     {
         "id": 40,
-        "dynasty_id": 7,
+        "dynasty_id": 8,
         "dynasty_name": "孫吳",
         "title": "吳景帝",
         "name": "孫休",
@@ -345,7 +345,7 @@
     },
     {
         "id": 41,
-        "dynasty_id": 7,
+        "dynasty_id": 8,
         "dynasty_name": "孫吳",
         "title": "吳末帝",
         "name": "孫皓",
@@ -354,7 +354,7 @@
     },
     {
         "id": 42,
-        "dynasty_id": 8,
+        "dynasty_id": 9,
         "dynasty_name": "西晉",
         "title": "晉武帝",
         "name": "司馬炎",
@@ -363,7 +363,7 @@
     },
     {
         "id": 43,
-        "dynasty_id": 8,
+        "dynasty_id": 9,
         "dynasty_name": "西晉",
         "title": "晉惠帝",
         "name": "司馬衷",
@@ -372,7 +372,7 @@
     },
     {
         "id": 44,
-        "dynasty_id": 8,
+        "dynasty_id": 9,
         "dynasty_name": "西晉",
         "title": "晉懷帝",
         "name": "司馬熾",
@@ -381,7 +381,7 @@
     },
     {
         "id": 45,
-        "dynasty_id": 8,
+        "dynasty_id": 9,
         "dynasty_name": "西晉",
         "title": "晉愍帝",
         "name": "司馬鄴",
@@ -390,25 +390,25 @@
     },
     {
         "id": 46,
-        "dynasty_id": 111,
+        "dynasty_id": 124,
         "dynasty_name": "其他",
         "name": "趙廞"
     },
     {
         "id": 47,
-        "dynasty_id": 9,
+        "dynasty_id": 10,
         "dynasty_name": "晉",
         "name": "司馬倫"
     },
     {
         "id": 48,
-        "dynasty_id": 111,
+        "dynasty_id": 124,
         "dynasty_name": "其他",
         "name": "劉尼、張昌"
     },
     {
         "id": 49,
-        "dynasty_id": 10,
+        "dynasty_id": 11,
         "dynasty_name": "東晉",
         "title": "晉元帝",
         "name": "司馬睿",
@@ -417,7 +417,7 @@
     },
     {
         "id": 50,
-        "dynasty_id": 10,
+        "dynasty_id": 11,
         "dynasty_name": "東晉",
         "title": "晉明帝",
         "name": "司馬紹",
@@ -426,7 +426,7 @@
     },
     {
         "id": 51,
-        "dynasty_id": 10,
+        "dynasty_id": 11,
         "dynasty_name": "東晉",
         "title": "晉成帝",
         "name": "司馬衍",
@@ -435,7 +435,7 @@
     },
     {
         "id": 52,
-        "dynasty_id": 10,
+        "dynasty_id": 11,
         "dynasty_name": "東晉",
         "title": "晉康帝",
         "name": "司馬岳",
@@ -444,7 +444,7 @@
     },
     {
         "id": 53,
-        "dynasty_id": 10,
+        "dynasty_id": 11,
         "dynasty_name": "東晉",
         "title": "晉穆帝",
         "name": "司馬聃",
@@ -453,7 +453,7 @@
     },
     {
         "id": 54,
-        "dynasty_id": 10,
+        "dynasty_id": 11,
         "dynasty_name": "東晉",
         "title": "晉哀帝",
         "name": "司馬丕",
@@ -462,7 +462,7 @@
     },
     {
         "id": 55,
-        "dynasty_id": 10,
+        "dynasty_id": 11,
         "dynasty_name": "東晉",
         "title": "晉廢帝",
         "name": "司馬奕",
@@ -471,7 +471,7 @@
     },
     {
         "id": 56,
-        "dynasty_id": 10,
+        "dynasty_id": 11,
         "dynasty_name": "東晉",
         "title": "晉簡文帝",
         "name": "司馬昱",
@@ -480,7 +480,7 @@
     },
     {
         "id": 57,
-        "dynasty_id": 10,
+        "dynasty_id": 11,
         "dynasty_name": "東晉",
         "title": "晉孝武帝",
         "name": "司馬曜",
@@ -489,7 +489,7 @@
     },
     {
         "id": 58,
-        "dynasty_id": 10,
+        "dynasty_id": 11,
         "dynasty_name": "東晉",
         "title": "晉安帝",
         "name": "司馬德宗",
@@ -498,7 +498,7 @@
     },
     {
         "id": 59,
-        "dynasty_id": 10,
+        "dynasty_id": 11,
         "dynasty_name": "東晉",
         "title": "晉恭帝",
         "name": "司馬德文",
@@ -507,31 +507,31 @@
     },
     {
         "id": 60,
-        "dynasty_id": 11,
+        "dynasty_id": 12,
         "dynasty_name": "晉",
         "name": "司馬保"
     },
     {
         "id": 61,
-        "dynasty_id": 111,
+        "dynasty_id": 124,
         "dynasty_name": "其他",
         "name": "李金銀、李弘"
     },
     {
         "id": 62,
-        "dynasty_id": 12,
+        "dynasty_id": 13,
         "dynasty_name": "楚",
         "name": "桓玄"
     },
     {
         "id": 63,
-        "dynasty_id": 12,
+        "dynasty_id": 13,
         "dynasty_name": "楚",
         "name": "桓謙"
     },
     {
         "id": 64,
-        "dynasty_id": 13,
+        "dynasty_id": 14,
         "dynasty_name": "漢趙",
         "title": "漢光文帝",
         "name": "劉淵",
@@ -540,7 +540,7 @@
     },
     {
         "id": 65,
-        "dynasty_id": 13,
+        "dynasty_id": 14,
         "dynasty_name": "漢趙",
         "title": "漢昭武帝",
         "name": "劉聰",
@@ -549,7 +549,7 @@
     },
     {
         "id": 66,
-        "dynasty_id": 13,
+        "dynasty_id": 14,
         "dynasty_name": "漢趙",
         "title": "漢隱帝",
         "name": "劉粲",
@@ -558,7 +558,7 @@
     },
     {
         "id": 67,
-        "dynasty_id": 13,
+        "dynasty_id": 14,
         "dynasty_name": "漢趙",
         "title": "趙秦王",
         "name": "劉曜",
@@ -567,13 +567,13 @@
     },
     {
         "id": 68,
-        "dynasty_id": 111,
+        "dynasty_id": 124,
         "dynasty_name": "其他",
         "name": "句渠知"
     },
     {
         "id": 69,
-        "dynasty_id": 14,
+        "dynasty_id": 15,
         "dynasty_name": "成漢",
         "name": "李特",
         "first_regnal_year": "303年",
@@ -581,7 +581,7 @@
     },
     {
         "id": 70,
-        "dynasty_id": 14,
+        "dynasty_id": 15,
         "dynasty_name": "成漢",
         "title": "成武帝",
         "name": "李雄",
@@ -590,7 +590,7 @@
     },
     {
         "id": 71,
-        "dynasty_id": 14,
+        "dynasty_id": 15,
         "dynasty_name": "成漢",
         "title": "成幽公",
         "name": "李期",
@@ -599,7 +599,7 @@
     },
     {
         "id": 72,
-        "dynasty_id": 14,
+        "dynasty_id": 15,
         "dynasty_name": "成漢",
         "title": "漢昭文帝",
         "name": "李壽",
@@ -608,7 +608,7 @@
     },
     {
         "id": 73,
-        "dynasty_id": 14,
+        "dynasty_id": 15,
         "dynasty_name": "成漢",
         "title": "漢歸義侯",
         "name": "李勢",
@@ -617,7 +617,7 @@
     },
     {
         "id": 74,
-        "dynasty_id": 15,
+        "dynasty_id": 16,
         "dynasty_name": "前涼",
         "title": "西平明公",
         "name": "張寔",
@@ -626,7 +626,7 @@
     },
     {
         "id": 75,
-        "dynasty_id": 15,
+        "dynasty_id": 16,
         "dynasty_name": "前涼",
         "title": "西平成公",
         "name": "張茂",
@@ -635,7 +635,7 @@
     },
     {
         "id": 76,
-        "dynasty_id": 15,
+        "dynasty_id": 16,
         "dynasty_name": "前涼",
         "title": "西平文公",
         "name": "張駿",
@@ -644,7 +644,7 @@
     },
     {
         "id": 77,
-        "dynasty_id": 15,
+        "dynasty_id": 16,
         "dynasty_name": "前涼",
         "title": "西平桓公",
         "name": "張重華",
@@ -653,7 +653,7 @@
     },
     {
         "id": 78,
-        "dynasty_id": 15,
+        "dynasty_id": 16,
         "dynasty_name": "前涼",
         "title": "涼威王",
         "name": "張祚",
@@ -662,7 +662,7 @@
     },
     {
         "id": 79,
-        "dynasty_id": 15,
+        "dynasty_id": 16,
         "dynasty_name": "前涼",
         "title": "西平沖公",
         "name": "張玄靚",
@@ -671,7 +671,7 @@
     },
     {
         "id": 80,
-        "dynasty_id": 15,
+        "dynasty_id": 16,
         "dynasty_name": "前涼",
         "title": "西平悼公",
         "name": "張天錫",
@@ -680,13 +680,13 @@
     },
     {
         "id": 81,
-        "dynasty_id": 16,
+        "dynasty_id": 17,
         "dynasty_name": "涼",
         "name": "張大豫"
     },
     {
         "id": 82,
-        "dynasty_id": 17,
+        "dynasty_id": 18,
         "dynasty_name": "後趙",
         "title": "趙明帝",
         "name": "石勒",
@@ -695,7 +695,7 @@
     },
     {
         "id": 83,
-        "dynasty_id": 17,
+        "dynasty_id": 18,
         "dynasty_name": "後趙",
         "title": "趙海陽王",
         "name": "石弘",
@@ -704,7 +704,7 @@
     },
     {
         "id": 84,
-        "dynasty_id": 17,
+        "dynasty_id": 18,
         "dynasty_name": "後趙",
         "title": "趙武帝",
         "name": "石虎",
@@ -713,7 +713,7 @@
     },
     {
         "id": 85,
-        "dynasty_id": 17,
+        "dynasty_id": 18,
         "dynasty_name": "後趙",
         "title": "趙義陽王",
         "name": "石鑒",
@@ -722,7 +722,7 @@
     },
     {
         "id": 86,
-        "dynasty_id": 17,
+        "dynasty_id": 18,
         "dynasty_name": "後趙",
         "title": "趙新興王",
         "name": "石祗",
@@ -731,7 +731,7 @@
     },
     {
         "id": 87,
-        "dynasty_id": 18,
+        "dynasty_id": 19,
         "dynasty_name": "冉魏",
         "name": "魏武悼天王冉閔",
         "first_regnal_year": "350年",
@@ -739,13 +739,13 @@
     },
     {
         "id": 88,
-        "dynasty_id": 111,
+        "dynasty_id": 124,
         "dynasty_name": "其他",
         "name": "侯子光"
     },
     {
         "id": 89,
-        "dynasty_id": 19,
+        "dynasty_id": 20,
         "dynasty_name": "代",
         "name": "拓跋什翼犍",
         "first_regnal_year": "338年",
@@ -753,7 +753,7 @@
     },
     {
         "id": 90,
-        "dynasty_id": 20,
+        "dynasty_id": 21,
         "dynasty_name": "前燕",
         "title": "燕文明帝",
         "name": "慕容皝",
@@ -762,7 +762,7 @@
     },
     {
         "id": 91,
-        "dynasty_id": 20,
+        "dynasty_id": 21,
         "dynasty_name": "前燕",
         "title": "燕景昭帝",
         "name": "慕容儁",
@@ -771,7 +771,7 @@
     },
     {
         "id": 92,
-        "dynasty_id": 20,
+        "dynasty_id": 21,
         "dynasty_name": "前燕",
         "title": "燕幽帝",
         "name": "慕容暐",
@@ -780,7 +780,7 @@
     },
     {
         "id": 93,
-        "dynasty_id": 21,
+        "dynasty_id": 22,
         "dynasty_name": "前秦",
         "title": "秦景明帝",
         "name": "苻健",
@@ -789,7 +789,7 @@
     },
     {
         "id": 94,
-        "dynasty_id": 21,
+        "dynasty_id": 22,
         "dynasty_name": "前秦",
         "title": "秦厲王",
         "name": "苻生",
@@ -798,7 +798,7 @@
     },
     {
         "id": 95,
-        "dynasty_id": 21,
+        "dynasty_id": 22,
         "dynasty_name": "前秦",
         "title": "秦宣昭帝",
         "name": "苻堅",
@@ -807,7 +807,7 @@
     },
     {
         "id": 96,
-        "dynasty_id": 21,
+        "dynasty_id": 22,
         "dynasty_name": "前秦",
         "title": "秦哀平帝",
         "name": "苻丕",
@@ -816,7 +816,7 @@
     },
     {
         "id": 97,
-        "dynasty_id": 21,
+        "dynasty_id": 22,
         "dynasty_name": "前秦",
         "title": "秦高帝",
         "name": "苻登",
@@ -825,7 +825,7 @@
     },
     {
         "id": 98,
-        "dynasty_id": 21,
+        "dynasty_id": 22,
         "dynasty_name": "前秦",
         "title": "秦後主",
         "name": "苻崇",
@@ -834,25 +834,25 @@
     },
     {
         "id": 99,
-        "dynasty_id": 111,
+        "dynasty_id": 124,
         "dynasty_name": "其他",
         "name": "張琚"
     },
     {
         "id": 100,
-        "dynasty_id": 111,
+        "dynasty_id": 124,
         "dynasty_name": "其他",
         "name": "張育"
     },
     {
         "id": 101,
-        "dynasty_id": 111,
+        "dynasty_id": 124,
         "dynasty_name": "其他",
         "name": "竇衝"
     },
     {
         "id": 102,
-        "dynasty_id": 22,
+        "dynasty_id": 23,
         "dynasty_name": "後秦",
         "title": "秦武昭帝",
         "name": "姚萇",
@@ -861,7 +861,7 @@
     },
     {
         "id": 103,
-        "dynasty_id": 22,
+        "dynasty_id": 23,
         "dynasty_name": "後秦",
         "title": "秦文桓帝",
         "name": "姚興",
@@ -870,7 +870,7 @@
     },
     {
         "id": 104,
-        "dynasty_id": 22,
+        "dynasty_id": 23,
         "dynasty_name": "後秦",
         "title": "秦後主",
         "name": "姚泓",
@@ -879,7 +879,7 @@
     },
     {
         "id": 105,
-        "dynasty_id": 23,
+        "dynasty_id": 24,
         "dynasty_name": "後燕",
         "title": "燕成武帝",
         "name": "慕容垂",
@@ -888,7 +888,7 @@
     },
     {
         "id": 106,
-        "dynasty_id": 23,
+        "dynasty_id": 24,
         "dynasty_name": "後燕",
         "title": "燕惠愍帝",
         "name": "慕容寶",
@@ -897,7 +897,7 @@
     },
     {
         "id": 107,
-        "dynasty_id": 23,
+        "dynasty_id": 24,
         "dynasty_name": "後燕",
         "title": "燕昭武帝",
         "name": "慕容盛",
@@ -906,7 +906,7 @@
     },
     {
         "id": 108,
-        "dynasty_id": 23,
+        "dynasty_id": 24,
         "dynasty_name": "後燕",
         "title": "燕昭文帝",
         "name": "慕容熙",
@@ -915,43 +915,43 @@
     },
     {
         "id": 109,
-        "dynasty_id": 24,
+        "dynasty_id": 25,
         "dynasty_name": "魏",
         "name": "翟遼"
     },
     {
         "id": 110,
-        "dynasty_id": 24,
+        "dynasty_id": 25,
         "dynasty_name": "魏",
         "name": "翟釗"
     },
     {
         "id": 111,
-        "dynasty_id": 25,
+        "dynasty_id": 26,
         "dynasty_name": "燕",
         "name": "慕容詳"
     },
     {
         "id": 112,
-        "dynasty_id": 26,
+        "dynasty_id": 27,
         "dynasty_name": "燕",
         "name": "慕容麟"
     },
     {
         "id": 113,
-        "dynasty_id": 27,
+        "dynasty_id": 28,
         "dynasty_name": "燕",
         "name": "蘭汗"
     },
     {
         "id": 114,
-        "dynasty_id": 28,
+        "dynasty_id": 29,
         "dynasty_name": "西燕",
         "name": "慕容泓"
     },
     {
         "id": 115,
-        "dynasty_id": 28,
+        "dynasty_id": 29,
         "dynasty_name": "西燕",
         "title": "燕威帝",
         "name": "慕容沖",
@@ -960,7 +960,7 @@
     },
     {
         "id": 116,
-        "dynasty_id": 28,
+        "dynasty_id": 29,
         "dynasty_name": "西燕",
         "name": "段隨",
         "first_regnal_year": "386年",
@@ -968,7 +968,7 @@
     },
     {
         "id": 117,
-        "dynasty_id": 28,
+        "dynasty_id": 29,
         "dynasty_name": "西燕",
         "name": "慕容顗",
         "first_regnal_year": "386年",
@@ -976,7 +976,7 @@
     },
     {
         "id": 118,
-        "dynasty_id": 28,
+        "dynasty_id": 29,
         "dynasty_name": "西燕",
         "name": "慕容瑤",
         "first_regnal_year": "386年",
@@ -984,7 +984,7 @@
     },
     {
         "id": 119,
-        "dynasty_id": 28,
+        "dynasty_id": 29,
         "dynasty_name": "西燕",
         "name": "慕容忠",
         "first_regnal_year": "386年",
@@ -992,7 +992,7 @@
     },
     {
         "id": 120,
-        "dynasty_id": 28,
+        "dynasty_id": 29,
         "dynasty_name": "西燕",
         "name": "慕容永",
         "first_regnal_year": "386年",
@@ -1000,7 +1000,7 @@
     },
     {
         "id": 121,
-        "dynasty_id": 29,
+        "dynasty_id": 30,
         "dynasty_name": "西秦",
         "title": "秦宣烈王",
         "name": "乞伏國仁",
@@ -1009,7 +1009,7 @@
     },
     {
         "id": 122,
-        "dynasty_id": 29,
+        "dynasty_id": 30,
         "dynasty_name": "西秦",
         "title": "秦武元王",
         "name": "乞伏乾歸",
@@ -1018,7 +1018,7 @@
     },
     {
         "id": 123,
-        "dynasty_id": 29,
+        "dynasty_id": 30,
         "dynasty_name": "西秦",
         "title": "秦文昭王",
         "name": "乞伏熾磐",
@@ -1027,7 +1027,7 @@
     },
     {
         "id": 124,
-        "dynasty_id": 29,
+        "dynasty_id": 30,
         "dynasty_name": "西秦",
         "title": "秦後主",
         "name": "乞伏暮末",
@@ -1036,7 +1036,7 @@
     },
     {
         "id": 125,
-        "dynasty_id": 30,
+        "dynasty_id": 31,
         "dynasty_name": "後涼",
         "title": "涼懿武帝",
         "name": "呂光",
@@ -1045,7 +1045,7 @@
     },
     {
         "id": 126,
-        "dynasty_id": 30,
+        "dynasty_id": 31,
         "dynasty_name": "後涼",
         "title": "涼隱王",
         "name": "呂紹",
@@ -1054,7 +1054,7 @@
     },
     {
         "id": 127,
-        "dynasty_id": 30,
+        "dynasty_id": 31,
         "dynasty_name": "後涼",
         "title": "涼靈帝",
         "name": "呂纂",
@@ -1063,7 +1063,7 @@
     },
     {
         "id": 128,
-        "dynasty_id": 30,
+        "dynasty_id": 31,
         "dynasty_name": "後涼",
         "title": "涼後主",
         "name": "呂隆",
@@ -1072,7 +1072,7 @@
     },
     {
         "id": 129,
-        "dynasty_id": 31,
+        "dynasty_id": 32,
         "dynasty_name": "南涼",
         "title": "武威武王",
         "name": "禿髮烏孤",
@@ -1081,7 +1081,7 @@
     },
     {
         "id": 130,
-        "dynasty_id": 31,
+        "dynasty_id": 32,
         "dynasty_name": "南涼",
         "title": "河西康王",
         "name": "禿髮利鹿孤",
@@ -1090,7 +1090,7 @@
     },
     {
         "id": 131,
-        "dynasty_id": 31,
+        "dynasty_id": 32,
         "dynasty_name": "南涼",
         "title": "涼景王",
         "name": "禿髮傉檀",
@@ -1099,7 +1099,7 @@
     },
     {
         "id": 132,
-        "dynasty_id": 32,
+        "dynasty_id": 33,
         "dynasty_name": "南燕",
         "title": "燕獻武帝",
         "name": "慕容德",
@@ -1108,7 +1108,7 @@
     },
     {
         "id": 133,
-        "dynasty_id": 32,
+        "dynasty_id": 33,
         "dynasty_name": "南燕",
         "title": "燕末主",
         "name": "慕容超",
@@ -1117,13 +1117,13 @@
     },
     {
         "id": 134,
-        "dynasty_id": 111,
+        "dynasty_id": 124,
         "dynasty_name": "其他",
         "name": "王始"
     },
     {
         "id": 135,
-        "dynasty_id": 33,
+        "dynasty_id": 34,
         "dynasty_name": "西涼",
         "title": "涼武昭王",
         "name": "李暠",
@@ -1132,7 +1132,7 @@
     },
     {
         "id": 136,
-        "dynasty_id": 33,
+        "dynasty_id": 34,
         "dynasty_name": "西涼",
         "title": "涼後主",
         "name": "李歆",
@@ -1141,7 +1141,7 @@
     },
     {
         "id": 137,
-        "dynasty_id": 33,
+        "dynasty_id": 34,
         "dynasty_name": "西涼",
         "title": "涼冠軍侯",
         "name": "李恂",
@@ -1150,13 +1150,13 @@
     },
     {
         "id": 138,
-        "dynasty_id": 111,
+        "dynasty_id": 124,
         "dynasty_name": "其他",
         "name": "李寶"
     },
     {
         "id": 139,
-        "dynasty_id": 34,
+        "dynasty_id": 35,
         "dynasty_name": "夏",
         "title": "夏武烈帝",
         "name": "赫連勃勃",
@@ -1165,7 +1165,7 @@
     },
     {
         "id": 140,
-        "dynasty_id": 34,
+        "dynasty_id": 35,
         "dynasty_name": "夏",
         "title": "夏廢主",
         "name": "赫連昌",
@@ -1174,7 +1174,7 @@
     },
     {
         "id": 141,
-        "dynasty_id": 34,
+        "dynasty_id": 35,
         "dynasty_name": "夏",
         "title": "夏後主",
         "name": "赫連定",
@@ -1183,7 +1183,7 @@
     },
     {
         "id": 142,
-        "dynasty_id": 35,
+        "dynasty_id": 36,
         "dynasty_name": "北燕",
         "title": "燕惠懿帝",
         "name": "高雲",
@@ -1192,7 +1192,7 @@
     },
     {
         "id": 143,
-        "dynasty_id": 35,
+        "dynasty_id": 36,
         "dynasty_name": "北燕",
         "title": "燕文成帝",
         "name": "馮跋",
@@ -1201,7 +1201,7 @@
     },
     {
         "id": 144,
-        "dynasty_id": 35,
+        "dynasty_id": 36,
         "dynasty_name": "北燕",
         "title": "燕昭成帝",
         "name": "馮弘",
@@ -1210,7 +1210,7 @@
     },
     {
         "id": 145,
-        "dynasty_id": 36,
+        "dynasty_id": 37,
         "dynasty_name": "北涼",
         "title": "建康公",
         "name": "段業",
@@ -1219,7 +1219,7 @@
     },
     {
         "id": 146,
-        "dynasty_id": 36,
+        "dynasty_id": 37,
         "dynasty_name": "北涼",
         "title": "涼武宣王",
         "name": "沮渠蒙遜",
@@ -1228,7 +1228,7 @@
     },
     {
         "id": 147,
-        "dynasty_id": 36,
+        "dynasty_id": 37,
         "dynasty_name": "北涼",
         "title": "涼哀王",
         "name": "沮渠牧犍",
@@ -1237,21 +1237,21 @@
     },
     {
         "id": 148,
-        "dynasty_id": 37,
+        "dynasty_id": 38,
         "dynasty_name": "涼",
         "name": "沮渠無諱"
     },
     {
         "id": 149,
         "name": "沮渠安周",
-        "dynasty_id": 37,
+        "dynasty_id": 38,
         "dynasty_name": "涼",
         "first_regnal_year": "444年",
         "final_regnal_year": "460年"
     },
     {
         "id": 150,
-        "dynasty_id": 38,
+        "dynasty_id": 39,
         "dynasty_name": "劉宋",
         "title": "宋武帝",
         "name": "劉裕",
@@ -1260,7 +1260,7 @@
     },
     {
         "id": 151,
-        "dynasty_id": 38,
+        "dynasty_id": 39,
         "dynasty_name": "劉宋",
         "title": "宋少帝",
         "name": "劉義符",
@@ -1269,7 +1269,7 @@
     },
     {
         "id": 152,
-        "dynasty_id": 38,
+        "dynasty_id": 39,
         "dynasty_name": "劉宋",
         "title": "宋文帝",
         "name": "劉義隆",
@@ -1278,7 +1278,7 @@
     },
     {
         "id": 153,
-        "dynasty_id": 38,
+        "dynasty_id": 39,
         "dynasty_name": "劉宋",
         "title": "宋孝武帝",
         "name": "劉駿",
@@ -1287,7 +1287,7 @@
     },
     {
         "id": 154,
-        "dynasty_id": 38,
+        "dynasty_id": 39,
         "dynasty_name": "劉宋",
         "title": "宋前廢帝",
         "name": "劉子業",
@@ -1296,7 +1296,7 @@
     },
     {
         "id": 155,
-        "dynasty_id": 38,
+        "dynasty_id": 39,
         "dynasty_name": "劉宋",
         "title": "宋明帝",
         "name": "劉彧",
@@ -1305,7 +1305,7 @@
     },
     {
         "id": 156,
-        "dynasty_id": 38,
+        "dynasty_id": 39,
         "dynasty_name": "劉宋",
         "title": "宋後廢帝",
         "name": "劉昱",
@@ -1314,7 +1314,7 @@
     },
     {
         "id": 157,
-        "dynasty_id": 38,
+        "dynasty_id": 39,
         "dynasty_name": "劉宋",
         "title": "宋順帝",
         "name": "劉準",
@@ -1323,49 +1323,49 @@
     },
     {
         "id": 158,
-        "dynasty_id": 111,
+        "dynasty_id": 124,
         "dynasty_name": "其他",
         "name": "程道養"
     },
     {
         "id": 159,
-        "dynasty_id": 111,
+        "dynasty_id": 124,
         "dynasty_name": "其他",
         "name": "楊難當"
     },
     {
         "id": 160,
-        "dynasty_id": 111,
+        "dynasty_id": 124,
         "dynasty_name": "其他",
         "name": "劉劭"
     },
     {
         "id": 161,
-        "dynasty_id": 111,
+        "dynasty_id": 124,
         "dynasty_name": "其他",
         "name": "魯爽"
     },
     {
         "id": 162,
-        "dynasty_id": 111,
+        "dynasty_id": 124,
         "dynasty_name": "其他",
         "name": "劉渾"
     },
     {
         "id": 163,
-        "dynasty_id": 111,
+        "dynasty_id": 124,
         "dynasty_name": "其他",
         "name": "劉子勛"
     },
     {
         "id": 164,
-        "dynasty_id": 111,
+        "dynasty_id": 124,
         "dynasty_name": "其他",
         "name": "？"
     },
     {
         "id": 165,
-        "dynasty_id": 39,
+        "dynasty_id": 40,
         "dynasty_name": "南齊",
         "title": "齊高帝",
         "name": "蕭道成",
@@ -1374,7 +1374,7 @@
     },
     {
         "id": 166,
-        "dynasty_id": 39,
+        "dynasty_id": 40,
         "dynasty_name": "南齊",
         "title": "齊武帝",
         "name": "蕭賾",
@@ -1383,7 +1383,7 @@
     },
     {
         "id": 167,
-        "dynasty_id": 39,
+        "dynasty_id": 40,
         "dynasty_name": "南齊",
         "title": "齊鬱林王",
         "name": "蕭昭業",
@@ -1392,7 +1392,7 @@
     },
     {
         "id": 168,
-        "dynasty_id": 39,
+        "dynasty_id": 40,
         "dynasty_name": "南齊",
         "title": "齊海陵王",
         "name": "蕭昭文",
@@ -1401,7 +1401,7 @@
     },
     {
         "id": 169,
-        "dynasty_id": 39,
+        "dynasty_id": 40,
         "dynasty_name": "南齊",
         "title": "齊明帝",
         "name": "蕭鸞",
@@ -1410,7 +1410,7 @@
     },
     {
         "id": 170,
-        "dynasty_id": 39,
+        "dynasty_id": 40,
         "dynasty_name": "南齊",
         "title": "齊東昏侯",
         "name": "蕭寶卷",
@@ -1419,7 +1419,7 @@
     },
     {
         "id": 171,
-        "dynasty_id": 39,
+        "dynasty_id": 40,
         "dynasty_name": "南齊",
         "title": "齊和帝",
         "name": "蕭寶融",
@@ -1428,19 +1428,19 @@
     },
     {
         "id": 172,
-        "dynasty_id": 111,
+        "dynasty_id": 124,
         "dynasty_name": "其他",
         "name": "唐㝢之"
     },
     {
         "id": 173,
-        "dynasty_id": 111,
+        "dynasty_id": 124,
         "dynasty_name": "其他",
         "name": "雍道晞"
     },
     {
         "id": 174,
-        "dynasty_id": 40,
+        "dynasty_id": 41,
         "dynasty_name": "南梁",
         "title": "梁武帝",
         "name": "蕭衍",
@@ -1449,7 +1449,7 @@
     },
     {
         "id": 175,
-        "dynasty_id": 40,
+        "dynasty_id": 41,
         "dynasty_name": "南梁",
         "title": "梁簡文帝",
         "name": "蕭綱",
@@ -1458,7 +1458,7 @@
     },
     {
         "id": 176,
-        "dynasty_id": 40,
+        "dynasty_id": 41,
         "dynasty_name": "南梁",
         "title": "梁豫章王",
         "name": "蕭棟",
@@ -1467,7 +1467,7 @@
     },
     {
         "id": 177,
-        "dynasty_id": 40,
+        "dynasty_id": 41,
         "dynasty_name": "南梁",
         "title": "梁元帝",
         "name": "蕭繹",
@@ -1476,7 +1476,7 @@
     },
     {
         "id": 178,
-        "dynasty_id": 40,
+        "dynasty_id": 41,
         "dynasty_name": "南梁",
         "title": "梁貞陽侯",
         "name": "蕭淵明",
@@ -1485,7 +1485,7 @@
     },
     {
         "id": 179,
-        "dynasty_id": 40,
+        "dynasty_id": 41,
         "dynasty_name": "南梁",
         "title": "梁敬帝",
         "name": "蕭方智",
@@ -1494,49 +1494,49 @@
     },
     {
         "id": 180,
-        "dynasty_id": 111,
+        "dynasty_id": 124,
         "dynasty_name": "其他",
         "name": "鮮于琛"
     },
     {
         "id": 181,
-        "dynasty_id": 111,
+        "dynasty_id": 124,
         "dynasty_name": "其他",
         "name": "劉敬躬"
     },
     {
         "id": 182,
-        "dynasty_id": 111,
+        "dynasty_id": 124,
         "dynasty_name": "其他",
         "name": "李賁"
     },
     {
         "id": 183,
-        "dynasty_id": 111,
-        "dynasty_name": "其他",
+        "dynasty_id": 42,
+        "dynasty_name": "梁",
         "name": "蕭正德"
     },
     {
         "id": 184,
-        "dynasty_id": 41,
+        "dynasty_id": 43,
         "dynasty_name": "漢",
         "name": "侯景"
     },
     {
         "id": 185,
-        "dynasty_id": 111,
-        "dynasty_name": "其他",
+        "dynasty_id": 44,
+        "dynasty_name": "梁",
         "name": "蕭紀"
     },
     {
         "id": 186,
-        "dynasty_id": 111,
-        "dynasty_name": "其他",
+        "dynasty_id": 45,
+        "dynasty_name": "梁",
         "name": "蕭莊"
     },
     {
         "id": 187,
-        "dynasty_id": 42,
+        "dynasty_id": 46,
         "dynasty_name": "西梁",
         "title": "梁宣帝",
         "name": "蕭詧",
@@ -1545,7 +1545,7 @@
     },
     {
         "id": 188,
-        "dynasty_id": 42,
+        "dynasty_id": 46,
         "dynasty_name": "西梁",
         "title": "梁明帝",
         "name": "蕭巋",
@@ -1554,7 +1554,7 @@
     },
     {
         "id": 189,
-        "dynasty_id": 42,
+        "dynasty_id": 46,
         "dynasty_name": "西梁",
         "title": "梁後主",
         "name": "蕭琮",
@@ -1563,7 +1563,7 @@
     },
     {
         "id": 190,
-        "dynasty_id": 43,
+        "dynasty_id": 47,
         "dynasty_name": "南陳",
         "title": "陳武帝",
         "name": "陳霸先",
@@ -1572,7 +1572,7 @@
     },
     {
         "id": 191,
-        "dynasty_id": 43,
+        "dynasty_id": 47,
         "dynasty_name": "南陳",
         "title": "陳文帝",
         "name": "陳蒨",
@@ -1581,7 +1581,7 @@
     },
     {
         "id": 192,
-        "dynasty_id": 43,
+        "dynasty_id": 47,
         "dynasty_name": "南陳",
         "title": "陳廢帝",
         "name": "陳伯宗",
@@ -1590,7 +1590,7 @@
     },
     {
         "id": 193,
-        "dynasty_id": 43,
+        "dynasty_id": 47,
         "dynasty_name": "南陳",
         "title": "陳宣帝",
         "name": "陳頊",
@@ -1599,7 +1599,7 @@
     },
     {
         "id": 194,
-        "dynasty_id": 43,
+        "dynasty_id": 47,
         "dynasty_name": "南陳",
         "title": "陳後主",
         "name": "陳叔寶",
@@ -1608,7 +1608,7 @@
     },
     {
         "id": 195,
-        "dynasty_id": 44,
+        "dynasty_id": 48,
         "dynasty_name": "北魏",
         "title": "魏道武帝",
         "name": "拓跋珪",
@@ -1617,7 +1617,7 @@
     },
     {
         "id": 196,
-        "dynasty_id": 44,
+        "dynasty_id": 48,
         "dynasty_name": "北魏",
         "title": "魏明元帝",
         "name": "拓跋嗣",
@@ -1626,7 +1626,7 @@
     },
     {
         "id": 197,
-        "dynasty_id": 44,
+        "dynasty_id": 48,
         "dynasty_name": "北魏",
         "title": "魏太武帝",
         "name": "拓跋燾",
@@ -1635,7 +1635,7 @@
     },
     {
         "id": 198,
-        "dynasty_id": 44,
+        "dynasty_id": 48,
         "dynasty_name": "北魏",
         "title": "魏南安王",
         "name": "拓跋余",
@@ -1644,7 +1644,7 @@
     },
     {
         "id": 199,
-        "dynasty_id": 44,
+        "dynasty_id": 48,
         "dynasty_name": "北魏",
         "title": "魏文成帝",
         "name": "拓跋濬",
@@ -1653,7 +1653,7 @@
     },
     {
         "id": 200,
-        "dynasty_id": 44,
+        "dynasty_id": 48,
         "dynasty_name": "北魏",
         "title": "魏獻文帝",
         "name": "拓跋弘",
@@ -1662,7 +1662,7 @@
     },
     {
         "id": 201,
-        "dynasty_id": 44,
+        "dynasty_id": 48,
         "dynasty_name": "北魏",
         "title": "魏孝文帝",
         "name": "元宏",
@@ -1671,7 +1671,7 @@
     },
     {
         "id": 202,
-        "dynasty_id": 44,
+        "dynasty_id": 48,
         "dynasty_name": "北魏",
         "title": "魏宣武帝",
         "name": "元恪",
@@ -1680,7 +1680,7 @@
     },
     {
         "id": 203,
-        "dynasty_id": 44,
+        "dynasty_id": 48,
         "dynasty_name": "北魏",
         "title": "魏孝明帝",
         "name": "元詡",
@@ -1689,7 +1689,7 @@
     },
     {
         "id": 204,
-        "dynasty_id": 44,
+        "dynasty_id": 48,
         "dynasty_name": "北魏",
         "title": "魏孝莊帝",
         "name": "元子攸",
@@ -1698,7 +1698,7 @@
     },
     {
         "id": 205,
-        "dynasty_id": 44,
+        "dynasty_id": 48,
         "dynasty_name": "北魏",
         "title": "魏長廣王",
         "name": "元曄",
@@ -1707,7 +1707,7 @@
     },
     {
         "id": 206,
-        "dynasty_id": 44,
+        "dynasty_id": 48,
         "dynasty_name": "北魏",
         "title": "魏節閔帝",
         "name": "元恭",
@@ -1716,7 +1716,7 @@
     },
     {
         "id": 207,
-        "dynasty_id": 44,
+        "dynasty_id": 48,
         "dynasty_name": "北魏",
         "title": "魏安定王",
         "name": "元朗",
@@ -1725,7 +1725,7 @@
     },
     {
         "id": 208,
-        "dynasty_id": 44,
+        "dynasty_id": 48,
         "dynasty_name": "北魏",
         "title": "魏孝武帝",
         "name": "元脩",
@@ -1734,133 +1734,133 @@
     },
     {
         "id": 209,
-        "dynasty_id": 111,
+        "dynasty_id": 124,
         "dynasty_name": "其他",
         "name": "白亞栗斯、劉虎"
     },
     {
         "id": 210,
-        "dynasty_id": 111,
+        "dynasty_id": 124,
         "dynasty_name": "其他",
         "name": "司馬小君"
     },
     {
         "id": 211,
-        "dynasty_id": 111,
+        "dynasty_id": 124,
         "dynasty_name": "其他",
         "name": "樊素安"
     },
     {
         "id": 212,
-        "dynasty_id": 111,
+        "dynasty_id": 124,
         "dynasty_name": "其他",
         "name": "呂苟兒、王法智"
     },
     {
         "id": 213,
-        "dynasty_id": 111,
+        "dynasty_id": 124,
         "dynasty_name": "其他",
         "name": "陳瞻"
     },
     {
         "id": 214,
-        "dynasty_id": 111,
-        "dynasty_name": "其他",
+        "dynasty_id": 49,
+        "dynasty_name": "魏",
         "name": "元愉"
     },
     {
         "id": 215,
-        "dynasty_id": 111,
+        "dynasty_id": 124,
         "dynasty_name": "其他",
         "name": "法慶"
     },
     {
         "id": 216,
-        "dynasty_id": 111,
+        "dynasty_id": 124,
         "dynasty_name": "其他",
         "name": "破六韓拔陵、杜洛周"
     },
     {
         "id": 217,
-        "dynasty_id": 111,
+        "dynasty_id": 124,
         "dynasty_name": "其他",
         "name": "莫折念生"
     },
     {
         "id": 218,
-        "dynasty_id": 111,
+        "dynasty_id": 124,
         "dynasty_name": "其他",
         "name": "元法僧"
     },
     {
         "id": 219,
-        "dynasty_id": 111,
+        "dynasty_id": 124,
         "dynasty_name": "其他",
         "name": "劉蠡升"
     },
     {
         "id": 220,
-        "dynasty_id": 111,
+        "dynasty_id": 124,
         "dynasty_name": "其他",
         "name": "鮮于脩禮"
     },
     {
         "id": 221,
-        "dynasty_id": 111,
+        "dynasty_id": 124,
         "dynasty_name": "其他",
         "name": "陳雙熾"
     },
     {
         "id": 222,
-        "dynasty_id": 111,
+        "dynasty_id": 124,
         "dynasty_name": "其他",
         "name": "葛榮"
     },
     {
         "id": 223,
-        "dynasty_id": 111,
+        "dynasty_id": 124,
         "dynasty_name": "其他",
         "name": "劉獲、鄭辯"
     },
     {
         "id": 224,
-        "dynasty_id": 111,
+        "dynasty_id": 124,
         "dynasty_name": "其他",
         "name": "蕭寶夤"
     },
     {
         "id": 225,
-        "dynasty_id": 111,
+        "dynasty_id": 124,
         "dynasty_name": "其他",
         "name": "邢杲"
     },
     {
         "id": 226,
-        "dynasty_id": 111,
+        "dynasty_id": 124,
         "dynasty_name": "其他",
         "name": "万俟醜奴"
     },
     {
         "id": 227,
-        "dynasty_id": 111,
+        "dynasty_id": 124,
         "dynasty_name": "其他",
         "name": "劉擧"
     },
     {
         "id": 228,
-        "dynasty_id": 111,
-        "dynasty_name": "其他",
+        "dynasty_id": 50,
+        "dynasty_name": "魏",
         "name": "元顥"
     },
     {
         "id": 229,
-        "dynasty_id": 111,
-        "dynasty_name": "其他",
+        "dynasty_id": 51,
+        "dynasty_name": "魏",
         "name": "元悅"
     },
     {
         "id": 230,
-        "dynasty_id": 45,
+        "dynasty_id": 52,
         "dynasty_name": "東魏",
         "title": "魏孝靜帝",
         "name": "元善見",
@@ -1869,19 +1869,19 @@
     },
     {
         "id": 231,
-        "dynasty_id": 111,
+        "dynasty_id": 124,
         "dynasty_name": "其他",
         "name": "王迢觸、曹貳龍"
     },
     {
         "id": 232,
-        "dynasty_id": 111,
+        "dynasty_id": 124,
         "dynasty_name": "其他",
         "name": "高歡"
     },
     {
         "id": 233,
-        "dynasty_id": 46,
+        "dynasty_id": 53,
         "dynasty_name": "西魏",
         "title": "魏文帝",
         "name": "元寶炬",
@@ -1890,7 +1890,7 @@
     },
     {
         "id": 234,
-        "dynasty_id": 46,
+        "dynasty_id": 53,
         "dynasty_name": "西魏",
         "title": "魏廢帝",
         "name": "元欽",
@@ -1899,7 +1899,7 @@
     },
     {
         "id": 235,
-        "dynasty_id": 47,
+        "dynasty_id": 54,
         "dynasty_name": "北齊",
         "title": "齊文宣帝",
         "name": "高洋",
@@ -1908,7 +1908,7 @@
     },
     {
         "id": 236,
-        "dynasty_id": 47,
+        "dynasty_id": 54,
         "dynasty_name": "北齊",
         "title": "齊廢帝",
         "name": "高殷",
@@ -1917,7 +1917,7 @@
     },
     {
         "id": 237,
-        "dynasty_id": 47,
+        "dynasty_id": 54,
         "dynasty_name": "北齊",
         "title": "齊孝昭帝",
         "name": "高演",
@@ -1926,7 +1926,7 @@
     },
     {
         "id": 238,
-        "dynasty_id": 47,
+        "dynasty_id": 54,
         "dynasty_name": "北齊",
         "title": "齊武成帝",
         "name": "高湛",
@@ -1935,7 +1935,7 @@
     },
     {
         "id": 239,
-        "dynasty_id": 47,
+        "dynasty_id": 54,
         "dynasty_name": "北齊",
         "title": "齊後主",
         "name": "高緯",
@@ -1944,7 +1944,7 @@
     },
     {
         "id": 240,
-        "dynasty_id": 47,
+        "dynasty_id": 54,
         "dynasty_name": "北齊",
         "title": "齊安德王",
         "name": "高延宗",
@@ -1953,7 +1953,7 @@
     },
     {
         "id": 241,
-        "dynasty_id": 47,
+        "dynasty_id": 54,
         "dynasty_name": "北齊",
         "title": "齊幼主",
         "name": "高恆",
@@ -1962,19 +1962,19 @@
     },
     {
         "id": 242,
-        "dynasty_id": 111,
+        "dynasty_id": 124,
         "dynasty_name": "其他",
         "name": "高紹義"
     },
     {
         "id": 243,
-        "dynasty_id": 111,
+        "dynasty_id": 124,
         "dynasty_name": "其他",
         "name": "？"
     },
     {
         "id": 244,
-        "dynasty_id": 48,
+        "dynasty_id": 55,
         "dynasty_name": "北周",
         "title": "周明帝",
         "name": "宇文毓",
@@ -1983,7 +1983,7 @@
     },
     {
         "id": 245,
-        "dynasty_id": 48,
+        "dynasty_id": 55,
         "dynasty_name": "北周",
         "title": "周武帝",
         "name": "宇文邕",
@@ -1992,7 +1992,7 @@
     },
     {
         "id": 246,
-        "dynasty_id": 48,
+        "dynasty_id": 55,
         "dynasty_name": "北周",
         "title": "周宣帝",
         "name": "宇文贇",
@@ -2001,7 +2001,7 @@
     },
     {
         "id": 247,
-        "dynasty_id": 48,
+        "dynasty_id": 55,
         "dynasty_name": "北周",
         "title": "周靜帝",
         "name": "宇文闡",
@@ -2010,19 +2010,19 @@
     },
     {
         "id": 248,
-        "dynasty_id": 111,
+        "dynasty_id": 124,
         "dynasty_name": "其他",
         "name": "劉沒鐸"
     },
     {
         "id": 249,
-        "dynasty_id": 111,
+        "dynasty_id": 124,
         "dynasty_name": "其他",
         "name": "？"
     },
     {
         "id": 250,
-        "dynasty_id": 49,
+        "dynasty_id": 56,
         "dynasty_name": "高句麗",
         "title": "好太王",
         "name": "高安",
@@ -2031,7 +2031,7 @@
     },
     {
         "id": 251,
-        "dynasty_id": 49,
+        "dynasty_id": 56,
         "dynasty_name": "高句麗",
         "title": "長壽王",
         "name": "高璉",
@@ -2040,7 +2040,7 @@
     },
     {
         "id": 252,
-        "dynasty_id": 49,
+        "dynasty_id": 56,
         "dynasty_name": "高句麗",
         "title": "安原王",
         "name": "高延",
@@ -2049,7 +2049,7 @@
     },
     {
         "id": 253,
-        "dynasty_id": 49,
+        "dynasty_id": 56,
         "dynasty_name": "高句麗",
         "title": "平原王",
         "name": "高陽",
@@ -2058,7 +2058,7 @@
     },
     {
         "id": 254,
-        "dynasty_id": 50,
+        "dynasty_id": 57,
         "dynasty_name": "柔然",
         "title": "受羅部真可汗",
         "name": "予成",
@@ -2067,7 +2067,7 @@
     },
     {
         "id": 255,
-        "dynasty_id": 50,
+        "dynasty_id": 57,
         "dynasty_name": "柔然",
         "title": "伏古敦可汗",
         "name": "豆崙",
@@ -2076,7 +2076,7 @@
     },
     {
         "id": 256,
-        "dynasty_id": 50,
+        "dynasty_id": 57,
         "dynasty_name": "柔然",
         "title": "候其伏代庫者可汗",
         "name": "那蓋",
@@ -2085,7 +2085,7 @@
     },
     {
         "id": 257,
-        "dynasty_id": 50,
+        "dynasty_id": 57,
         "dynasty_name": "柔然",
         "title": "佗汗可汗",
         "name": "伏圖",
@@ -2094,7 +2094,7 @@
     },
     {
         "id": 258,
-        "dynasty_id": 50,
+        "dynasty_id": 57,
         "dynasty_name": "柔然",
         "title": "豆羅伏跋豆伐可汗",
         "name": "醜奴",
@@ -2103,7 +2103,7 @@
     },
     {
         "id": 259,
-        "dynasty_id": 51,
+        "dynasty_id": 58,
         "dynasty_name": "高昌",
         "name": "闞伯周",
         "first_regnal_year": "460年",
@@ -2111,7 +2111,7 @@
     },
     {
         "id": 260,
-        "dynasty_id": 51,
+        "dynasty_id": 58,
         "dynasty_name": "高昌",
         "name": "闞義成",
         "first_regnal_year": "約477年",
@@ -2119,7 +2119,7 @@
     },
     {
         "id": 261,
-        "dynasty_id": 51,
+        "dynasty_id": 58,
         "dynasty_name": "高昌",
         "name": "闞首歸",
         "first_regnal_year": "478年",
@@ -2127,7 +2127,7 @@
     },
     {
         "id": 262,
-        "dynasty_id": 51,
+        "dynasty_id": 58,
         "dynasty_name": "高昌",
         "name": "張孟明",
         "first_regnal_year": "489年",
@@ -2135,7 +2135,7 @@
     },
     {
         "id": 263,
-        "dynasty_id": 51,
+        "dynasty_id": 58,
         "dynasty_name": "高昌",
         "name": "馬儒",
         "first_regnal_year": "497年",
@@ -2143,7 +2143,7 @@
     },
     {
         "id": 264,
-        "dynasty_id": 51,
+        "dynasty_id": 58,
         "dynasty_name": "高昌",
         "name": "麴嘉",
         "first_regnal_year": "501年",
@@ -2151,7 +2151,7 @@
     },
     {
         "id": 265,
-        "dynasty_id": 51,
+        "dynasty_id": 58,
         "dynasty_name": "高昌",
         "name": "麴光",
         "first_regnal_year": "525年",
@@ -2159,7 +2159,7 @@
     },
     {
         "id": 266,
-        "dynasty_id": 51,
+        "dynasty_id": 58,
         "dynasty_name": "高昌",
         "name": "麴堅",
         "first_regnal_year": "530年",
@@ -2167,7 +2167,7 @@
     },
     {
         "id": 267,
-        "dynasty_id": 51,
+        "dynasty_id": 58,
         "dynasty_name": "高昌",
         "name": "麴玄喜",
         "first_regnal_year": "547年",
@@ -2175,7 +2175,7 @@
     },
     {
         "id": 268,
-        "dynasty_id": 51,
+        "dynasty_id": 58,
         "dynasty_name": "高昌",
         "name": "麴□",
         "first_regnal_year": "550年",
@@ -2183,7 +2183,7 @@
     },
     {
         "id": 269,
-        "dynasty_id": 51,
+        "dynasty_id": 58,
         "dynasty_name": "高昌",
         "name": "麴寶茂",
         "first_regnal_year": "555年",
@@ -2191,7 +2191,7 @@
     },
     {
         "id": 270,
-        "dynasty_id": 51,
+        "dynasty_id": 58,
         "dynasty_name": "高昌",
         "name": "麴乾固",
         "first_regnal_year": "560年",
@@ -2199,7 +2199,7 @@
     },
     {
         "id": 271,
-        "dynasty_id": 51,
+        "dynasty_id": 58,
         "dynasty_name": "高昌",
         "name": "麴伯雅",
         "first_regnal_year": "601年",
@@ -2207,7 +2207,7 @@
     },
     {
         "id": 272,
-        "dynasty_id": 51,
+        "dynasty_id": 58,
         "dynasty_name": "高昌",
         "name": "麴文泰",
         "first_regnal_year": "623年",
@@ -2215,7 +2215,7 @@
     },
     {
         "id": 273,
-        "dynasty_id": 52,
+        "dynasty_id": 59,
         "dynasty_name": "隋",
         "title": "隋文帝",
         "name": "楊堅",
@@ -2224,7 +2224,7 @@
     },
     {
         "id": 274,
-        "dynasty_id": 52,
+        "dynasty_id": 59,
         "dynasty_name": "隋",
         "title": "隋煬帝",
         "name": "楊廣",
@@ -2233,7 +2233,7 @@
     },
     {
         "id": 275,
-        "dynasty_id": 52,
+        "dynasty_id": 59,
         "dynasty_name": "隋",
         "title": "隋恭帝",
         "name": "楊侑",
@@ -2242,7 +2242,7 @@
     },
     {
         "id": 276,
-        "dynasty_id": 52,
+        "dynasty_id": 59,
         "dynasty_name": "隋",
         "title": "皇泰主",
         "name": "楊侗",
@@ -2251,85 +2251,85 @@
     },
     {
         "id": 277,
-        "dynasty_id": 111,
+        "dynasty_id": 124,
         "dynasty_name": "其他",
         "name": "向海明"
     },
     {
         "id": 278,
-        "dynasty_id": 111,
+        "dynasty_id": 124,
         "dynasty_name": "其他",
         "name": "劉迦論"
     },
     {
         "id": 279,
-        "dynasty_id": 111,
+        "dynasty_id": 124,
         "dynasty_name": "其他",
         "name": "操師乞"
     },
     {
         "id": 280,
-        "dynasty_id": 111,
+        "dynasty_id": 124,
         "dynasty_name": "其他",
         "name": "林士弘"
     },
     {
         "id": 281,
-        "dynasty_id": 111,
+        "dynasty_id": 124,
         "dynasty_name": "其他",
         "name": "竇建德"
     },
     {
         "id": 282,
-        "dynasty_id": 111,
-        "dynasty_name": "其他",
+        "dynasty_id": 60,
+        "dynasty_name": "魏",
         "name": "李密"
     },
     {
         "id": 283,
-        "dynasty_id": 111,
-        "dynasty_name": "其他",
+        "dynasty_id": 61,
+        "dynasty_name": "漢",
         "name": "劉武周"
     },
     {
         "id": 284,
-        "dynasty_id": 111,
+        "dynasty_id": 124,
         "dynasty_name": "其他",
         "name": "郭子和"
     },
     {
         "id": 285,
-        "dynasty_id": 111,
-        "dynasty_name": "其他",
+        "dynasty_id": 62,
+        "dynasty_name": "秦",
         "name": "薛舉"
     },
     {
         "id": 286,
-        "dynasty_id": 111,
-        "dynasty_name": "其他",
+        "dynasty_id": 63,
+        "dynasty_name": "涼",
         "name": "李軌"
     },
     {
         "id": 287,
-        "dynasty_id": 53,
+        "dynasty_id": 64,
         "dynasty_name": "梁",
         "name": "蕭銑"
     },
     {
         "id": 288,
-        "dynasty_id": 111,
+        "dynasty_id": 124,
         "dynasty_name": "其他",
         "name": "曹武徹"
     },
     {
         "id": 289,
-        "dynasty_id": 111,
-        "dynasty_name": "其他",
+        "dynasty_id": 65,
+        "dynasty_name": "梁",
         "name": "梁師都"
     },
     {
         "id": 290,
-        "dynasty_id": 54,
+        "dynasty_id": 66,
         "dynasty_name": "唐",
         "title": "唐高祖",
         "name": "李淵",
@@ -2338,7 +2338,7 @@
     },
     {
         "id": 291,
-        "dynasty_id": 54,
+        "dynasty_id": 66,
         "dynasty_name": "唐",
         "title": "唐太宗",
         "name": "李世民",
@@ -2347,7 +2347,7 @@
     },
     {
         "id": 292,
-        "dynasty_id": 54,
+        "dynasty_id": 66,
         "dynasty_name": "唐",
         "title": "唐高宗",
         "name": "李治",
@@ -2356,7 +2356,7 @@
     },
     {
         "id": 293,
-        "dynasty_id": 54,
+        "dynasty_id": 66,
         "dynasty_name": "唐",
         "title": "唐中宗",
         "name": "李顯",
@@ -2365,7 +2365,7 @@
     },
     {
         "id": 294,
-        "dynasty_id": 54,
+        "dynasty_id": 66,
         "dynasty_name": "唐",
         "title": "唐睿宗",
         "name": "李旦",
@@ -2374,7 +2374,7 @@
     },
     {
         "id": 295,
-        "dynasty_id": 55,
+        "dynasty_id": 67,
         "dynasty_name": "武周",
         "name": "武曌",
         "first_regnal_year": "683年",
@@ -2382,7 +2382,7 @@
     },
     {
         "id": 296,
-        "dynasty_id": 54,
+        "dynasty_id": 66,
         "dynasty_name": "唐",
         "title": "唐中宗",
         "name": "李顯",
@@ -2391,7 +2391,7 @@
     },
     {
         "id": 297,
-        "dynasty_id": 54,
+        "dynasty_id": 66,
         "dynasty_name": "唐",
         "title": "唐殤帝",
         "name": "李重茂",
@@ -2400,7 +2400,7 @@
     },
     {
         "id": 298,
-        "dynasty_id": 54,
+        "dynasty_id": 66,
         "dynasty_name": "唐",
         "title": "唐睿宗",
         "name": "李旦",
@@ -2409,7 +2409,7 @@
     },
     {
         "id": 299,
-        "dynasty_id": 54,
+        "dynasty_id": 66,
         "dynasty_name": "唐",
         "title": "唐玄宗",
         "name": "李隆基",
@@ -2418,7 +2418,7 @@
     },
     {
         "id": 300,
-        "dynasty_id": 54,
+        "dynasty_id": 66,
         "dynasty_name": "唐",
         "title": "唐肅宗",
         "name": "李亨",
@@ -2427,7 +2427,7 @@
     },
     {
         "id": 301,
-        "dynasty_id": 54,
+        "dynasty_id": 66,
         "dynasty_name": "唐",
         "title": "唐代宗",
         "name": "李豫",
@@ -2436,7 +2436,7 @@
     },
     {
         "id": 302,
-        "dynasty_id": 54,
+        "dynasty_id": 66,
         "dynasty_name": "唐",
         "title": "唐德宗",
         "name": "李适",
@@ -2445,7 +2445,7 @@
     },
     {
         "id": 303,
-        "dynasty_id": 54,
+        "dynasty_id": 66,
         "dynasty_name": "唐",
         "title": "唐順宗",
         "name": "李誦",
@@ -2454,7 +2454,7 @@
     },
     {
         "id": 304,
-        "dynasty_id": 54,
+        "dynasty_id": 66,
         "dynasty_name": "唐",
         "title": "唐憲宗",
         "name": "李純",
@@ -2463,7 +2463,7 @@
     },
     {
         "id": 305,
-        "dynasty_id": 54,
+        "dynasty_id": 66,
         "dynasty_name": "唐",
         "title": "唐穆宗",
         "name": "李恆",
@@ -2472,7 +2472,7 @@
     },
     {
         "id": 306,
-        "dynasty_id": 54,
+        "dynasty_id": 66,
         "dynasty_name": "唐",
         "title": "唐敬宗",
         "name": "李湛",
@@ -2481,7 +2481,7 @@
     },
     {
         "id": 307,
-        "dynasty_id": 54,
+        "dynasty_id": 66,
         "dynasty_name": "唐",
         "title": "唐文宗",
         "name": "李昂",
@@ -2490,7 +2490,7 @@
     },
     {
         "id": 308,
-        "dynasty_id": 54,
+        "dynasty_id": 66,
         "dynasty_name": "唐",
         "title": "唐武宗",
         "name": "李炎",
@@ -2499,7 +2499,7 @@
     },
     {
         "id": 309,
-        "dynasty_id": 54,
+        "dynasty_id": 66,
         "dynasty_name": "唐",
         "title": "唐宣宗",
         "name": "李忱",
@@ -2508,7 +2508,7 @@
     },
     {
         "id": 310,
-        "dynasty_id": 54,
+        "dynasty_id": 66,
         "dynasty_name": "唐",
         "title": "唐懿宗",
         "name": "李漼",
@@ -2517,7 +2517,7 @@
     },
     {
         "id": 311,
-        "dynasty_id": 54,
+        "dynasty_id": 66,
         "dynasty_name": "唐",
         "title": "唐僖宗",
         "name": "李儇",
@@ -2526,7 +2526,7 @@
     },
     {
         "id": 312,
-        "dynasty_id": 54,
+        "dynasty_id": 66,
         "dynasty_name": "唐",
         "title": "唐昭宗",
         "name": "李曄",
@@ -2535,181 +2535,181 @@
     },
     {
         "id": 313,
-        "dynasty_id": 111,
+        "dynasty_id": 124,
         "dynasty_name": "其他",
         "name": "宇文化及"
     },
     {
         "id": 314,
-        "dynasty_id": 111,
+        "dynasty_id": 124,
         "dynasty_name": "其他",
         "name": "朱粲"
     },
     {
         "id": 315,
-        "dynasty_id": 111,
+        "dynasty_id": 124,
         "dynasty_name": "其他",
         "name": "高開道"
     },
     {
         "id": 316,
-        "dynasty_id": 111,
+        "dynasty_id": 124,
         "dynasty_name": "其他",
         "name": "高曇晟"
     },
     {
         "id": 317,
-        "dynasty_id": 56,
+        "dynasty_id": 68,
         "dynasty_name": "鄭",
         "name": "王世充"
     },
     {
         "id": 318,
-        "dynasty_id": 111,
+        "dynasty_id": 124,
         "dynasty_name": "其他",
         "name": "沈法興"
     },
     {
         "id": 319,
-        "dynasty_id": 111,
+        "dynasty_id": 124,
         "dynasty_name": "其他",
         "name": "李子通"
     },
     {
         "id": 320,
-        "dynasty_id": 111,
+        "dynasty_id": 124,
         "dynasty_name": "其他",
         "name": "劉黑闥"
     },
     {
         "id": 321,
-        "dynasty_id": 111,
+        "dynasty_id": 124,
         "dynasty_name": "其他",
         "name": "輔公祏"
     },
     {
         "id": 322,
-        "dynasty_id": 111,
+        "dynasty_id": 124,
         "dynasty_name": "其他",
         "name": "王摩沙"
     },
     {
         "id": 323,
-        "dynasty_id": 111,
+        "dynasty_id": 124,
         "dynasty_name": "其他",
         "name": "李重福"
     },
     {
         "id": 324,
-        "dynasty_id": 57,
+        "dynasty_id": 69,
         "dynasty_name": "大燕",
         "name": "安祿山"
     },
     {
         "id": 325,
-        "dynasty_id": 57,
+        "dynasty_id": 69,
         "dynasty_name": "大燕",
         "name": "安慶緒"
     },
     {
         "id": 326,
-        "dynasty_id": 111,
+        "dynasty_id": 124,
         "dynasty_name": "其他",
         "name": "史思明"
     },
     {
         "id": 327,
-        "dynasty_id": 111,
+        "dynasty_id": 124,
         "dynasty_name": "其他",
         "name": "史朝義"
     },
     {
         "id": 328,
-        "dynasty_id": 111,
+        "dynasty_id": 124,
         "dynasty_name": "其他",
         "name": "段子璋"
     },
     {
         "id": 329,
-        "dynasty_id": 111,
+        "dynasty_id": 124,
         "dynasty_name": "其他",
         "name": "李珍"
     },
     {
         "id": 330,
-        "dynasty_id": 111,
+        "dynasty_id": 124,
         "dynasty_name": "其他",
         "name": "袁晁"
     },
     {
         "id": 331,
-        "dynasty_id": 111,
+        "dynasty_id": 124,
         "dynasty_name": "其他",
         "name": "李承宏"
     },
     {
         "id": 332,
-        "dynasty_id": 58,
+        "dynasty_id": 70,
         "dynasty_name": "秦",
         "name": "朱泚"
     },
     {
         "id": 333,
-        "dynasty_id": 59,
+        "dynasty_id": 71,
         "dynasty_name": "漢",
         "name": "朱泚"
     },
     {
         "id": 334,
-        "dynasty_id": 60,
+        "dynasty_id": 72,
         "dynasty_name": "楚",
         "name": "李希烈"
     },
     {
         "id": 335,
-        "dynasty_id": 111,
+        "dynasty_id": 124,
         "dynasty_name": "其他",
         "name": "裘甫"
     },
     {
         "id": 336,
-        "dynasty_id": 111,
+        "dynasty_id": 124,
         "dynasty_name": "其他",
         "name": "黃巢"
     },
     {
         "id": 337,
-        "dynasty_id": 61,
+        "dynasty_id": 73,
         "dynasty_name": "大齊",
         "name": "黃巢"
     },
     {
         "id": 338,
-        "dynasty_id": 111,
+        "dynasty_id": 124,
         "dynasty_name": "其他",
         "name": "秦宗權"
     },
     {
         "id": 339,
-        "dynasty_id": 111,
+        "dynasty_id": 124,
         "dynasty_name": "其他",
         "name": "李熅"
     },
     {
         "id": 340,
-        "dynasty_id": 62,
+        "dynasty_id": 74,
         "dynasty_name": "大越羅平國",
         "name": "董昌"
     },
     {
         "id": 341,
-        "dynasty_id": 111,
+        "dynasty_id": 124,
         "dynasty_name": "其他",
         "name": "李縝"
     },
     {
         "id": 342,
-        "dynasty_id": 63,
+        "dynasty_id": 75,
         "dynasty_name": "吐蕃",
         "name": "可黎可足贊普",
         "first_regnal_year": "817年",
@@ -2717,7 +2717,7 @@
     },
     {
         "id": 343,
-        "dynasty_id": 64,
+        "dynasty_id": 76,
         "dynasty_name": "于闐",
         "name": "尉遲烏僧波",
         "first_regnal_year": "912年",
@@ -2725,7 +2725,7 @@
     },
     {
         "id": 344,
-        "dynasty_id": 64,
+        "dynasty_id": 76,
         "dynasty_name": "于闐",
         "name": "尉遲蘇拉",
         "first_regnal_year": "966年",
@@ -2733,7 +2733,7 @@
     },
     {
         "id": 345,
-        "dynasty_id": 64,
+        "dynasty_id": 76,
         "dynasty_name": "于闐",
         "name": "尉遲達磨",
         "first_regnal_year": "977年",
@@ -2741,7 +2741,7 @@
     },
     {
         "id": 346,
-        "dynasty_id": 64,
+        "dynasty_id": 76,
         "dynasty_name": "于闐",
         "name": "尉遲僧伽羅摩",
         "first_regnal_year": "985年",
@@ -2749,13 +2749,13 @@
     },
     {
         "id": 347,
-        "dynasty_id": 64,
+        "dynasty_id": 76,
         "dynasty_name": "于闐",
         "name": "？"
     },
     {
         "id": 348,
-        "dynasty_id": 65,
+        "dynasty_id": 77,
         "dynasty_name": "渤海",
         "title": "渤海高王",
         "name": "大祚榮",
@@ -2764,7 +2764,7 @@
     },
     {
         "id": 349,
-        "dynasty_id": 65,
+        "dynasty_id": 77,
         "dynasty_name": "渤海",
         "title": "渤海武王",
         "name": "大武藝",
@@ -2773,7 +2773,7 @@
     },
     {
         "id": 350,
-        "dynasty_id": 65,
+        "dynasty_id": 77,
         "dynasty_name": "渤海",
         "title": "渤海文王",
         "name": "大欽茂",
@@ -2782,7 +2782,7 @@
     },
     {
         "id": 351,
-        "dynasty_id": 65,
+        "dynasty_id": 77,
         "dynasty_name": "渤海",
         "title": "渤海成王",
         "name": "大華璵",
@@ -2791,7 +2791,7 @@
     },
     {
         "id": 352,
-        "dynasty_id": 65,
+        "dynasty_id": 77,
         "dynasty_name": "渤海",
         "title": "渤海康王",
         "name": "大嵩璘",
@@ -2800,7 +2800,7 @@
     },
     {
         "id": 353,
-        "dynasty_id": 65,
+        "dynasty_id": 77,
         "dynasty_name": "渤海",
         "title": "渤海定王",
         "name": "大元瑜",
@@ -2809,7 +2809,7 @@
     },
     {
         "id": 354,
-        "dynasty_id": 65,
+        "dynasty_id": 77,
         "dynasty_name": "渤海",
         "title": "渤海僖王",
         "name": "大言義",
@@ -2818,7 +2818,7 @@
     },
     {
         "id": 355,
-        "dynasty_id": 65,
+        "dynasty_id": 77,
         "dynasty_name": "渤海",
         "title": "渤海簡王",
         "name": "大明忠",
@@ -2827,7 +2827,7 @@
     },
     {
         "id": 356,
-        "dynasty_id": 65,
+        "dynasty_id": 77,
         "dynasty_name": "渤海",
         "title": "渤海宣王",
         "name": "大仁秀",
@@ -2836,7 +2836,7 @@
     },
     {
         "id": 357,
-        "dynasty_id": 65,
+        "dynasty_id": 77,
         "dynasty_name": "渤海",
         "name": "大彝震",
         "first_regnal_year": "830年",
@@ -2844,7 +2844,7 @@
     },
     {
         "id": 358,
-        "dynasty_id": 65,
+        "dynasty_id": 77,
         "dynasty_name": "渤海",
         "name": "大虔晃",
         "first_regnal_year": "857年",
@@ -2852,7 +2852,7 @@
     },
     {
         "id": 359,
-        "dynasty_id": 65,
+        "dynasty_id": 77,
         "dynasty_name": "渤海",
         "name": "大玄錫",
         "first_regnal_year": "871年",
@@ -2860,7 +2860,7 @@
     },
     {
         "id": 360,
-        "dynasty_id": 65,
+        "dynasty_id": 77,
         "dynasty_name": "渤海",
         "name": "大瑋瑎",
         "first_regnal_year": "893年",
@@ -2868,7 +2868,7 @@
     },
     {
         "id": 361,
-        "dynasty_id": 65,
+        "dynasty_id": 77,
         "dynasty_name": "渤海",
         "name": "大諲譔",
         "first_regnal_year": "906年",
@@ -2876,7 +2876,7 @@
     },
     {
         "id": 362,
-        "dynasty_id": 66,
+        "dynasty_id": 78,
         "dynasty_name": "東丹",
         "name": "耶律倍",
         "first_regnal_year": "926年",
@@ -2884,7 +2884,7 @@
     },
     {
         "id": 363,
-        "dynasty_id": 68,
+        "dynasty_id": 80,
         "dynasty_name": "南詔",
         "name": "閣羅鳳",
         "first_regnal_year": "748年",
@@ -2892,7 +2892,7 @@
     },
     {
         "id": 364,
-        "dynasty_id": 68,
+        "dynasty_id": 80,
         "dynasty_name": "南詔",
         "name": "異牟尋",
         "first_regnal_year": "779年",
@@ -2900,7 +2900,7 @@
     },
     {
         "id": 365,
-        "dynasty_id": 68,
+        "dynasty_id": 80,
         "dynasty_name": "南詔",
         "name": "尋閣勸",
         "first_regnal_year": "808年",
@@ -2908,7 +2908,7 @@
     },
     {
         "id": 366,
-        "dynasty_id": 68,
+        "dynasty_id": 80,
         "dynasty_name": "南詔",
         "name": "勸龍晟",
         "first_regnal_year": "809年",
@@ -2916,7 +2916,7 @@
     },
     {
         "id": 367,
-        "dynasty_id": 68,
+        "dynasty_id": 80,
         "dynasty_name": "南詔",
         "name": "勸利晟",
         "first_regnal_year": "816年",
@@ -2924,7 +2924,7 @@
     },
     {
         "id": 368,
-        "dynasty_id": 68,
+        "dynasty_id": 80,
         "dynasty_name": "南詔",
         "name": "勸豐祐",
         "first_regnal_year": "823年",
@@ -2932,7 +2932,7 @@
     },
     {
         "id": 369,
-        "dynasty_id": 68,
+        "dynasty_id": 80,
         "dynasty_name": "南詔",
         "name": "世隆",
         "first_regnal_year": "859年",
@@ -2940,7 +2940,7 @@
     },
     {
         "id": 370,
-        "dynasty_id": 68,
+        "dynasty_id": 80,
         "dynasty_name": "南詔",
         "name": "隆舜",
         "first_regnal_year": "877年",
@@ -2948,7 +2948,7 @@
     },
     {
         "id": 371,
-        "dynasty_id": 68,
+        "dynasty_id": 80,
         "dynasty_name": "南詔",
         "name": "舜化貞",
         "first_regnal_year": "897年",
@@ -2956,7 +2956,7 @@
     },
     {
         "id": 372,
-        "dynasty_id": 69,
+        "dynasty_id": 81,
         "dynasty_name": "大長和",
         "name": "鄭買嗣",
         "first_regnal_year": "902年",
@@ -2964,7 +2964,7 @@
     },
     {
         "id": 373,
-        "dynasty_id": 69,
+        "dynasty_id": 81,
         "dynasty_name": "大長和",
         "name": "鄭仁旻",
         "first_regnal_year": "909年",
@@ -2972,7 +2972,7 @@
     },
     {
         "id": 374,
-        "dynasty_id": 69,
+        "dynasty_id": 81,
         "dynasty_name": "大長和",
         "name": "鄭隆亶",
         "first_regnal_year": "926年",
@@ -2980,7 +2980,7 @@
     },
     {
         "id": 375,
-        "dynasty_id": 70,
+        "dynasty_id": 82,
         "dynasty_name": "大天興",
         "name": "趙善政",
         "first_regnal_year": "928年",
@@ -2988,7 +2988,7 @@
     },
     {
         "id": 376,
-        "dynasty_id": 71,
+        "dynasty_id": 83,
         "dynasty_name": "大義寧",
         "name": "楊干貞",
         "first_regnal_year": "929年",
@@ -2996,7 +2996,7 @@
     },
     {
         "id": 377,
-        "dynasty_id": 72,
+        "dynasty_id": 84,
         "dynasty_name": "大理",
         "title": "大理太祖",
         "name": "段思平",
@@ -3005,7 +3005,7 @@
     },
     {
         "id": 378,
-        "dynasty_id": 72,
+        "dynasty_id": 84,
         "dynasty_name": "大理",
         "title": "大理文經帝",
         "name": "段思英",
@@ -3014,7 +3014,7 @@
     },
     {
         "id": 379,
-        "dynasty_id": 72,
+        "dynasty_id": 84,
         "dynasty_name": "大理",
         "title": "大理聖慈帝",
         "name": "段思良",
@@ -3023,7 +3023,7 @@
     },
     {
         "id": 380,
-        "dynasty_id": 72,
+        "dynasty_id": 84,
         "dynasty_name": "大理",
         "title": "大理廣慈帝",
         "name": "段思聰",
@@ -3032,7 +3032,7 @@
     },
     {
         "id": 381,
-        "dynasty_id": 72,
+        "dynasty_id": 84,
         "dynasty_name": "大理",
         "title": "大理應道帝",
         "name": "段素順",
@@ -3041,7 +3041,7 @@
     },
     {
         "id": 382,
-        "dynasty_id": 72,
+        "dynasty_id": 84,
         "dynasty_name": "大理",
         "title": "大理昭明帝",
         "name": "段素英",
@@ -3050,7 +3050,7 @@
     },
     {
         "id": 383,
-        "dynasty_id": 72,
+        "dynasty_id": 84,
         "dynasty_name": "大理",
         "title": "大理宣肅帝",
         "name": "段素廉",
@@ -3059,7 +3059,7 @@
     },
     {
         "id": 384,
-        "dynasty_id": 72,
+        "dynasty_id": 84,
         "dynasty_name": "大理",
         "title": "大理秉義帝",
         "name": "段素隆",
@@ -3068,7 +3068,7 @@
     },
     {
         "id": 385,
-        "dynasty_id": 72,
+        "dynasty_id": 84,
         "dynasty_name": "大理",
         "title": "大理聖德帝",
         "name": "段素真",
@@ -3077,7 +3077,7 @@
     },
     {
         "id": 386,
-        "dynasty_id": 72,
+        "dynasty_id": 84,
         "dynasty_name": "大理",
         "title": "大理天明帝",
         "name": "段素興",
@@ -3086,7 +3086,7 @@
     },
     {
         "id": 387,
-        "dynasty_id": 72,
+        "dynasty_id": 84,
         "dynasty_name": "大理",
         "title": "大理世宗",
         "name": "段思廉",
@@ -3095,7 +3095,7 @@
     },
     {
         "id": 388,
-        "dynasty_id": 72,
+        "dynasty_id": 84,
         "dynasty_name": "大理",
         "title": "大理上德帝",
         "name": "段廉義",
@@ -3104,7 +3104,7 @@
     },
     {
         "id": 389,
-        "dynasty_id": 72,
+        "dynasty_id": 84,
         "dynasty_name": "大理",
         "title": "大理上明帝",
         "name": "段壽輝",
@@ -3113,7 +3113,7 @@
     },
     {
         "id": 390,
-        "dynasty_id": 72,
+        "dynasty_id": 84,
         "dynasty_name": "大理",
         "title": "大理保定帝",
         "name": "段正明",
@@ -3122,7 +3122,7 @@
     },
     {
         "id": 391,
-        "dynasty_id": 73,
+        "dynasty_id": 85,
         "dynasty_name": "大中",
         "name": "高升泰",
         "first_regnal_year": "1094年",
@@ -3130,7 +3130,7 @@
     },
     {
         "id": 392,
-        "dynasty_id": 74,
+        "dynasty_id": 86,
         "dynasty_name": "後大理",
         "title": "大理中宗",
         "name": "段正淳",
@@ -3139,7 +3139,7 @@
     },
     {
         "id": 393,
-        "dynasty_id": 74,
+        "dynasty_id": 86,
         "dynasty_name": "後大理",
         "title": "大理憲宗",
         "name": "段正嚴",
@@ -3148,7 +3148,7 @@
     },
     {
         "id": 394,
-        "dynasty_id": 74,
+        "dynasty_id": 86,
         "dynasty_name": "後大理",
         "title": "大理景宗",
         "name": "段正興",
@@ -3157,7 +3157,7 @@
     },
     {
         "id": 395,
-        "dynasty_id": 74,
+        "dynasty_id": 86,
         "dynasty_name": "後大理",
         "title": "大理宣宗",
         "name": "段智興",
@@ -3166,7 +3166,7 @@
     },
     {
         "id": 396,
-        "dynasty_id": 74,
+        "dynasty_id": 86,
         "dynasty_name": "後大理",
         "title": "大理亨天帝",
         "name": "段智廉",
@@ -3175,7 +3175,7 @@
     },
     {
         "id": 397,
-        "dynasty_id": 74,
+        "dynasty_id": 86,
         "dynasty_name": "後大理",
         "title": "大理神宗",
         "name": "段智祥",
@@ -3184,7 +3184,7 @@
     },
     {
         "id": 398,
-        "dynasty_id": 74,
+        "dynasty_id": 86,
         "dynasty_name": "後大理",
         "title": "大理孝義帝",
         "name": "段祥興",
@@ -3193,7 +3193,7 @@
     },
     {
         "id": 399,
-        "dynasty_id": 74,
+        "dynasty_id": 86,
         "dynasty_name": "後大理",
         "name": "大理天定賢王段興智",
         "first_regnal_year": "1251年",
@@ -3201,37 +3201,37 @@
     },
     {
         "id": 400,
-        "dynasty_id": 111,
+        "dynasty_id": 124,
         "dynasty_name": "其他",
         "name": "段思曠"
     },
     {
         "id": 401,
-        "dynasty_id": 111,
+        "dynasty_id": 124,
         "dynasty_name": "其他",
         "name": "高貞明"
     },
     {
         "id": 402,
-        "dynasty_id": 111,
+        "dynasty_id": 124,
         "dynasty_name": "其他",
         "name": "高妙音護"
     },
     {
         "id": 403,
-        "dynasty_id": 111,
+        "dynasty_id": 124,
         "dynasty_name": "其他",
         "name": "楊義貞"
     },
     {
         "id": 404,
-        "dynasty_id": 111,
+        "dynasty_id": 124,
         "dynasty_name": "其他",
         "name": "？"
     },
     {
         "id": 405,
-        "dynasty_id": 75,
+        "dynasty_id": 87,
         "dynasty_name": "後梁",
         "title": "梁太祖",
         "name": "朱溫",
@@ -3240,7 +3240,7 @@
     },
     {
         "id": 406,
-        "dynasty_id": 75,
+        "dynasty_id": 87,
         "dynasty_name": "後梁",
         "title": "梁郢王",
         "name": "朱友珪",
@@ -3249,7 +3249,7 @@
     },
     {
         "id": 407,
-        "dynasty_id": 75,
+        "dynasty_id": 87,
         "dynasty_name": "後梁",
         "title": "梁末帝",
         "name": "朱友貞",
@@ -3258,25 +3258,25 @@
     },
     {
         "id": 408,
-        "dynasty_id": 111,
+        "dynasty_id": 124,
         "dynasty_name": "其他",
         "name": "李茂貞"
     },
     {
         "id": 409,
-        "dynasty_id": 111,
+        "dynasty_id": 124,
         "dynasty_name": "其他",
         "name": "張承奉"
     },
     {
         "id": 410,
-        "dynasty_id": 76,
+        "dynasty_id": 88,
         "dynasty_name": "大燕",
         "name": "劉守光"
     },
     {
         "id": 411,
-        "dynasty_id": 77,
+        "dynasty_id": 89,
         "dynasty_name": "河東",
         "name": "李克用",
         "first_regnal_year": "907年",
@@ -3284,7 +3284,7 @@
     },
     {
         "id": 412,
-        "dynasty_id": 77,
+        "dynasty_id": 89,
         "dynasty_name": "河東",
         "name": "李存勖",
         "first_regnal_year": "908年",
@@ -3292,7 +3292,7 @@
     },
     {
         "id": 413,
-        "dynasty_id": 78,
+        "dynasty_id": 90,
         "dynasty_name": "後唐",
         "title": "唐莊宗",
         "name": "李存勖",
@@ -3301,7 +3301,7 @@
     },
     {
         "id": 414,
-        "dynasty_id": 78,
+        "dynasty_id": 90,
         "dynasty_name": "後唐",
         "title": "唐明宗",
         "name": "李嗣源",
@@ -3310,7 +3310,7 @@
     },
     {
         "id": 415,
-        "dynasty_id": 78,
+        "dynasty_id": 90,
         "dynasty_name": "後唐",
         "title": "唐閔帝",
         "name": "李從厚",
@@ -3319,7 +3319,7 @@
     },
     {
         "id": 416,
-        "dynasty_id": 78,
+        "dynasty_id": 90,
         "dynasty_name": "後唐",
         "title": "唐末帝",
         "name": "李從珂",
@@ -3328,7 +3328,7 @@
     },
     {
         "id": 417,
-        "dynasty_id": 79,
+        "dynasty_id": 91,
         "dynasty_name": "後晉",
         "title": "晉高祖",
         "name": "石敬瑭",
@@ -3337,7 +3337,7 @@
     },
     {
         "id": 418,
-        "dynasty_id": 79,
+        "dynasty_id": 91,
         "dynasty_name": "後晉",
         "title": "晉出帝",
         "name": "石重貴",
@@ -3346,13 +3346,13 @@
     },
     {
         "id": 419,
-        "dynasty_id": 111,
+        "dynasty_id": 124,
         "dynasty_name": "其他",
         "name": "劉知遠"
     },
     {
         "id": 420,
-        "dynasty_id": 80,
+        "dynasty_id": 92,
         "dynasty_name": "後漢",
         "title": "漢高祖",
         "name": "劉知遠",
@@ -3363,14 +3363,14 @@
         "id": 421,
         "title": "漢隱帝",
         "name": "劉承祐",
-        "dynasty_id": 80,
+        "dynasty_id": 92,
         "dynasty_name": "後漢",
         "first_regnal_year": "948年",
         "final_regnal_year": "951年"
     },
     {
         "id": 422,
-        "dynasty_id": 81,
+        "dynasty_id": 93,
         "dynasty_name": "後周",
         "title": "周太祖",
         "name": "郭威",
@@ -3379,7 +3379,7 @@
     },
     {
         "id": 423,
-        "dynasty_id": 82,
+        "dynasty_id": 94,
         "dynasty_name": "吳",
         "title": "吳烈祖",
         "name": "楊渥",
@@ -3388,7 +3388,7 @@
     },
     {
         "id": 424,
-        "dynasty_id": 82,
+        "dynasty_id": 94,
         "dynasty_name": "吳",
         "title": "吳高祖",
         "name": "楊隆演",
@@ -3397,7 +3397,7 @@
     },
     {
         "id": 425,
-        "dynasty_id": 82,
+        "dynasty_id": 94,
         "dynasty_name": "吳",
         "title": "吳睿帝",
         "name": "楊溥",
@@ -3406,7 +3406,7 @@
     },
     {
         "id": 426,
-        "dynasty_id": 83,
+        "dynasty_id": 95,
         "dynasty_name": "南唐",
         "title": "唐烈祖",
         "name": "李昪",
@@ -3415,7 +3415,7 @@
     },
     {
         "id": 427,
-        "dynasty_id": 83,
+        "dynasty_id": 95,
         "dynasty_name": "南唐",
         "title": "唐元宗",
         "name": "李璟",
@@ -3424,7 +3424,7 @@
     },
     {
         "id": 428,
-        "dynasty_id": 83,
+        "dynasty_id": 95,
         "dynasty_name": "南唐",
         "title": "唐後主",
         "name": "李煜",
@@ -3433,7 +3433,7 @@
     },
     {
         "id": 429,
-        "dynasty_id": 84,
+        "dynasty_id": 96,
         "dynasty_name": "吳越",
         "title": "吳越太祖",
         "name": "錢鏐",
@@ -3442,7 +3442,7 @@
     },
     {
         "id": 430,
-        "dynasty_id": 84,
+        "dynasty_id": 96,
         "dynasty_name": "吳越",
         "title": "吳越世宗",
         "name": "錢元瓘",
@@ -3451,7 +3451,7 @@
     },
     {
         "id": 431,
-        "dynasty_id": 84,
+        "dynasty_id": 96,
         "dynasty_name": "吳越",
         "title": "吳越成宗",
         "name": "錢弘佐",
@@ -3460,7 +3460,7 @@
     },
     {
         "id": 432,
-        "dynasty_id": 84,
+        "dynasty_id": 96,
         "dynasty_name": "吳越",
         "name": "吳越忠遜王錢弘倧",
         "first_regnal_year": "947年",
@@ -3468,7 +3468,7 @@
     },
     {
         "id": 433,
-        "dynasty_id": 84,
+        "dynasty_id": 96,
         "dynasty_name": "吳越",
         "name": "吳越忠懿王錢弘俶",
         "first_regnal_year": "948年",
@@ -3476,7 +3476,7 @@
     },
     {
         "id": 434,
-        "dynasty_id": 85,
+        "dynasty_id": 97,
         "dynasty_name": "楚",
         "title": "楚武穆王",
         "name": "馬殷",
@@ -3485,7 +3485,7 @@
     },
     {
         "id": 435,
-        "dynasty_id": 85,
+        "dynasty_id": 97,
         "dynasty_name": "楚",
         "title": "楚衡陽王",
         "name": "馬希聲",
@@ -3494,7 +3494,7 @@
     },
     {
         "id": 436,
-        "dynasty_id": 85,
+        "dynasty_id": 97,
         "dynasty_name": "楚",
         "title": "楚文昭王",
         "name": "馬希範",
@@ -3503,7 +3503,7 @@
     },
     {
         "id": 437,
-        "dynasty_id": 85,
+        "dynasty_id": 97,
         "dynasty_name": "楚",
         "title": "楚廢王",
         "name": "馬希廣",
@@ -3512,7 +3512,7 @@
     },
     {
         "id": 438,
-        "dynasty_id": 85,
+        "dynasty_id": 97,
         "dynasty_name": "楚",
         "title": "楚恭孝王",
         "name": "馬希萼",
@@ -3521,7 +3521,7 @@
     },
     {
         "id": 439,
-        "dynasty_id": 86,
+        "dynasty_id": 98,
         "dynasty_name": "閩",
         "title": "閩太祖",
         "name": "王審知",
@@ -3530,7 +3530,7 @@
     },
     {
         "id": 440,
-        "dynasty_id": 86,
+        "dynasty_id": 98,
         "dynasty_name": "閩",
         "title": "閩嗣王",
         "name": "王延翰",
@@ -3539,7 +3539,7 @@
     },
     {
         "id": 441,
-        "dynasty_id": 86,
+        "dynasty_id": 98,
         "dynasty_name": "閩",
         "title": "閩惠宗",
         "name": "王延鈞",
@@ -3548,7 +3548,7 @@
     },
     {
         "id": 442,
-        "dynasty_id": 86,
+        "dynasty_id": 98,
         "dynasty_name": "閩",
         "title": "閩康宗",
         "name": "王繼鵬",
@@ -3557,7 +3557,7 @@
     },
     {
         "id": 443,
-        "dynasty_id": 86,
+        "dynasty_id": 98,
         "dynasty_name": "閩",
         "title": "閩景宗",
         "name": "王延羲",
@@ -3566,7 +3566,7 @@
     },
     {
         "id": 444,
-        "dynasty_id": 86,
+        "dynasty_id": 98,
         "dynasty_name": "閩",
         "title": "閩天德帝",
         "name": "王延政",
@@ -3575,25 +3575,25 @@
     },
     {
         "id": 445,
-        "dynasty_id": 111,
+        "dynasty_id": 124,
         "dynasty_name": "其他",
         "name": "朱文進"
     },
     {
         "id": 446,
-        "dynasty_id": 111,
+        "dynasty_id": 124,
         "dynasty_name": "其他",
         "name": "卓儼明"
     },
     {
         "id": 447,
-        "dynasty_id": 111,
+        "dynasty_id": 124,
         "dynasty_name": "其他",
         "name": "李仁達"
     },
     {
         "id": 448,
-        "dynasty_id": 87,
+        "dynasty_id": 99,
         "dynasty_name": "南漢",
         "title": "漢高祖",
         "name": "劉龑",
@@ -3602,7 +3602,7 @@
     },
     {
         "id": 449,
-        "dynasty_id": 87,
+        "dynasty_id": 99,
         "dynasty_name": "南漢",
         "title": "漢殤帝",
         "name": "劉玢",
@@ -3611,7 +3611,7 @@
     },
     {
         "id": 450,
-        "dynasty_id": 87,
+        "dynasty_id": 99,
         "dynasty_name": "南漢",
         "title": "漢中宗",
         "name": "劉晟",
@@ -3620,7 +3620,7 @@
     },
     {
         "id": 451,
-        "dynasty_id": 87,
+        "dynasty_id": 99,
         "dynasty_name": "南漢",
         "title": "漢後主",
         "name": "劉鋹",
@@ -3629,19 +3629,19 @@
     },
     {
         "id": 452,
-        "dynasty_id": 111,
+        "dynasty_id": 124,
         "dynasty_name": "其他",
         "name": "劉隱"
     },
     {
         "id": 453,
-        "dynasty_id": 111,
+        "dynasty_id": 124,
         "dynasty_name": "其他",
         "name": "張遇賢"
     },
     {
         "id": 454,
-        "dynasty_id": 88,
+        "dynasty_id": 100,
         "dynasty_name": "前蜀",
         "title": "蜀高祖",
         "name": "王建",
@@ -3650,7 +3650,7 @@
     },
     {
         "id": 455,
-        "dynasty_id": 88,
+        "dynasty_id": 100,
         "dynasty_name": "前蜀",
         "title": "蜀後主",
         "name": "王衍",
@@ -3659,7 +3659,7 @@
     },
     {
         "id": 456,
-        "dynasty_id": 89,
+        "dynasty_id": 101,
         "dynasty_name": "後蜀",
         "title": "蜀高祖",
         "name": "孟知祥",
@@ -3668,7 +3668,7 @@
     },
     {
         "id": 457,
-        "dynasty_id": 89,
+        "dynasty_id": 101,
         "dynasty_name": "後蜀",
         "title": "蜀後主",
         "name": "孟昶",
@@ -3677,7 +3677,7 @@
     },
     {
         "id": 458,
-        "dynasty_id": 90,
+        "dynasty_id": 102,
         "dynasty_name": "荊南",
         "title": "楚武信王",
         "name": "高季興",
@@ -3686,7 +3686,7 @@
     },
     {
         "id": 459,
-        "dynasty_id": 90,
+        "dynasty_id": 102,
         "dynasty_name": "荊南",
         "name": "南平文獻王高從誨",
         "first_regnal_year": "928年",
@@ -3694,7 +3694,7 @@
     },
     {
         "id": 460,
-        "dynasty_id": 90,
+        "dynasty_id": 102,
         "dynasty_name": "荊南",
         "name": "南平貞懿王高保融",
         "first_regnal_year": "948年",
@@ -3702,7 +3702,7 @@
     },
     {
         "id": 461,
-        "dynasty_id": 90,
+        "dynasty_id": 102,
         "dynasty_name": "荊南",
         "name": "高保勗",
         "first_regnal_year": "960年",
@@ -3710,7 +3710,7 @@
     },
     {
         "id": 462,
-        "dynasty_id": 90,
+        "dynasty_id": 102,
         "dynasty_name": "荊南",
         "name": "高繼沖",
         "first_regnal_year": "962年",
@@ -3718,7 +3718,7 @@
     },
     {
         "id": 463,
-        "dynasty_id": 91,
+        "dynasty_id": 103,
         "dynasty_name": "北漢",
         "title": "漢世祖",
         "name": "劉旻",
@@ -3727,7 +3727,7 @@
     },
     {
         "id": 464,
-        "dynasty_id": 91,
+        "dynasty_id": 103,
         "dynasty_name": "北漢",
         "title": "漢睿宗",
         "name": "劉鈞",
@@ -3736,7 +3736,7 @@
     },
     {
         "id": 465,
-        "dynasty_id": 91,
+        "dynasty_id": 103,
         "dynasty_name": "北漢",
         "title": "漢英武帝",
         "name": "劉繼元",
@@ -3745,7 +3745,7 @@
     },
     {
         "id": 466,
-        "dynasty_id": 92,
+        "dynasty_id": 104,
         "dynasty_name": "北宋",
         "title": "宋太祖",
         "name": "趙匡胤",
@@ -3754,7 +3754,7 @@
     },
     {
         "id": 467,
-        "dynasty_id": 92,
+        "dynasty_id": 104,
         "dynasty_name": "北宋",
         "title": "宋太宗",
         "name": "趙光義",
@@ -3763,7 +3763,7 @@
     },
     {
         "id": 468,
-        "dynasty_id": 92,
+        "dynasty_id": 104,
         "dynasty_name": "北宋",
         "title": "宋真宗",
         "name": "趙恆",
@@ -3772,7 +3772,7 @@
     },
     {
         "id": 469,
-        "dynasty_id": 92,
+        "dynasty_id": 104,
         "dynasty_name": "北宋",
         "title": "宋仁宗",
         "name": "趙禎",
@@ -3781,7 +3781,7 @@
     },
     {
         "id": 470,
-        "dynasty_id": 92,
+        "dynasty_id": 104,
         "dynasty_name": "北宋",
         "title": "宋英宗",
         "name": "趙曙",
@@ -3790,7 +3790,7 @@
     },
     {
         "id": 471,
-        "dynasty_id": 92,
+        "dynasty_id": 104,
         "dynasty_name": "北宋",
         "title": "宋神宗",
         "name": "趙頊",
@@ -3799,7 +3799,7 @@
     },
     {
         "id": 472,
-        "dynasty_id": 92,
+        "dynasty_id": 104,
         "dynasty_name": "北宋",
         "title": "宋哲宗",
         "name": "趙煦",
@@ -3808,7 +3808,7 @@
     },
     {
         "id": 473,
-        "dynasty_id": 92,
+        "dynasty_id": 104,
         "dynasty_name": "北宋",
         "title": "宋徽宗",
         "name": "趙佶",
@@ -3817,7 +3817,7 @@
     },
     {
         "id": 474,
-        "dynasty_id": 92,
+        "dynasty_id": 104,
         "dynasty_name": "北宋",
         "title": "宋欽宗",
         "name": "趙桓",
@@ -3826,55 +3826,55 @@
     },
     {
         "id": 475,
-        "dynasty_id": 111,
+        "dynasty_id": 124,
         "dynasty_name": "其他",
         "name": "李順"
     },
     {
         "id": 476,
-        "dynasty_id": 111,
+        "dynasty_id": 124,
         "dynasty_name": "其他",
         "name": "王均"
     },
     {
         "id": 477,
-        "dynasty_id": 111,
+        "dynasty_id": 124,
         "dynasty_name": "其他",
         "name": "王倫"
     },
     {
         "id": 478,
-        "dynasty_id": 111,
+        "dynasty_id": 124,
         "dynasty_name": "其他",
         "name": "王則"
     },
     {
         "id": 479,
-        "dynasty_id": 111,
+        "dynasty_id": 124,
         "dynasty_name": "其他",
         "name": "儂智高"
     },
     {
         "id": 480,
-        "dynasty_id": 111,
+        "dynasty_id": 124,
         "dynasty_name": "其他",
         "name": "趙諗"
     },
     {
         "id": 481,
-        "dynasty_id": 111,
+        "dynasty_id": 124,
         "dynasty_name": "其他",
         "name": "方臘"
     },
     {
         "id": 482,
-        "dynasty_id": 111,
+        "dynasty_id": 124,
         "dynasty_name": "其他",
         "name": "？"
     },
     {
         "id": 483,
-        "dynasty_id": 93,
+        "dynasty_id": 105,
         "dynasty_name": "南宋",
         "title": "宋高宗",
         "name": "趙構",
@@ -3883,7 +3883,7 @@
     },
     {
         "id": 484,
-        "dynasty_id": 93,
+        "dynasty_id": 105,
         "dynasty_name": "南宋",
         "title": "宋孝宗",
         "name": "趙昚",
@@ -3892,7 +3892,7 @@
     },
     {
         "id": 485,
-        "dynasty_id": 93,
+        "dynasty_id": 105,
         "dynasty_name": "南宋",
         "title": "宋光宗",
         "name": "趙惇",
@@ -3901,7 +3901,7 @@
     },
     {
         "id": 486,
-        "dynasty_id": 93,
+        "dynasty_id": 105,
         "dynasty_name": "南宋",
         "title": "宋寧宗",
         "name": "趙擴",
@@ -3910,7 +3910,7 @@
     },
     {
         "id": 487,
-        "dynasty_id": 93,
+        "dynasty_id": 105,
         "dynasty_name": "南宋",
         "title": "宋理宗",
         "name": "趙昀",
@@ -3919,7 +3919,7 @@
     },
     {
         "id": 488,
-        "dynasty_id": 93,
+        "dynasty_id": 105,
         "dynasty_name": "南宋",
         "title": "宋度宗",
         "name": "趙禥",
@@ -3928,7 +3928,7 @@
     },
     {
         "id": 489,
-        "dynasty_id": 93,
+        "dynasty_id": 105,
         "dynasty_name": "南宋",
         "title": "宋恭帝",
         "name": "趙㬎",
@@ -3937,7 +3937,7 @@
     },
     {
         "id": 490,
-        "dynasty_id": 93,
+        "dynasty_id": 105,
         "dynasty_name": "南宋",
         "title": "宋端宗",
         "name": "趙昰",
@@ -3946,7 +3946,7 @@
     },
     {
         "id": 491,
-        "dynasty_id": 93,
+        "dynasty_id": 105,
         "dynasty_name": "南宋",
         "title": "宋少帝",
         "name": "趙昺",
@@ -3955,97 +3955,97 @@
     },
     {
         "id": 492,
-        "dynasty_id": 111,
+        "dynasty_id": 124,
         "dynasty_name": "其他",
         "name": "趙旉"
     },
     {
         "id": 493,
-        "dynasty_id": 111,
+        "dynasty_id": 124,
         "dynasty_name": "其他",
         "name": "鍾相"
     },
     {
         "id": 494,
-        "dynasty_id": 111,
+        "dynasty_id": 124,
         "dynasty_name": "其他",
         "name": "陳萬"
     },
     {
         "id": 495,
-        "dynasty_id": 111,
+        "dynasty_id": 124,
         "dynasty_name": "其他",
         "name": "李合戎、雷進"
     },
     {
         "id": 496,
-        "dynasty_id": 111,
+        "dynasty_id": 124,
         "dynasty_name": "其他",
         "name": "雷進"
     },
     {
         "id": 497,
-        "dynasty_id": 111,
+        "dynasty_id": 124,
         "dynasty_name": "其他",
         "name": "李婆備"
     },
     {
         "id": 498,
-        "dynasty_id": 111,
+        "dynasty_id": 124,
         "dynasty_name": "其他",
         "name": "劉豫"
     },
     {
         "id": 499,
-        "dynasty_id": 111,
+        "dynasty_id": 124,
         "dynasty_name": "其他",
         "name": "楊么"
     },
     {
         "id": 500,
-        "dynasty_id": 111,
+        "dynasty_id": 124,
         "dynasty_name": "其他",
         "name": "王法恩"
     },
     {
         "id": 501,
-        "dynasty_id": 111,
+        "dynasty_id": 124,
         "dynasty_name": "其他",
         "name": "阿謝"
     },
     {
         "id": 502,
-        "dynasty_id": 111,
+        "dynasty_id": 124,
         "dynasty_name": "其他",
         "name": "李接"
     },
     {
         "id": 503,
-        "dynasty_id": 111,
+        "dynasty_id": 124,
         "dynasty_name": "其他",
         "name": "吳曦"
     },
     {
         "id": 504,
-        "dynasty_id": 111,
+        "dynasty_id": 124,
         "dynasty_name": "其他",
         "name": "廖森"
     },
     {
         "id": 505,
-        "dynasty_id": 111,
+        "dynasty_id": 124,
         "dynasty_name": "其他",
         "name": "李子揚"
     },
     {
         "id": 506,
-        "dynasty_id": 111,
+        "dynasty_id": 124,
         "dynasty_name": "其他",
         "name": "徐真一"
     },
     {
         "id": 507,
-        "dynasty_id": 94,
+        "dynasty_id": 106,
         "dynasty_name": "遼",
         "title": "遼太祖",
         "name": "耶律億",
@@ -4054,7 +4054,7 @@
     },
     {
         "id": 508,
-        "dynasty_id": 94,
+        "dynasty_id": 106,
         "dynasty_name": "遼",
         "title": "遼太宗",
         "name": "耶律德光",
@@ -4063,7 +4063,7 @@
     },
     {
         "id": 509,
-        "dynasty_id": 94,
+        "dynasty_id": 106,
         "dynasty_name": "遼",
         "title": "遼世宗",
         "name": "耶律阮",
@@ -4072,7 +4072,7 @@
     },
     {
         "id": 510,
-        "dynasty_id": 94,
+        "dynasty_id": 106,
         "dynasty_name": "遼",
         "title": "遼穆宗",
         "name": "耶律璟",
@@ -4081,7 +4081,7 @@
     },
     {
         "id": 511,
-        "dynasty_id": 94,
+        "dynasty_id": 106,
         "dynasty_name": "遼",
         "title": "遼景宗",
         "name": "耶律賢",
@@ -4090,7 +4090,7 @@
     },
     {
         "id": 512,
-        "dynasty_id": 94,
+        "dynasty_id": 106,
         "dynasty_name": "遼",
         "title": "遼聖宗",
         "name": "耶律隆緒",
@@ -4099,7 +4099,7 @@
     },
     {
         "id": 513,
-        "dynasty_id": 94,
+        "dynasty_id": 106,
         "dynasty_name": "遼",
         "title": "遼興宗",
         "name": "耶律宗真",
@@ -4108,7 +4108,7 @@
     },
     {
         "id": 514,
-        "dynasty_id": 94,
+        "dynasty_id": 106,
         "dynasty_name": "遼",
         "title": "遼道宗",
         "name": "耶律洪基",
@@ -4117,7 +4117,7 @@
     },
     {
         "id": 515,
-        "dynasty_id": 94,
+        "dynasty_id": 106,
         "dynasty_name": "遼",
         "title": "遼天祚帝",
         "name": "耶律延禧",
@@ -4126,7 +4126,7 @@
     },
     {
         "id": 516,
-        "dynasty_id": 95,
+        "dynasty_id": 107,
         "dynasty_name": "北遼",
         "title": "遼宣宗",
         "name": "耶律淳",
@@ -4135,7 +4135,7 @@
     },
     {
         "id": 517,
-        "dynasty_id": 95,
+        "dynasty_id": 107,
         "dynasty_name": "北遼",
         "name": "遼德妃蕭普賢女",
         "first_regnal_year": "1122年",
@@ -4143,7 +4143,7 @@
     },
     {
         "id": 518,
-        "dynasty_id": 96,
+        "dynasty_id": 108,
         "dynasty_name": "西北遼",
         "title": "遼梁王",
         "name": "耶律雅里",
@@ -4152,31 +4152,31 @@
     },
     {
         "id": 519,
-        "dynasty_id": 111,
+        "dynasty_id": 124,
         "dynasty_name": "其他",
         "name": "大延琳"
     },
     {
         "id": 520,
-        "dynasty_id": 111,
+        "dynasty_id": 124,
         "dynasty_name": "其他",
         "name": "高永昌"
     },
     {
         "id": 521,
-        "dynasty_id": 111,
+        "dynasty_id": 124,
         "dynasty_name": "其他",
         "name": "回離保"
     },
     {
         "id": 522,
-        "dynasty_id": 111,
+        "dynasty_id": 124,
         "dynasty_name": "其他",
         "name": "蕭幹"
     },
     {
         "id": 523,
-        "dynasty_id": 97,
+        "dynasty_id": 109,
         "dynasty_name": "西遼",
         "title": "遼德宗",
         "name": "耶律大石",
@@ -4185,7 +4185,7 @@
     },
     {
         "id": 524,
-        "dynasty_id": 97,
+        "dynasty_id": 109,
         "dynasty_name": "西遼",
         "name": "遼感天后蕭塔不煙",
         "first_regnal_year": "1143年",
@@ -4193,7 +4193,7 @@
     },
     {
         "id": 525,
-        "dynasty_id": 97,
+        "dynasty_id": 109,
         "dynasty_name": "西遼",
         "title": "遼仁宗",
         "name": "耶律夷列",
@@ -4202,7 +4202,7 @@
     },
     {
         "id": 526,
-        "dynasty_id": 97,
+        "dynasty_id": 109,
         "dynasty_name": "西遼",
         "name": "遼承天后耶律普速完",
         "first_regnal_year": "1163年",
@@ -4210,7 +4210,7 @@
     },
     {
         "id": 527,
-        "dynasty_id": 97,
+        "dynasty_id": 109,
         "dynasty_name": "西遼",
         "title": "遼末主",
         "name": "耶律直魯古",
@@ -4219,7 +4219,7 @@
     },
     {
         "id": 528,
-        "dynasty_id": 98,
+        "dynasty_id": 110,
         "dynasty_name": "西夏",
         "title": "夏景宗",
         "name": "李元昊",
@@ -4228,7 +4228,7 @@
     },
     {
         "id": 529,
-        "dynasty_id": 98,
+        "dynasty_id": 110,
         "dynasty_name": "西夏",
         "title": "夏毅宗",
         "name": "李諒祚",
@@ -4237,7 +4237,7 @@
     },
     {
         "id": 530,
-        "dynasty_id": 98,
+        "dynasty_id": 110,
         "dynasty_name": "西夏",
         "title": "夏惠宗",
         "name": "李秉常",
@@ -4246,7 +4246,7 @@
     },
     {
         "id": 531,
-        "dynasty_id": 98,
+        "dynasty_id": 110,
         "dynasty_name": "西夏",
         "title": "夏崇宗",
         "name": "李乾順",
@@ -4255,7 +4255,7 @@
     },
     {
         "id": 532,
-        "dynasty_id": 98,
+        "dynasty_id": 110,
         "dynasty_name": "西夏",
         "title": "夏仁宗",
         "name": "李仁孝",
@@ -4264,7 +4264,7 @@
     },
     {
         "id": 533,
-        "dynasty_id": 98,
+        "dynasty_id": 110,
         "dynasty_name": "西夏",
         "title": "夏桓宗",
         "name": "李純祐",
@@ -4273,7 +4273,7 @@
     },
     {
         "id": 534,
-        "dynasty_id": 98,
+        "dynasty_id": 110,
         "dynasty_name": "西夏",
         "title": "夏襄宗",
         "name": "李安全",
@@ -4282,7 +4282,7 @@
     },
     {
         "id": 535,
-        "dynasty_id": 98,
+        "dynasty_id": 110,
         "dynasty_name": "西夏",
         "title": "夏神宗",
         "name": "李遵頊",
@@ -4291,7 +4291,7 @@
     },
     {
         "id": 536,
-        "dynasty_id": 98,
+        "dynasty_id": 110,
         "dynasty_name": "西夏",
         "title": "夏獻宗",
         "name": "李德旺",
@@ -4300,7 +4300,7 @@
     },
     {
         "id": 537,
-        "dynasty_id": 98,
+        "dynasty_id": 110,
         "dynasty_name": "西夏",
         "title": "夏末主",
         "name": "李睍",
@@ -4309,7 +4309,7 @@
     },
     {
         "id": 538,
-        "dynasty_id": 99,
+        "dynasty_id": 111,
         "dynasty_name": "金",
         "title": "金太祖",
         "name": "完顏旻",
@@ -4318,7 +4318,7 @@
     },
     {
         "id": 539,
-        "dynasty_id": 99,
+        "dynasty_id": 111,
         "dynasty_name": "金",
         "title": "金太宗",
         "name": "完顏晟",
@@ -4327,7 +4327,7 @@
     },
     {
         "id": 540,
-        "dynasty_id": 99,
+        "dynasty_id": 111,
         "dynasty_name": "金",
         "title": "金熙宗",
         "name": "完顏亶",
@@ -4336,7 +4336,7 @@
     },
     {
         "id": 541,
-        "dynasty_id": 99,
+        "dynasty_id": 111,
         "dynasty_name": "金",
         "title": "金海陵王",
         "name": "完顏亮",
@@ -4345,7 +4345,7 @@
     },
     {
         "id": 542,
-        "dynasty_id": 99,
+        "dynasty_id": 111,
         "dynasty_name": "金",
         "title": "金世宗",
         "name": "完顏雍",
@@ -4354,7 +4354,7 @@
     },
     {
         "id": 543,
-        "dynasty_id": 99,
+        "dynasty_id": 111,
         "dynasty_name": "金",
         "title": "金章宗",
         "name": "完顏璟",
@@ -4363,7 +4363,7 @@
     },
     {
         "id": 544,
-        "dynasty_id": 99,
+        "dynasty_id": 111,
         "dynasty_name": "金",
         "title": "金衛紹王",
         "name": "完顏永濟",
@@ -4372,7 +4372,7 @@
     },
     {
         "id": 545,
-        "dynasty_id": 99,
+        "dynasty_id": 111,
         "dynasty_name": "金",
         "title": "金宣宗",
         "name": "完顏珣",
@@ -4381,7 +4381,7 @@
     },
     {
         "id": 546,
-        "dynasty_id": 99,
+        "dynasty_id": 111,
         "dynasty_name": "金",
         "title": "金哀宗",
         "name": "完顏守緒",
@@ -4390,7 +4390,7 @@
     },
     {
         "id": 547,
-        "dynasty_id": 99,
+        "dynasty_id": 111,
         "dynasty_name": "金",
         "title": "金末帝",
         "name": "完顏承麟",
@@ -4399,103 +4399,103 @@
     },
     {
         "id": 548,
-        "dynasty_id": 111,
+        "dynasty_id": 124,
         "dynasty_name": "其他",
         "name": "熬羅孛極烈"
     },
     {
         "id": 549,
-        "dynasty_id": 111,
+        "dynasty_id": 124,
         "dynasty_name": "其他",
         "name": "？"
     },
     {
         "id": 550,
-        "dynasty_id": 111,
+        "dynasty_id": 124,
         "dynasty_name": "其他",
         "name": "完顏允文"
     },
     {
         "id": 551,
-        "dynasty_id": 111,
+        "dynasty_id": 124,
         "dynasty_name": "其他",
         "name": "？"
     },
     {
         "id": 552,
-        "dynasty_id": 111,
+        "dynasty_id": 124,
         "dynasty_name": "其他",
         "name": "移剌窩斡"
     },
     {
         "id": 553,
-        "dynasty_id": 111,
+        "dynasty_id": 124,
         "dynasty_name": "其他",
         "name": "耶律德壽"
     },
     {
         "id": 554,
-        "dynasty_id": 111,
+        "dynasty_id": 124,
         "dynasty_name": "其他",
         "name": "耶律留哥"
     },
     {
         "id": 555,
-        "dynasty_id": 111,
+        "dynasty_id": 124,
         "dynasty_name": "其他",
         "name": "劉永昌"
     },
     {
         "id": 556,
-        "dynasty_id": 111,
+        "dynasty_id": 124,
         "dynasty_name": "其他",
         "name": "楊安兒"
     },
     {
         "id": 557,
-        "dynasty_id": 111,
+        "dynasty_id": 124,
         "dynasty_name": "其他",
         "name": "蒲鮮萬奴"
     },
     {
         "id": 558,
-        "dynasty_id": 111,
+        "dynasty_id": 124,
         "dynasty_name": "其他",
         "name": "張鯨"
     },
     {
         "id": 559,
-        "dynasty_id": 111,
+        "dynasty_id": 124,
         "dynasty_name": "其他",
         "name": "張致"
     },
     {
         "id": 560,
-        "dynasty_id": 111,
+        "dynasty_id": 124,
         "dynasty_name": "其他",
         "name": "郝定"
     },
     {
         "id": 561,
-        "dynasty_id": 111,
+        "dynasty_id": 124,
         "dynasty_name": "其他",
         "name": "耶律廝不"
     },
     {
         "id": 562,
-        "dynasty_id": 111,
+        "dynasty_id": 124,
         "dynasty_name": "其他",
         "name": "乞奴"
     },
     {
         "id": 563,
-        "dynasty_id": 111,
+        "dynasty_id": 124,
         "dynasty_name": "其他",
         "name": "耶律金山"
     },
     {
         "id": 564,
-        "dynasty_id": 100,
+        "dynasty_id": 112,
         "dynasty_name": "元",
         "title": "元世祖",
         "name": "忽必烈",
@@ -4504,7 +4504,7 @@
     },
     {
         "id": 565,
-        "dynasty_id": 100,
+        "dynasty_id": 112,
         "dynasty_name": "元",
         "title": "元成宗",
         "name": "鐵穆耳",
@@ -4513,7 +4513,7 @@
     },
     {
         "id": 566,
-        "dynasty_id": 100,
+        "dynasty_id": 112,
         "dynasty_name": "元",
         "title": "元武宗",
         "name": "海山",
@@ -4522,7 +4522,7 @@
     },
     {
         "id": 567,
-        "dynasty_id": 100,
+        "dynasty_id": 112,
         "dynasty_name": "元",
         "title": "元仁宗",
         "name": "愛育黎拔力八達",
@@ -4531,7 +4531,7 @@
     },
     {
         "id": 568,
-        "dynasty_id": 100,
+        "dynasty_id": 112,
         "dynasty_name": "元",
         "title": "元英宗",
         "name": "碩德八剌",
@@ -4540,7 +4540,7 @@
     },
     {
         "id": 569,
-        "dynasty_id": 100,
+        "dynasty_id": 112,
         "dynasty_name": "元",
         "title": "元泰定帝",
         "name": "也孫鐵木兒",
@@ -4549,7 +4549,7 @@
     },
     {
         "id": 570,
-        "dynasty_id": 100,
+        "dynasty_id": 112,
         "dynasty_name": "元",
         "title": "元天順帝",
         "name": "阿剌吉八",
@@ -4558,7 +4558,7 @@
     },
     {
         "id": 571,
-        "dynasty_id": 100,
+        "dynasty_id": 112,
         "dynasty_name": "元",
         "title": "元文宗",
         "name": "圖帖睦爾",
@@ -4567,7 +4567,7 @@
     },
     {
         "id": 572,
-        "dynasty_id": 100,
+        "dynasty_id": 112,
         "dynasty_name": "元",
         "title": "元惠宗",
         "name": "妥懽帖睦爾",
@@ -4576,7 +4576,7 @@
     },
     {
         "id": 573,
-        "dynasty_id": 101,
+        "dynasty_id": 113,
         "dynasty_name": "北元",
         "title": "元昭宗",
         "name": "愛猷識理達臘",
@@ -4585,7 +4585,7 @@
     },
     {
         "id": 574,
-        "dynasty_id": 101,
+        "dynasty_id": 113,
         "dynasty_name": "北元",
         "title": "元後主",
         "name": "脫古思帖木兒",
@@ -4594,127 +4594,127 @@
     },
     {
         "id": 575,
-        "dynasty_id": 111,
+        "dynasty_id": 124,
         "dynasty_name": "其他",
         "name": "杜可用"
     },
     {
         "id": 576,
-        "dynasty_id": 111,
+        "dynasty_id": 124,
         "dynasty_name": "其他",
         "name": "陳吊眼"
     },
     {
         "id": 577,
-        "dynasty_id": 111,
+        "dynasty_id": 124,
         "dynasty_name": "其他",
         "name": "林桂方、趙良鈐"
     },
     {
         "id": 578,
-        "dynasty_id": 111,
+        "dynasty_id": 124,
         "dynasty_name": "其他",
         "name": "黃華"
     },
     {
         "id": 579,
-        "dynasty_id": 111,
+        "dynasty_id": 124,
         "dynasty_name": "其他",
         "name": "黎德、區將軍"
     },
     {
         "id": 580,
-        "dynasty_id": 111,
+        "dynasty_id": 124,
         "dynasty_name": "其他",
         "name": "楊鎮龍"
     },
     {
         "id": 581,
-        "dynasty_id": 111,
+        "dynasty_id": 124,
         "dynasty_name": "其他",
         "name": "陳空崖"
     },
     {
         "id": 582,
-        "dynasty_id": 111,
+        "dynasty_id": 124,
         "dynasty_name": "其他",
         "name": "陳慶安"
     },
     {
         "id": 583,
-        "dynasty_id": 111,
+        "dynasty_id": 124,
         "dynasty_name": "其他",
         "name": "周子旺"
     },
     {
         "id": 584,
-        "dynasty_id": 111,
+        "dynasty_id": 124,
         "dynasty_name": "其他",
         "name": "朱光卿"
     },
     {
         "id": 585,
-        "dynasty_id": 102,
+        "dynasty_id": 114,
         "dynasty_name": "宋",
         "name": "徐壽輝"
     },
     {
         "id": 586,
-        "dynasty_id": 111,
+        "dynasty_id": 124,
         "dynasty_name": "其他",
         "name": "趙普勝"
     },
     {
         "id": 587,
-        "dynasty_id": 103,
+        "dynasty_id": 115,
         "dynasty_name": "大周",
         "name": "張士誠"
     },
     {
         "id": 588,
-        "dynasty_id": 111,
+        "dynasty_id": 124,
         "dynasty_name": "其他",
         "name": "韓林兒"
     },
     {
         "id": 589,
-        "dynasty_id": 111,
-        "dynasty_name": "其他",
+        "dynasty_id": 116,
+        "dynasty_name": "漢",
         "name": "陳友諒"
     },
     {
         "id": 590,
-        "dynasty_id": 111,
-        "dynasty_name": "其他",
+        "dynasty_id": 116,
+        "dynasty_name": "漢",
         "name": "陳理"
     },
     {
         "id": 591,
-        "dynasty_id": 111,
+        "dynasty_id": 124,
         "dynasty_name": "其他",
         "name": "明玉珍"
     },
     {
         "id": 592,
-        "dynasty_id": 111,
+        "dynasty_id": 124,
         "dynasty_name": "其他",
         "name": "明昇"
     },
     {
         "id": 593,
-        "dynasty_id": 111,
+        "dynasty_id": 124,
         "dynasty_name": "其他",
         "name": "朱元璋"
     },
     {
         "id": 594,
-        "dynasty_id": 111,
+        "dynasty_id": 124,
         "dynasty_name": "其他",
         "name": "把匝剌瓦爾密"
     },
     {
         "id": 595,
-        "dynasty_id": 104,
+        "dynasty_id": 117,
         "dynasty_name": "明",
         "title": "明太祖",
         "name": "朱元璋",
@@ -4723,7 +4723,7 @@
     },
     {
         "id": 596,
-        "dynasty_id": 104,
+        "dynasty_id": 117,
         "dynasty_name": "明",
         "title": "明惠宗",
         "name": "朱允炆",
@@ -4732,7 +4732,7 @@
     },
     {
         "id": 597,
-        "dynasty_id": 104,
+        "dynasty_id": 117,
         "dynasty_name": "明",
         "title": "明成祖",
         "name": "朱棣",
@@ -4741,7 +4741,7 @@
     },
     {
         "id": 598,
-        "dynasty_id": 104,
+        "dynasty_id": 117,
         "dynasty_name": "明",
         "title": "明仁宗",
         "name": "朱高熾",
@@ -4750,7 +4750,7 @@
     },
     {
         "id": 599,
-        "dynasty_id": 104,
+        "dynasty_id": 117,
         "dynasty_name": "明",
         "title": "明宣宗",
         "name": "朱瞻基",
@@ -4759,7 +4759,7 @@
     },
     {
         "id": 600,
-        "dynasty_id": 104,
+        "dynasty_id": 117,
         "dynasty_name": "明",
         "title": "明英宗",
         "name": "朱祁鎮",
@@ -4768,7 +4768,7 @@
     },
     {
         "id": 601,
-        "dynasty_id": 104,
+        "dynasty_id": 117,
         "dynasty_name": "明",
         "title": "明代宗",
         "name": "朱祁鈺",
@@ -4777,7 +4777,7 @@
     },
     {
         "id": 602,
-        "dynasty_id": 104,
+        "dynasty_id": 117,
         "dynasty_name": "明",
         "title": "明英宗",
         "name": "朱祁鎮",
@@ -4786,7 +4786,7 @@
     },
     {
         "id": 603,
-        "dynasty_id": 104,
+        "dynasty_id": 117,
         "dynasty_name": "明",
         "title": "明憲宗",
         "name": "朱見深",
@@ -4795,7 +4795,7 @@
     },
     {
         "id": 604,
-        "dynasty_id": 104,
+        "dynasty_id": 117,
         "dynasty_name": "明",
         "title": "明孝宗",
         "name": "朱祐樘",
@@ -4804,7 +4804,7 @@
     },
     {
         "id": 605,
-        "dynasty_id": 104,
+        "dynasty_id": 117,
         "dynasty_name": "明",
         "title": "明武宗",
         "name": "朱厚照",
@@ -4813,7 +4813,7 @@
     },
     {
         "id": 606,
-        "dynasty_id": 104,
+        "dynasty_id": 117,
         "dynasty_name": "明",
         "title": "明世宗",
         "name": "朱厚熜",
@@ -4822,7 +4822,7 @@
     },
     {
         "id": 607,
-        "dynasty_id": 104,
+        "dynasty_id": 117,
         "dynasty_name": "明",
         "title": "明穆宗",
         "name": "朱載坖",
@@ -4831,7 +4831,7 @@
     },
     {
         "id": 608,
-        "dynasty_id": 104,
+        "dynasty_id": 117,
         "dynasty_name": "明",
         "title": "明神宗",
         "name": "朱祤鈞",
@@ -4840,7 +4840,7 @@
     },
     {
         "id": 609,
-        "dynasty_id": 104,
+        "dynasty_id": 117,
         "dynasty_name": "明",
         "title": "明光宗",
         "name": "朱常洛",
@@ -4849,7 +4849,7 @@
     },
     {
         "id": 610,
-        "dynasty_id": 104,
+        "dynasty_id": 117,
         "dynasty_name": "明",
         "title": "明熹宗",
         "name": "朱由校",
@@ -4858,7 +4858,7 @@
     },
     {
         "id": 611,
-        "dynasty_id": 104,
+        "dynasty_id": 117,
         "dynasty_name": "明",
         "title": "明思宗",
         "name": "朱由檢",
@@ -4867,247 +4867,247 @@
     },
     {
         "id": 612,
-        "dynasty_id": 111,
+        "dynasty_id": 124,
         "dynasty_name": "其他",
         "name": "彭玉琳"
     },
     {
         "id": 613,
-        "dynasty_id": 111,
+        "dynasty_id": 124,
         "dynasty_name": "其他",
         "name": "田九成"
     },
     {
         "id": 614,
-        "dynasty_id": 111,
+        "dynasty_id": 124,
         "dynasty_name": "其他",
         "name": "范玉"
     },
     {
         "id": 615,
-        "dynasty_id": 111,
+        "dynasty_id": 124,
         "dynasty_name": "其他",
         "name": "黎餓"
     },
     {
         "id": 616,
-        "dynasty_id": 111,
+        "dynasty_id": 124,
         "dynasty_name": "其他",
         "name": "明本"
     },
     {
         "id": 617,
-        "dynasty_id": 111,
+        "dynasty_id": 124,
         "dynasty_name": "其他",
         "name": "陳鑑胡"
     },
     {
         "id": 618,
-        "dynasty_id": 111,
+        "dynasty_id": 124,
         "dynasty_name": "其他",
         "name": "黃蕭養"
     },
     {
         "id": 619,
-        "dynasty_id": 111,
+        "dynasty_id": 124,
         "dynasty_name": "其他",
         "name": "朱徽煠"
     },
     {
         "id": 620,
-        "dynasty_id": 111,
+        "dynasty_id": 124,
         "dynasty_name": "其他",
         "name": "也先"
     },
     {
         "id": 621,
-        "dynasty_id": 111,
+        "dynasty_id": 124,
         "dynasty_name": "其他",
         "name": "李珍"
     },
     {
         "id": 622,
-        "dynasty_id": 111,
+        "dynasty_id": 124,
         "dynasty_name": "其他",
         "name": "王斌"
     },
     {
         "id": 623,
-        "dynasty_id": 111,
+        "dynasty_id": 124,
         "dynasty_name": "其他",
         "name": "李添保"
     },
     {
         "id": 624,
-        "dynasty_id": 111,
+        "dynasty_id": 124,
         "dynasty_name": "其他",
         "name": "李真、宋普貴"
     },
     {
         "id": 625,
-        "dynasty_id": 111,
+        "dynasty_id": 124,
         "dynasty_name": "其他",
         "name": "劉通"
     },
     {
         "id": 626,
-        "dynasty_id": 111,
+        "dynasty_id": 124,
         "dynasty_name": "其他",
         "name": "曹甫"
     },
     {
         "id": 627,
-        "dynasty_id": 111,
+        "dynasty_id": 124,
         "dynasty_name": "其他",
         "name": "朱宸濠"
     },
     {
         "id": 628,
-        "dynasty_id": 111,
+        "dynasty_id": 124,
         "dynasty_name": "其他",
         "name": "段鋹"
     },
     {
         "id": 629,
-        "dynasty_id": 111,
+        "dynasty_id": 124,
         "dynasty_name": "其他",
         "name": "樊紳"
     },
     {
         "id": 630,
-        "dynasty_id": 111,
+        "dynasty_id": 124,
         "dynasty_name": "其他",
         "name": "田斌"
     },
     {
         "id": 631,
-        "dynasty_id": 111,
+        "dynasty_id": 124,
         "dynasty_name": "其他",
         "name": "張璉"
     },
     {
         "id": 632,
-        "dynasty_id": 111,
+        "dynasty_id": 124,
         "dynasty_name": "其他",
         "name": "馬相"
     },
     {
         "id": 633,
-        "dynasty_id": 111,
+        "dynasty_id": 124,
         "dynasty_name": "其他",
         "name": "蔡伯貫"
     },
     {
         "id": 634,
-        "dynasty_id": 111,
+        "dynasty_id": 124,
         "dynasty_name": "其他",
         "name": "僧省悟"
     },
     {
         "id": 635,
-        "dynasty_id": 111,
+        "dynasty_id": 124,
         "dynasty_name": "其他",
         "name": "李新"
     },
     {
         "id": 636,
-        "dynasty_id": 111,
+        "dynasty_id": 124,
         "dynasty_name": "其他",
         "name": "李文"
     },
     {
         "id": 637,
-        "dynasty_id": 111,
+        "dynasty_id": 124,
         "dynasty_name": "其他",
         "name": "奢崇明"
     },
     {
         "id": 638,
-        "dynasty_id": 111,
+        "dynasty_id": 124,
         "dynasty_name": "其他",
         "name": "劉應選"
     },
     {
         "id": 639,
-        "dynasty_id": 111,
+        "dynasty_id": 124,
         "dynasty_name": "其他",
         "name": "徐鴻儒"
     },
     {
         "id": 640,
-        "dynasty_id": 111,
+        "dynasty_id": 124,
         "dynasty_name": "其他",
         "name": "鄭振明"
     },
     {
         "id": 641,
-        "dynasty_id": 111,
+        "dynasty_id": 124,
         "dynasty_name": "其他",
         "name": "万俟德"
     },
     {
         "id": 642,
-        "dynasty_id": 111,
+        "dynasty_id": 124,
         "dynasty_name": "其他",
         "name": "楊桓、楊從儒"
     },
     {
         "id": 643,
-        "dynasty_id": 111,
+        "dynasty_id": 124,
         "dynasty_name": "其他",
         "name": "不可考"
     },
     {
         "id": 644,
-        "dynasty_id": 111,
+        "dynasty_id": 124,
         "dynasty_name": "其他",
         "name": "張惟元"
     },
     {
         "id": 645,
-        "dynasty_id": 111,
+        "dynasty_id": 124,
         "dynasty_name": "其他",
         "name": "李盛明"
     },
     {
         "id": 646,
-        "dynasty_id": 111,
+        "dynasty_id": 124,
         "dynasty_name": "其他",
         "name": "高迎祥"
     },
     {
         "id": 647,
-        "dynasty_id": 111,
+        "dynasty_id": 124,
         "dynasty_name": "其他",
         "name": "張普薇"
     },
     {
         "id": 648,
-        "dynasty_id": 105,
+        "dynasty_id": 118,
         "dynasty_name": "大順",
         "name": "李自成"
     },
     {
         "id": 649,
-        "dynasty_id": 111,
+        "dynasty_id": 124,
         "dynasty_name": "其他",
         "name": "朱慈烺"
     },
     {
         "id": 650,
-        "dynasty_id": 111,
+        "dynasty_id": 124,
         "dynasty_name": "其他",
         "name": "朱慈炯"
     },
     {
         "id": 651,
-        "dynasty_id": 111,
+        "dynasty_id": 124,
         "dynasty_name": "其他",
         "name": "張獻忠"
     },
     {
         "id": 652,
-        "dynasty_id": 106,
+        "dynasty_id": 119,
         "dynasty_name": "南明",
         "title": "明安宗",
         "name": "朱由崧",
@@ -5116,7 +5116,7 @@
     },
     {
         "id": 653,
-        "dynasty_id": 106,
+        "dynasty_id": 119,
         "dynasty_name": "南明",
         "title": "明紹宗",
         "name": "朱聿鍵",
@@ -5125,7 +5125,7 @@
     },
     {
         "id": 654,
-        "dynasty_id": 106,
+        "dynasty_id": 119,
         "dynasty_name": "南明",
         "title": "明昭宗",
         "name": "朱由榔",
@@ -5134,43 +5134,43 @@
     },
     {
         "id": 655,
-        "dynasty_id": 111,
+        "dynasty_id": 124,
         "dynasty_name": "其他",
         "name": "朱亨嘉"
     },
     {
         "id": 656,
-        "dynasty_id": 111,
+        "dynasty_id": 124,
         "dynasty_name": "其他",
         "name": "朱常瀛"
     },
     {
         "id": 657,
-        "dynasty_id": 111,
+        "dynasty_id": 124,
         "dynasty_name": "其他",
         "name": "朱以海"
     },
     {
         "id": 658,
-        "dynasty_id": 111,
+        "dynasty_id": 124,
         "dynasty_name": "其他",
         "name": "？"
     },
     {
         "id": 659,
-        "dynasty_id": 111,
+        "dynasty_id": 124,
         "dynasty_name": "其他",
         "name": "朱聿𨮁"
     },
     {
         "id": 660,
-        "dynasty_id": 111,
+        "dynasty_id": 124,
         "dynasty_name": "其他",
         "name": "朱常清"
     },
     {
         "id": 661,
-        "dynasty_id": 107,
+        "dynasty_id": 120,
         "dynasty_name": "明鄭",
         "title": "延平武王",
         "name": "鄭成功",
@@ -5179,7 +5179,7 @@
     },
     {
         "id": 662,
-        "dynasty_id": 107,
+        "dynasty_id": 120,
         "dynasty_name": "明鄭",
         "title": "延平文王",
         "name": "鄭經",
@@ -5188,7 +5188,7 @@
     },
     {
         "id": 663,
-        "dynasty_id": 107,
+        "dynasty_id": 120,
         "dynasty_name": "明鄭",
         "name": "鄭克塽",
         "first_regnal_year": "1681年",
@@ -5196,13 +5196,13 @@
     },
     {
         "id": 664,
-        "dynasty_id": 111,
+        "dynasty_id": 124,
         "dynasty_name": "其他",
         "name": "劉公顯"
     },
     {
         "id": 665,
-        "dynasty_id": 108,
+        "dynasty_id": 121,
         "dynasty_name": "後金",
         "name": "努爾哈赤",
         "first_regnal_year": "1616年",
@@ -5210,7 +5210,7 @@
     },
     {
         "id": 666,
-        "dynasty_id": 108,
+        "dynasty_id": 121,
         "dynasty_name": "後金",
         "name": "皇太極",
         "first_regnal_year": "1626年",
@@ -5218,7 +5218,7 @@
     },
     {
         "id": 667,
-        "dynasty_id": 109,
+        "dynasty_id": 122,
         "dynasty_name": "清",
         "title": "清太宗",
         "name": "皇太極",
@@ -5227,7 +5227,7 @@
     },
     {
         "id": 668,
-        "dynasty_id": 109,
+        "dynasty_id": 122,
         "dynasty_name": "清",
         "title": "清世祖",
         "name": "福臨",
@@ -5236,7 +5236,7 @@
     },
     {
         "id": 669,
-        "dynasty_id": 109,
+        "dynasty_id": 122,
         "dynasty_name": "清",
         "title": "清聖祖",
         "name": "玄燁",
@@ -5245,7 +5245,7 @@
     },
     {
         "id": 670,
-        "dynasty_id": 109,
+        "dynasty_id": 122,
         "dynasty_name": "清",
         "title": "清世宗",
         "name": "胤禛",
@@ -5254,7 +5254,7 @@
     },
     {
         "id": 671,
-        "dynasty_id": 109,
+        "dynasty_id": 122,
         "dynasty_name": "清",
         "title": "清高宗",
         "name": "弘曆",
@@ -5263,7 +5263,7 @@
     },
     {
         "id": 672,
-        "dynasty_id": 109,
+        "dynasty_id": 122,
         "dynasty_name": "清",
         "title": "清仁宗",
         "name": "顒琰",
@@ -5272,7 +5272,7 @@
     },
     {
         "id": 673,
-        "dynasty_id": 109,
+        "dynasty_id": 122,
         "dynasty_name": "清",
         "title": "清宣宗",
         "name": "旻寧",
@@ -5281,7 +5281,7 @@
     },
     {
         "id": 674,
-        "dynasty_id": 109,
+        "dynasty_id": 122,
         "dynasty_name": "清",
         "title": "清文宗",
         "name": "奕詝",
@@ -5290,7 +5290,7 @@
     },
     {
         "id": 675,
-        "dynasty_id": 109,
+        "dynasty_id": 122,
         "dynasty_name": "清",
         "title": "清穆宗",
         "name": "載淳",
@@ -5299,7 +5299,7 @@
     },
     {
         "id": 676,
-        "dynasty_id": 109,
+        "dynasty_id": 122,
         "dynasty_name": "清",
         "title": "清德宗",
         "name": "載湉",
@@ -5308,7 +5308,7 @@
     },
     {
         "id": 677,
-        "dynasty_id": 109,
+        "dynasty_id": 122,
         "dynasty_name": "清",
         "title": "清宣統帝",
         "name": "溥儀",
@@ -5317,464 +5317,464 @@
     },
     {
         "id": 678,
-        "dynasty_id": 111,
+        "dynasty_id": 124,
         "dynasty_name": "其他",
         "name": "秦尚行"
     },
     {
         "id": 679,
-        "dynasty_id": 111,
+        "dynasty_id": 124,
         "dynasty_name": "其他",
         "name": "劉守分"
     },
     {
         "id": 680,
-        "dynasty_id": 111,
+        "dynasty_id": 124,
         "dynasty_name": "其他",
         "name": "宮文彩"
     },
     {
         "id": 681,
-        "dynasty_id": 111,
+        "dynasty_id": 124,
         "dynasty_name": "其他",
         "name": "胡守龍"
     },
     {
         "id": 682,
-        "dynasty_id": 111,
+        "dynasty_id": 124,
         "dynasty_name": "其他",
         "name": "蔣爾恂"
     },
     {
         "id": 683,
-        "dynasty_id": 111,
+        "dynasty_id": 124,
         "dynasty_name": "其他",
         "name": "王光代"
     },
     {
         "id": 684,
-        "dynasty_id": 111,
+        "dynasty_id": 124,
         "dynasty_name": "其他",
         "name": "張華山"
     },
     {
         "id": 685,
-        "dynasty_id": 111,
+        "dynasty_id": 124,
         "dynasty_name": "其他",
         "name": "郭應銓"
     },
     {
         "id": 686,
-        "dynasty_id": 111,
+        "dynasty_id": 124,
         "dynasty_name": "其他",
         "name": "孫可望"
     },
     {
         "id": 687,
-        "dynasty_id": 111,
+        "dynasty_id": 124,
         "dynasty_name": "其他",
         "name": "金聲桓"
     },
     {
         "id": 688,
-        "dynasty_id": 111,
+        "dynasty_id": 124,
         "dynasty_name": "其他",
         "name": "朱鴻基"
     },
     {
         "id": 689,
-        "dynasty_id": 111,
+        "dynasty_id": 124,
         "dynasty_name": "其他",
         "name": "虞允"
     },
     {
         "id": 690,
-        "dynasty_id": 111,
+        "dynasty_id": 124,
         "dynasty_name": "其他",
         "name": "蕭惟堂"
     },
     {
         "id": 691,
-        "dynasty_id": 111,
+        "dynasty_id": 124,
         "dynasty_name": "其他",
         "name": "王耀祖"
     },
     {
         "id": 692,
-        "dynasty_id": 111,
+        "dynasty_id": 124,
         "dynasty_name": "其他",
         "name": "楊起隆"
     },
     {
         "id": 693,
-        "dynasty_id": 111,
+        "dynasty_id": 124,
         "dynasty_name": "其他",
         "name": "吳三桂"
     },
     {
         "id": 694,
-        "dynasty_id": 111,
+        "dynasty_id": 124,
         "dynasty_name": "其他",
         "name": "吳世璠"
     },
     {
         "id": 695,
-        "dynasty_id": 111,
+        "dynasty_id": 124,
         "dynasty_name": "其他",
         "name": "耿精忠"
     },
     {
         "id": 696,
-        "dynasty_id": 111,
+        "dynasty_id": 124,
         "dynasty_name": "其他",
         "name": "魏枝葉"
     },
     {
         "id": 697,
-        "dynasty_id": 111,
+        "dynasty_id": 124,
         "dynasty_name": "其他",
         "name": "李天極、朱六非"
     },
     {
         "id": 698,
-        "dynasty_id": 111,
+        "dynasty_id": 124,
         "dynasty_name": "其他",
         "name": "錢寶通"
     },
     {
         "id": 699,
-        "dynasty_id": 111,
+        "dynasty_id": 124,
         "dynasty_name": "其他",
         "name": "張念一"
     },
     {
         "id": 700,
-        "dynasty_id": 111,
+        "dynasty_id": 124,
         "dynasty_name": "其他",
         "name": "朱一貴"
     },
     {
         "id": 701,
-        "dynasty_id": 111,
+        "dynasty_id": 124,
         "dynasty_name": "其他",
         "name": "林爽文"
     },
     {
         "id": 702,
-        "dynasty_id": 111,
+        "dynasty_id": 124,
         "dynasty_name": "其他",
         "name": "陳周全"
     },
     {
         "id": 703,
-        "dynasty_id": 111,
+        "dynasty_id": 124,
         "dynasty_name": "其他",
         "name": "聶傑人、張正謨"
     },
     {
         "id": 704,
-        "dynasty_id": 111,
+        "dynasty_id": 124,
         "dynasty_name": "其他",
         "name": "林之華、覃加耀"
     },
     {
         "id": 705,
-        "dynasty_id": 111,
+        "dynasty_id": 124,
         "dynasty_name": "其他",
         "name": "王聰兒"
     },
     {
         "id": 706,
-        "dynasty_id": 111,
+        "dynasty_id": 124,
         "dynasty_name": "其他",
         "name": "王囊仙"
     },
     {
         "id": 707,
-        "dynasty_id": 111,
+        "dynasty_id": 124,
         "dynasty_name": "其他",
         "name": "韋朝元"
     },
     {
         "id": 708,
-        "dynasty_id": 111,
+        "dynasty_id": 124,
         "dynasty_name": "其他",
         "name": "黎樹"
     },
     {
         "id": 709,
-        "dynasty_id": 111,
+        "dynasty_id": 124,
         "dynasty_name": "其他",
         "name": "王大叔"
     },
     {
         "id": 710,
-        "dynasty_id": 111,
+        "dynasty_id": 124,
         "dynasty_name": "其他",
         "name": "蔡牽"
     },
     {
         "id": 711,
-        "dynasty_id": 111,
+        "dynasty_id": 124,
         "dynasty_name": "其他",
         "name": "陳紀傳"
     },
     {
         "id": 712,
-        "dynasty_id": 111,
+        "dynasty_id": 124,
         "dynasty_name": "其他",
         "name": "李文成"
     },
     {
         "id": 713,
-        "dynasty_id": 111,
+        "dynasty_id": 124,
         "dynasty_name": "其他",
         "name": "朱毛俚"
     },
     {
         "id": 714,
-        "dynasty_id": 111,
+        "dynasty_id": 124,
         "dynasty_name": "其他",
         "name": "馬進忠"
     },
     {
         "id": 715,
-        "dynasty_id": 111,
+        "dynasty_id": 124,
         "dynasty_name": "其他",
         "name": "楊良斌"
     },
     {
         "id": 716,
-        "dynasty_id": 111,
+        "dynasty_id": 124,
         "dynasty_name": "其他",
         "name": "趙金龍"
     },
     {
         "id": 717,
-        "dynasty_id": 111,
+        "dynasty_id": 124,
         "dynasty_name": "其他",
         "name": "張丙、許成"
     },
     {
         "id": 718,
-        "dynasty_id": 111,
+        "dynasty_id": 124,
         "dynasty_name": "其他",
         "name": "黃城"
     },
     {
         "id": 719,
-        "dynasty_id": 111,
+        "dynasty_id": 124,
         "dynasty_name": "其他",
         "name": "梁辦、吳扁、陳委"
     },
     {
         "id": 720,
-        "dynasty_id": 111,
+        "dynasty_id": 124,
         "dynasty_name": "其他",
         "name": "劉仲、蔡恭"
     },
     {
         "id": 721,
-        "dynasty_id": 111,
+        "dynasty_id": 124,
         "dynasty_name": "其他",
         "name": "藍正樽"
     },
     {
         "id": 722,
-        "dynasty_id": 110,
+        "dynasty_id": 123,
         "dynasty_name": "太平天國",
         "name": "洪秀全"
     },
     {
         "id": 723,
-        "dynasty_id": 111,
+        "dynasty_id": 124,
         "dynasty_name": "其他",
         "name": "彭運洪"
     },
     {
         "id": 724,
-        "dynasty_id": 111,
+        "dynasty_id": 124,
         "dynasty_name": "其他",
         "name": "黃德美"
     },
     {
         "id": 725,
-        "dynasty_id": 111,
+        "dynasty_id": 124,
         "dynasty_name": "其他",
         "name": "林恭"
     },
     {
         "id": 726,
-        "dynasty_id": 111,
+        "dynasty_id": 124,
         "dynasty_name": "其他",
         "name": "劉麗川"
     },
     {
         "id": 727,
-        "dynasty_id": 111,
+        "dynasty_id": 124,
         "dynasty_name": "其他",
         "name": "林萬青"
     },
     {
         "id": 728,
-        "dynasty_id": 111,
+        "dynasty_id": 124,
         "dynasty_name": "其他",
         "name": "陳開"
     },
     {
         "id": 729,
-        "dynasty_id": 111,
+        "dynasty_id": 124,
         "dynasty_name": "其他",
         "name": "楊龍喜"
     },
     {
         "id": 730,
-        "dynasty_id": 111,
+        "dynasty_id": 124,
         "dynasty_name": "其他",
         "name": "朱洪英、胡有祿"
     },
     {
         "id": 731,
-        "dynasty_id": 111,
+        "dynasty_id": 124,
         "dynasty_name": "其他",
         "name": "鄺經全至"
     },
     {
         "id": 732,
-        "dynasty_id": 111,
+        "dynasty_id": 124,
         "dynasty_name": "其他",
         "name": "杜文秀"
     },
     {
         "id": 733,
-        "dynasty_id": 111,
+        "dynasty_id": 124,
         "dynasty_name": "其他",
         "name": "朱明月"
     },
     {
         "id": 734,
-        "dynasty_id": 111,
+        "dynasty_id": 124,
         "dynasty_name": "其他",
         "name": "李永和"
     },
     {
         "id": 735,
-        "dynasty_id": 111,
+        "dynasty_id": 124,
         "dynasty_name": "其他",
         "name": "宋繼鵬"
     },
     {
         "id": 736,
-        "dynasty_id": 111,
+        "dynasty_id": 124,
         "dynasty_name": "其他",
         "name": "黃正倫"
     },
     {
         "id": 737,
-        "dynasty_id": 111,
+        "dynasty_id": 124,
         "dynasty_name": "其他",
         "name": "王守清"
     },
     {
         "id": 738,
-        "dynasty_id": 111,
+        "dynasty_id": 124,
         "dynasty_name": "其他",
         "name": "穆生華"
     },
     {
         "id": 739,
-        "dynasty_id": 111,
+        "dynasty_id": 124,
         "dynasty_name": "其他",
         "name": "唐景崧、劉永福"
     },
     {
         "id": 740,
-        "dynasty_id": 111,
+        "dynasty_id": 124,
         "dynasty_name": "其他",
         "name": "朱紅燈"
     },
     {
         "id": 741,
-        "dynasty_id": 111,
+        "dynasty_id": 124,
         "dynasty_name": "其他",
         "name": "溥儁"
     },
     {
         "id": 742,
-        "dynasty_id": 111,
+        "dynasty_id": 124,
         "dynasty_name": "其他",
         "name": "大開、陳魁鰲"
     },
     {
         "id": 743,
-        "dynasty_id": 111,
+        "dynasty_id": 124,
         "dynasty_name": "其他",
         "name": "龔春臺"
     },
     {
         "id": 744,
-        "dynasty_id": 111,
+        "dynasty_id": 124,
         "dynasty_name": "其他",
         "name": "八世哲布尊丹巴呼圖克圖"
     },
     {
         "id": 745,
-        "dynasty_id": 111,
+        "dynasty_id": 124,
         "dynasty_name": "其他",
         "name": "袁世凱"
     },
     {
         "id": 746,
-        "dynasty_id": 111,
+        "dynasty_id": 124,
         "dynasty_name": "其他",
         "name": "呂光"
     },
     {
         "id": 747,
-        "dynasty_id": 111,
+        "dynasty_id": 124,
         "dynasty_name": "其他",
         "name": "察都·若巴"
     },
     {
         "id": 748,
-        "dynasty_id": 111,
+        "dynasty_id": 124,
         "dynasty_name": "其他",
         "name": "溥儀"
     },
     {
         "id": 749,
-        "dynasty_id": 111,
+        "dynasty_id": 124,
         "dynasty_name": "其他",
         "name": "聶真娃"
     },
     {
         "id": 750,
-        "dynasty_id": 111,
+        "dynasty_id": 124,
         "dynasty_name": "其他",
         "name": "韓欲明"
     },
     {
         "id": 751,
-        "dynasty_id": 111,
+        "dynasty_id": 124,
         "dynasty_name": "其他",
         "name": "馬士偉"
     },
     {
         "id": 752,
-        "dynasty_id": 111,
+        "dynasty_id": 124,
         "dynasty_name": "其他",
         "name": "薛幹臣"
     },
     {
         "id": 753,
-        "dynasty_id": 111,
+        "dynasty_id": 124,
         "dynasty_name": "其他",
         "name": "溥儀"
     },
     {
         "id": 754,
         "name": "？",
-        "dynasty_id": 111,
+        "dynasty_id": 124,
         "dynasty_name": "其他"
     }
 ]

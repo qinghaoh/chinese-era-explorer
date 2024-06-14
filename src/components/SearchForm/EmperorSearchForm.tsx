@@ -10,6 +10,7 @@ interface EmperorSearchProps {
 
 const EmperorSearchForm: React.FC<EmperorSearchProps> = ({ onSubmit }) => {
   const [dynastiesData, setDynastiesData] = useState<Dynasty[]>([]);
+  const [error, setError] = useState<string | null>(null);
   const form = useForm({
     initialValues: {
       dynasty: '',
@@ -23,8 +24,13 @@ const EmperorSearchForm: React.FC<EmperorSearchProps> = ({ onSubmit }) => {
       try {
         const data = await import('../../data/dynasties.json');
         setDynastiesData(data.default as Dynasty[]);
-      } catch (error) {
-        console.error('Failed to load dynasties data:', error);
+        setError(null);
+      } catch (err: unknown) {
+        if (err instanceof Error) {
+          setError(`Failed to load dynasties data: ${err.message}`);
+        } else {
+          setError('Failed to load dynasties data: An unknown error occurred');
+        }
       }
     };
 
@@ -62,13 +68,14 @@ const EmperorSearchForm: React.FC<EmperorSearchProps> = ({ onSubmit }) => {
         .filter((emperor) => emperor[1] !== '？')
         .map((emperor) => [emperor[1], emperor])
     ).values(),
-  ].map((emperor) => {
-    console.log(`${emperor[0]} ${emperor[1]}`);
-    return {
-      value: String(emperor[0]),
-      label: emperor[1],
-    };
-  });
+  ].map((emperor) => ({
+    value: String(emperor[0]),
+    label: emperor[1],
+  }));
+
+  if (error) {
+    return <div>Error: {error}</div>; // Displaying the error in the UI
+  }
 
   return (
     <Box maw={400} mx="auto" mt="md">

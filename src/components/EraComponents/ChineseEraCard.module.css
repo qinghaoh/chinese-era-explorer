@@ -1,5 +1,5 @@
 @font-face {
-  font-family: 'Lishu';
+  font-family: Lishu;
   src: url('../../assets/fonts/Chinese_characters.ttf') format('truetype');
 }
 
@@ -86,7 +86,7 @@ body {
   transform: translate(10%, 15%);
   writing-mode: vertical-rl;
   text-orientation: upright;
-  font-family: 'Lishu', sans-serif;
+  font-family: Lishu, sans-serif;
   font-size: 22px;
   white-space: normal;
   height: 70px;

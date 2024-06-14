@@ -213,13 +213,6 @@ def compare_years(literal_year: str, digit_year: int):
     return (year > digit_year) - (year < digit_year)
 
 
-def get_dynasty_id(dynasty_name=""):
-    global dynasty_id
-    if not dynasty_name:
-        return "其他", "其他"
-    return dynasty_id, dynasty_name
-
-
 def is_duplicate_emperor(curr_emperor, emperors):
     if not emperors:
         return False
@@ -229,14 +222,20 @@ def is_duplicate_emperor(curr_emperor, emperors):
     ) == emperors[-1].get("title", "")
 
 
-def handle_special_cases(d, emperor, emperors, dynasties, data_copy):
+def handle_other_dynasties(
+    row_data: dict[str, str],
+    emperor: dict[str, str],
+    emperors: list[dict[str, str]],
+    dynasties: list[dict[str, str]],
+    data_copy: list[dict[str, str]],
+):
     global emperor_id, dynasty_id
 
     is_matched = False
     is_from_remark = False
 
     # Create a new dynasty and move an "other" emperor to this new dynasty
-    def put_other_emperor_to_dynasty(
+    def put_emperor_to_dynasty(
         emperor_name,
         dynasty_name,
         display_name=None,
@@ -257,6 +256,7 @@ def handle_special_cases(d, emperor, emperors, dynasties, data_copy):
                 is_duplicate_emperor(curr_emperor, emperors)
                 and dynasty_name == emperors[-1]["dynasty_name"]
             ):
+                row_data["element"] = element
                 return dynasty
 
             curr_emperor["dynasty_id"] = dynasty_id
@@ -290,7 +290,7 @@ def handle_special_cases(d, emperor, emperors, dynasties, data_copy):
             emperor_id += 1
 
             if element:
-                d["element"] = element
+                row_data["element"] = element
 
         return dynasty
 
@@ -300,13 +300,13 @@ def handle_special_cases(d, emperor, emperors, dynasties, data_copy):
         emperor_name: str, eras: dict[str, str], dynasty_display_names: dict[str, str]
     ):
         for era, dynasty in eras.items():
-            if d["name"] == era:
-                put_other_emperor_to_dynasty(
+            if row_data["name"] == era:
+                put_emperor_to_dynasty(
                     emperor_name, dynasty, dynasty_display_names[dynasty]
                 )
                 break
 
-    def move_successive_other_emperors_to_dynasty(
+    def put_successive_emperors_to_dynasty(
         first_emperor_name,
         second_emperor_name,
         dynasty_name,
@@ -327,51 +327,52 @@ def handle_special_cases(d, emperor, emperors, dynasties, data_copy):
         if (
             (
                 not first_emperor_last_era_name
-                or d["name"] == first_emperor_last_era_name
+                or row_data["name"] == first_emperor_last_era_name
             )
             and emperor
             and emperor["name"] == first_emperor_name
         ):
-            dynasty = put_other_emperor_to_dynasty(
+            dynasty = put_emperor_to_dynasty(
                 first_emperor_name, dynasty_name, display_name
             )
             # Adjust the following values, because there are more emperors in this "other" dynasty
-            dynasty_id -= 1
-            dynasty["emperors"].append(
-                [
-                    emperor["id"] + 1,
-                    ((second_emperor_title + " ") if second_emperor_title else "")
-                    + second_emperor_name,
-                ]
-            )
+            if dynasty:
+                dynasty_id -= 1
+                dynasty["emperors"].append(
+                    [
+                        emperor["id"] + 1,
+                        ((second_emperor_title + " ") if second_emperor_title else "")
+                        + second_emperor_name,
+                    ]
+                )
 
-            if to_create_second_emperor:
-                is_from_remark = True
-                d["start"] = first_era_start
-                d["end"] = first_era_end
+                if to_create_second_emperor:
+                    is_from_remark = True
+                    row_data["start"] = first_era_start
+                    row_data["end"] = first_era_end
 
-                second_emperor = {
-                    "id": emperor["id"] + 1,
-                    "name": second_emperor_name,
-                    "dynasty_id": dynasty_id,
-                    "dynasty_name": dynasty_name,
-                    "first_regnal_year": first_regnal_year,
-                    "final_regnal_year": final_regnal_year,
-                }
-                if second_emperor_title:
-                    second_emperor["title"] = second_emperor_title
-                emperors.append(second_emperor)
+                    second_emperor = {
+                        "id": emperor["id"] + 1,
+                        "name": second_emperor_name,
+                        "dynasty_id": dynasty_id,
+                        "dynasty_name": dynasty_name,
+                        "first_regnal_year": first_regnal_year,
+                        "final_regnal_year": final_regnal_year,
+                    }
+                    if second_emperor_title:
+                        second_emperor["title"] = second_emperor_title
+                    emperors.append(second_emperor)
 
-                emperor_id += 1
-                dynasty_id += 1
+                    emperor_id += 1
+                    dynasty_id += 1
 
-                d_copy = copy.deepcopy(d)
-                d_copy["start"] = second_era_start
-                d_copy["end"] = second_era_end
-                d_copy["emperor_id"] = second_emperor["id"]
-                data_copy.append(d_copy)
+                    d_copy = copy.deepcopy(row_data)
+                    d_copy["start"] = second_era_start
+                    d_copy["end"] = second_era_end
+                    d_copy["emperor_id"] = second_emperor["id"]
+                    data_copy.append(d_copy)
 
-                return
+                    return
 
         if emperor and emperor["name"] == second_emperor_name:
             is_matched = True
@@ -386,23 +387,35 @@ def handle_special_cases(d, emperor, emperors, dynasties, data_copy):
 
             if (
                 not second_emperor_last_era_name
-                or d["name"] == second_emperor_last_era_name
+                or row_data["name"] == second_emperor_last_era_name
             ):
                 dynasty_id += 1
 
-    put_other_emperor_to_dynasty("公孫淵", "燕", "燕（公孫淵）")
-    put_other_emperor_to_dynasty("司馬倫", "晉", "晉（司馬倫）", "金")
-    put_other_emperor_to_dynasty("司馬保", "晉", "晉（司馬保）", "金")
-    put_other_emperor_to_dynasty("張大豫", "涼", "涼（張大豫）")
-    move_successive_other_emperors_to_dynasty("翟遼", "翟釗", "魏", "翟魏")
-    move_successive_other_emperors_to_dynasty("桓玄", "桓謙", "楚", "桓楚")
-    put_other_emperor_to_dynasty("慕容詳", "燕", "燕（慕容詳）")
-    put_other_emperor_to_dynasty("慕容麟", "燕", "燕（慕容麟）")
-    put_other_emperor_to_dynasty("蘭汗", "燕", "燕（蘭汗）")
-    put_other_emperor_to_dynasty("侯景", "漢", "漢（侯景）")
-    put_other_emperor_to_dynasty("王世充", "鄭", "鄭（王世充）")
-    put_other_emperor_to_dynasty("蕭銑", "梁", "梁（蕭銑）", "火")
-    move_successive_other_emperors_to_dynasty(
+    put_emperor_to_dynasty("公孫述", "成家")
+    put_emperor_to_dynasty("公孫淵", "燕", "燕（公孫淵）")
+    put_emperor_to_dynasty("司馬倫", "晉", "晉（司馬倫）", "金")
+    put_emperor_to_dynasty("司馬保", "晉", "晉（司馬保）", "金")
+    put_emperor_to_dynasty("張大豫", "涼", "涼（張大豫）")
+    put_successive_emperors_to_dynasty("翟遼", "翟釗", "魏", "翟魏")
+    put_successive_emperors_to_dynasty("桓玄", "桓謙", "楚", "桓楚")
+    put_emperor_to_dynasty("慕容詳", "燕", "燕（慕容詳）")
+    put_emperor_to_dynasty("慕容麟", "燕", "燕（慕容麟）")
+    put_emperor_to_dynasty("蘭汗", "燕", "燕（蘭汗）")
+    put_emperor_to_dynasty("元愉", "魏", "魏（元愉）", "水")
+    put_emperor_to_dynasty("元顥", "魏", "魏（元顥）", "水")
+    put_emperor_to_dynasty("元悅", "魏", "魏（元悅）", "水")
+    put_emperor_to_dynasty("蕭正德", "梁", "蕭正德", "火")
+    put_emperor_to_dynasty("侯景", "漢", "漢（侯景）")
+    put_emperor_to_dynasty("蕭紀", "梁", "梁（蕭紀）", "火")
+    put_emperor_to_dynasty("蕭莊", "梁", "梁（蕭莊）", "火")
+    put_emperor_to_dynasty("李密", "魏", "李密")
+    put_emperor_to_dynasty("劉武周", "漢", "漢（劉武周）")
+    put_emperor_to_dynasty("薛舉", "秦", "秦（薛舉）")
+    put_emperor_to_dynasty("李軌", "涼", "涼（李軌）")
+    put_emperor_to_dynasty("蕭銑", "梁", "梁（蕭銑）", "火")
+    put_emperor_to_dynasty("梁師都", "梁", "梁（梁師都）")
+    put_emperor_to_dynasty("王世充", "鄭", "鄭（王世充）")
+    put_successive_emperors_to_dynasty(
         "安祿山", "安慶緒", "大燕", "大燕（安祿山）", "", "", "天成"
     )
 
@@ -410,28 +423,28 @@ def handle_special_cases(d, emperor, emperors, dynasties, data_copy):
         "朱泚", {"應天": "秦", "天皇": "漢"}, {"秦": "秦（朱泚）", "漢": "漢（朱泚）"}
     )
 
-    put_other_emperor_to_dynasty("李希烈", "楚", "楚（李希烈）")
+    put_emperor_to_dynasty("李希烈", "楚", "楚（李希烈）")
     move_emperor_based_on_dynasty_dicts(
         "黃巢", {"金統": "大齊"}, {"大齊": "大齊（黃巢）"}
     )
-    put_other_emperor_to_dynasty("劉守光", "大燕", "大燕（劉守光）")
-    put_other_emperor_to_dynasty("董昌", "大越羅平國")
-    put_other_emperor_to_dynasty("徐壽輝", "宋", "宋（徐壽輝）")
-    put_other_emperor_to_dynasty("張士誠", "大周", "大周（張士誠）")
-    # move_successive_other_emperors_to_dynasty("陳友諒", "陳理", "漢", "陳漢", "", "")
+    put_emperor_to_dynasty("劉守光", "大燕", "大燕（劉守光）")
+    put_emperor_to_dynasty("董昌", "大越羅平國")
+    put_emperor_to_dynasty("徐壽輝", "宋", "宋（徐壽輝）")
+    put_emperor_to_dynasty("張士誠", "大周", "大周（張士誠）")
+    put_successive_emperors_to_dynasty("陳友諒", "陳理", "漢", "陳漢")
 
     # 大順 （1643年—1646年）
     # 《甲申纪事》“贼云以水德王，衣服尚蓝。故军中俱穿蓝，官帽亦用蓝。”
-    put_other_emperor_to_dynasty("李自成", "大順", None, "水")
+    put_emperor_to_dynasty("李自成", "大順", None, "水")
 
-    put_other_emperor_to_dynasty("洪秀全", "太平天國")
+    put_emperor_to_dynasty("洪秀全", "太平天國")
 
     # This line MUST BE before the cases
     # where `move_successive_other_emperors_to_new_dynasty()` is called
     # with ` to_create_second_emperor` == True
-    data_copy.append(d)
+    data_copy.append(row_data)
 
-    move_successive_other_emperors_to_dynasty(
+    put_successive_emperors_to_dynasty(
         "沮渠無諱",
         "沮渠安周",
         "涼",
@@ -492,19 +505,19 @@ def is_regular_dynasty(attributes: tuple):
     return bool(attributes)
 
 
-def convert(csv_file: Path, attributes: tuple, dynasties: list[dict]):
+def process_era_file(csv_file: Path, attributes: tuple, dynasties: list[dict]):
     """
     Processes a CSV file containing dynasty data and updates the dynasties list.
 
     The csv_file contains data for either:
     1. A single regular dynasty, or
-    2. One or more special dynasties.
+    2. One or more special (other) dynasties.
 
     The type of data contained in the csv_file is determined by the attributes parameter.
 
     Args:
         csv_file (Path): The path to the CSV file containing dynasty data.
-        attributes (Tuple): Attributes that determine the type of data in the CSV file.
+        attributes (Tuple): Attributes of the data in the CSV file.
         dynasties (List[Dict]): The list of existing dynasties to be updated.
 
     Returns:
@@ -538,7 +551,7 @@ def convert(csv_file: Path, attributes: tuple, dynasties: list[dict]):
                 "id": dynasty_id,
                 "name": dynasty_name,
                 # "emperors": dynasty_emperors,
-                # "group": dynasty_group,
+                "group": dynasty_group,
             }
             dynasties.append(dynasty)
 
@@ -550,10 +563,10 @@ def convert(csv_file: Path, attributes: tuple, dynasties: list[dict]):
             emperor = {}
             if is_header(d):
                 emperor["id"] = emperor_id
-                emperor["dynasty_id"], emperor["dynasty_name"] = get_dynasty_id(
-                    dynasty_name
+                emperor["dynasty_id"], emperor["dynasty_name"] = (
+                    dynasty_id,
+                    dynasty_name,
                 )
-
                 match = re.match(r"(.+)（([^）]+)）", d["name"])
                 if match:
                     name, reign_duration = match.groups()
@@ -618,13 +631,9 @@ def convert(csv_file: Path, attributes: tuple, dynasties: list[dict]):
 
         if dynasty_name == "唐" and dynasties[-1]["name"] == "武周":
             dynasties[-2]["emperors"] = dynasty_emperors
-            # TODO: initialize it at top
-            dynasties[-2]["group"] = dynasty_group
             dynasty_id += 2
         else:
             dynasties[-1]["emperors"] = dynasty_emperors
-            # TODO: initialize it at top
-            dynasties[-1]["group"] = dynasty_group
             dynasty_id += 1
     else:
         # Other dynasties
@@ -638,12 +647,12 @@ def convert(csv_file: Path, attributes: tuple, dynasties: list[dict]):
                 # it has any cell value that is duplicated across all columns,
                 # or it contains a cell in a column named "emperor".
                 emperor["id"] = emperor_id
-                emperor["dynasty_id"], emperor["dynasty_name"] = get_dynasty_id()
+                emperor["dynasty_id"], emperor["dynasty_name"] = "其他", "其他"
                 emperor["name"] = d["emperor"]
                 parse_duration(d["duration"], d)
                 del d["emperor"]
 
-                is_matched, is_from_remark = handle_special_cases(
+                is_matched, is_from_remark = handle_other_dynasties(
                     d, emperor, emperors, dynasties, data_copy
                 )
 
@@ -711,7 +720,7 @@ def main():
             print(f"Warning: File {filepath} not found. Skipping.")
             continue
 
-        era_data, emperor_data = convert(filepath, attributes, dynasties)
+        era_data, emperor_data = process_era_file(filepath, attributes, dynasties)
         eras.extend(era_data)
         emperors.extend(emperor_data)
 
