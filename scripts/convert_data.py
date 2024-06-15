@@ -256,7 +256,8 @@ def handle_other_dynasties(
                 is_duplicate_emperor(curr_emperor, emperors)
                 and dynasty_name == emperors[-1]["dynasty_name"]
             ):
-                row_data["element"] = element
+                if element:
+                    row_data["element"] = element
                 return dynasty
 
             curr_emperor["dynasty_id"] = dynasty_id
@@ -392,32 +393,60 @@ def handle_other_dynasties(
                 dynasty_id += 1
 
     put_emperor_to_dynasty("公孫述", "成家")
+    put_emperor_to_dynasty("劉盆子", "漢", "漢（赤眉軍）")
     put_emperor_to_dynasty("公孫淵", "燕", "燕（公孫淵）")
     put_emperor_to_dynasty("司馬倫", "晉", "晉（司馬倫）", "金")
+    put_emperor_to_dynasty("劉尼、張昌", "漢", "漢（劉尼）")
     put_emperor_to_dynasty("司馬保", "晉", "晉（司馬保）", "金")
+    put_emperor_to_dynasty("句渠知", "大秦", "秦（句渠知）")
+    put_emperor_to_dynasty("張琚", "秦", "秦（張琚）")
+    put_emperor_to_dynasty("張育", "蜀", "蜀（張育）")
     put_emperor_to_dynasty("張大豫", "涼", "涼（張大豫）")
+    put_emperor_to_dynasty("竇衝", "秦", "秦（竇衝）")
     put_successive_emperors_to_dynasty("翟遼", "翟釗", "魏", "翟魏")
     put_successive_emperors_to_dynasty("桓玄", "桓謙", "楚", "桓楚")
     put_emperor_to_dynasty("慕容詳", "燕", "燕（慕容詳）")
     put_emperor_to_dynasty("慕容麟", "燕", "燕（慕容麟）")
     put_emperor_to_dynasty("蘭汗", "燕", "燕（蘭汗）")
+    put_emperor_to_dynasty("李寶", "涼", "後西涼")
+    put_emperor_to_dynasty("程道養", "蜀", "蜀（程道養）")
+    put_emperor_to_dynasty("楊難當", "大秦", "秦（楊難當）")
+    put_emperor_to_dynasty("劉渾", "楚", "楚（劉渾）")
+    put_emperor_to_dynasty("劉子勛", "宋", "宋（劉子勛）", "水")
+    put_emperor_to_dynasty("唐㝢之", "吳", "吳（唐㝢之）")
     put_emperor_to_dynasty("元愉", "魏", "魏（元愉）", "水")
+    put_emperor_to_dynasty("莫折念生", "秦", "秦（莫折念生）")
+    put_emperor_to_dynasty("葛榮", "齊", "齊（葛榮）")
+    put_emperor_to_dynasty("蕭寶夤", "齊", "齊（蕭寶夤）")
+    put_emperor_to_dynasty("邢杲", "漢", "漢（邢杲）")
+    put_emperor_to_dynasty("万俟醜奴", "大趙", "趙（万俟醜奴）")
     put_emperor_to_dynasty("元顥", "魏", "魏（元顥）", "水")
     put_emperor_to_dynasty("元悅", "魏", "魏（元悅）", "水")
     put_emperor_to_dynasty("蕭正德", "梁", "蕭正德", "火")
     put_emperor_to_dynasty("侯景", "漢", "漢（侯景）")
     put_emperor_to_dynasty("蕭紀", "梁", "梁（蕭紀）", "火")
     put_emperor_to_dynasty("蕭莊", "梁", "梁（蕭莊）", "火")
-    put_emperor_to_dynasty("李密", "魏", "李密")
+    put_emperor_to_dynasty("高紹義", "齊", "齊（高紹義）", "木")
+    put_emperor_to_dynasty("林士弘", "楚", "楚（林士弘）")
+    put_emperor_to_dynasty("竇建德", "夏", "夏（竇建德）")
+    put_emperor_to_dynasty("李密", "魏", "魏（李密）")
     put_emperor_to_dynasty("劉武周", "漢", "漢（劉武周）")
     put_emperor_to_dynasty("薛舉", "秦", "秦（薛舉）")
     put_emperor_to_dynasty("李軌", "涼", "涼（李軌）")
     put_emperor_to_dynasty("蕭銑", "梁", "梁（蕭銑）", "火")
     put_emperor_to_dynasty("梁師都", "梁", "梁（梁師都）")
+    put_emperor_to_dynasty("宇文化及", "許", "許（宇文化及）")
     put_emperor_to_dynasty("王世充", "鄭", "鄭（王世充）")
+    put_emperor_to_dynasty("朱粲", "楚", "楚（朱粲）")
+    put_emperor_to_dynasty("高開道", "燕", "燕（高開道）")
+    put_emperor_to_dynasty("沈法興", "梁", "梁（沈法興）")
+    put_emperor_to_dynasty("李子通", "吳", "吳（李子通）")
+    put_emperor_to_dynasty("輔公祏", "宋", "宋（輔公祏）")
+    put_emperor_to_dynasty("李重福", "唐", "唐（李重福）", "土")
     put_successive_emperors_to_dynasty(
         "安祿山", "安慶緒", "大燕", "大燕（安祿山）", "", "", "天成"
     )
+    put_emperor_to_dynasty("段子璋", "梁", "梁（段子璋）")
 
     move_emperor_based_on_dynasty_dicts(
         "朱泚", {"應天": "秦", "天皇": "漢"}, {"秦": "秦（朱泚）", "漢": "漢（朱泚）"}
@@ -428,6 +457,7 @@ def handle_other_dynasties(
         "黃巢", {"金統": "大齊"}, {"大齊": "大齊（黃巢）"}
     )
     put_emperor_to_dynasty("劉守光", "大燕", "大燕（劉守光）")
+    put_emperor_to_dynasty("李熅", "唐", "唐（李熅）", "土")
     put_emperor_to_dynasty("董昌", "大越羅平國")
     put_emperor_to_dynasty("徐壽輝", "宋", "宋（徐壽輝）")
     put_emperor_to_dynasty("張士誠", "大周", "大周（張士誠）")
