@@ -234,39 +234,67 @@ def handle_other_dynasties(
     is_matched = False
     is_from_remark = False
 
-    # Create a new dynasty and move an "other" emperor to this new dynasty
-    def put_emperor_to_dynasty(
+    # Create a new dynasty and move an "other" emperor to this new dynasty,
+    # if the current emperor is not a duplicate of the previous emperor.
+    def move_emperor_to_dynasty(
         emperor_name,
         dynasty_name,
         display_name=None,
         element=None,
-        curr_emperor=emperor,
+        is_successor=False,
     ):
         global dynasty_id, emperor_id
         nonlocal is_matched
 
         dynasty = None
+        curr_emperor = emperor
 
         if curr_emperor and curr_emperor["name"] == emperor_name:
             is_matched = True
+
+            if element:
+                row_data["element"] = element
+
             # If curr_emperor is duplicate of the previous emperor (title + name)
             # and the new dynasty name is the same as the dynasty of the previous emperor,
-            # no change is applied to curre_emperor, and no new dynasty is created.
+            # no change is applied to curr_emperor, no new dynasty is created,
+            # and curr_emperor is not added to the emperors list.
             if (
                 is_duplicate_emperor(curr_emperor, emperors)
                 and dynasty_name == emperors[-1]["dynasty_name"]
             ):
-                if element:
-                    row_data["element"] = element
                 return dynasty
 
-            curr_emperor["dynasty_id"] = dynasty_id
             curr_emperor["dynasty_name"] = dynasty_name
 
-            dynasty = {
-                "id": dynasty_id,
-                "name": dynasty_name,
-                "emperors": [
+            if not is_successor:
+                curr_emperor["dynasty_id"] = dynasty_id
+                dynasty = {
+                    "id": dynasty_id,
+                    "name": dynasty_name,
+                    "emperors": [
+                        [
+                            curr_emperor["id"],
+                            (
+                                (
+                                    curr_emperor["title"] + " "
+                                    if "title" in curr_emperor
+                                    else ""
+                                )
+                                + curr_emperor["name"]
+                            ),
+                        ]
+                    ],
+                    "group": "其他",
+                }
+                if display_name:
+                    dynasty["display_name"] = display_name
+
+                dynasties.append(dynasty)
+                dynasty_id += 1
+            else:
+                curr_emperor["dynasty_id"] = dynasty_id - 1
+                dynasties[-1]["emperors"].append(
                     [
                         curr_emperor["id"],
                         (
@@ -278,20 +306,10 @@ def handle_other_dynasties(
                             + curr_emperor["name"]
                         ),
                     ]
-                ],
-                "group": "其他",
-            }
-            if display_name:
-                dynasty["display_name"] = display_name
-
-            dynasties.append(dynasty)
-            dynasty_id += 1
+                )
 
             emperors.append(curr_emperor)
             emperor_id += 1
-
-            if element:
-                row_data["element"] = element
 
         return dynasty
 
@@ -300,22 +318,121 @@ def handle_other_dynasties(
     def move_emperor_based_on_dynasty_dicts(
         emperor_name: str, eras: dict[str, str], dynasty_display_names: dict[str, str]
     ):
-        for era, dynasty in eras.items():
+        for era, dynasty_name in eras.items():
             if row_data["name"] == era:
-                put_emperor_to_dynasty(
-                    emperor_name, dynasty, dynasty_display_names[dynasty]
+                move_emperor_to_dynasty(
+                    emperor_name,
+                    dynasty_name,
+                    dynasty_display_names.get(dynasty_name, ""),
                 )
                 break
 
-    def put_successive_emperors_to_dynasty(
+    # The emperors are in succession of the given dynasty
+    def move_successive_emperors_to_dynasty(
+        successive_emperors: list[str], dynasty_name, display_name
+    ):
+        for idx, emperor_name in enumerate(successive_emperors):
+            if emperor and emperor["name"] == emperor_name:
+                move_emperor_to_dynasty(
+                    emperor_name, dynasty_name, display_name, None, idx > 0
+                )
+
+    move_emperor_to_dynasty("公孫述", "成家")
+    move_emperor_to_dynasty("劉盆子", "漢", "漢（赤眉軍）")
+    move_emperor_to_dynasty("公孫淵", "燕", "燕（公孫淵）")
+    move_emperor_to_dynasty("司馬倫", "晉", "晉（司馬倫）", "金")
+    move_emperor_to_dynasty("劉尼、張昌", "漢", "漢（劉尼）")
+    move_emperor_to_dynasty("司馬保", "晉", "晉（司馬保）", "金")
+    move_emperor_to_dynasty("句渠知", "大秦", "秦（句渠知）")
+    move_emperor_to_dynasty("張琚", "秦", "秦（張琚）")
+    move_emperor_to_dynasty("張育", "蜀", "蜀（張育）")
+    move_emperor_to_dynasty("張大豫", "涼", "涼（張大豫）")
+    move_emperor_to_dynasty("竇衝", "秦", "秦（竇衝）")
+    move_successive_emperors_to_dynasty(["翟遼", "翟釗"], "魏", "翟魏")
+    move_successive_emperors_to_dynasty(["桓玄", "桓謙"], "楚", "桓楚")
+    move_emperor_to_dynasty("慕容詳", "燕", "燕（慕容詳）")
+    move_emperor_to_dynasty("慕容麟", "燕", "燕（慕容麟）")
+    move_emperor_to_dynasty("蘭汗", "燕", "燕（蘭汗）")
+    move_emperor_to_dynasty("李寶", "涼", "後西涼")
+    move_emperor_to_dynasty("程道養", "蜀", "蜀（程道養）")
+    move_emperor_to_dynasty("楊難當", "大秦", "秦（楊難當）")
+    move_emperor_to_dynasty("劉渾", "楚", "楚（劉渾）")
+    move_emperor_to_dynasty("劉子勛", "宋", "宋（劉子勛）", "水")
+    move_emperor_to_dynasty("唐㝢之", "吳", "吳（唐㝢之）")
+    move_emperor_to_dynasty("元愉", "魏", "魏（元愉）", "水")
+    move_emperor_to_dynasty("莫折念生", "秦", "秦（莫折念生）")
+    move_emperor_to_dynasty("葛榮", "齊", "齊（葛榮）")
+    move_emperor_to_dynasty("蕭寶夤", "齊", "齊（蕭寶夤）")
+    move_emperor_to_dynasty("邢杲", "漢", "漢（邢杲）")
+    move_emperor_to_dynasty("万俟醜奴", "大趙", "趙（万俟醜奴）")
+    move_emperor_to_dynasty("元顥", "魏", "魏（元顥）", "水")
+    move_emperor_to_dynasty("元悅", "魏", "魏（元悅）", "水")
+    move_emperor_to_dynasty("蕭正德", "梁", "蕭正德", "火")
+    move_emperor_to_dynasty("侯景", "漢", "漢（侯景）")
+    move_emperor_to_dynasty("蕭紀", "梁", "梁（蕭紀）", "火")
+    move_emperor_to_dynasty("蕭莊", "梁", "梁（蕭莊）", "火")
+    move_emperor_to_dynasty("高紹義", "齊", "齊（高紹義）", "木")
+    move_emperor_to_dynasty("林士弘", "楚", "楚（林士弘）")
+    move_emperor_to_dynasty("竇建德", "夏", "夏（竇建德）")
+    move_emperor_to_dynasty("李密", "魏", "魏（李密）")
+    move_emperor_to_dynasty("劉武周", "漢", "漢（劉武周）")
+    move_emperor_to_dynasty("薛舉", "秦", "秦（薛舉）")
+    move_emperor_to_dynasty("李軌", "涼", "涼（李軌）")
+    move_emperor_to_dynasty("蕭銑", "梁", "梁（蕭銑）", "火")
+    move_emperor_to_dynasty("梁師都", "梁", "梁（梁師都）")
+    move_emperor_to_dynasty("宇文化及", "許", "許（宇文化及）")
+    move_emperor_to_dynasty("王世充", "鄭", "鄭（王世充）")
+    move_emperor_to_dynasty("朱粲", "楚", "楚（朱粲）")
+    move_emperor_to_dynasty("高開道", "燕", "燕（高開道）")
+    move_emperor_to_dynasty("沈法興", "梁", "梁（沈法興）")
+    move_emperor_to_dynasty("李子通", "吳", "吳（李子通）")
+    move_emperor_to_dynasty("輔公祏", "宋", "宋（輔公祏）")
+    move_emperor_to_dynasty("李重福", "唐", "唐（李重福）", "土")
+    move_successive_emperors_to_dynasty(
+        ["安祿山", "安慶緒", "史思明", "史朝義"], "大燕", "大燕（安祿山）"
+    )
+    move_emperor_to_dynasty("段子璋", "梁", "梁（段子璋）")
+    move_emperor_based_on_dynasty_dicts(
+        "朱泚", {"應天": "秦", "天皇": "漢"}, {"秦": "秦（朱泚）", "漢": "漢（朱泚）"}
+    )
+    move_emperor_to_dynasty("李希烈", "楚", "楚（李希烈）")
+    move_emperor_based_on_dynasty_dicts(
+        "黃巢", {"金統": "大齊"}, {"大齊": "大齊（黃巢）"}
+    )
+    move_emperor_to_dynasty("劉守光", "大燕", "大燕（劉守光）")
+    move_emperor_to_dynasty("李熅", "唐", "唐（李熅）", "土")
+    move_emperor_to_dynasty("董昌", "大越羅平國")
+    move_emperor_to_dynasty("李茂貞", "岐")
+    move_emperor_to_dynasty("朱文進", "閩", "閩（朱文進）")
+    move_emperor_to_dynasty("張遇賢", "中天八國")
+    move_emperor_to_dynasty("李順", "大蜀", "蜀（李順）")
+    move_emperor_to_dynasty("王均", "大蜀", "蜀（王均）")
+    move_emperor_to_dynasty("王則", "安陽")
+    move_emperor_based_on_dynasty_dicts("儂智高", {"景瑞": "南天", "啟曆": "大南"}, {})
+    move_emperor_to_dynasty("劉豫", "大齊", "齊（劉豫）")
+    move_emperor_to_dynasty("阿謝", "自杞國")
+    move_emperor_to_dynasty("耶律留哥", "東遼")
+    move_emperor_to_dynasty("蒲鮮萬奴", "東夏")
+    move_emperor_to_dynasty("徐壽輝", "宋", "宋（徐壽輝）")
+    move_emperor_to_dynasty("張士誠", "大周", "大周（張士誠）")
+    move_successive_emperors_to_dynasty(["陳友諒", "陳理"], "漢", "陳漢")
+
+    # 大順 （1643年—1646年）
+    # 《甲申纪事》“贼云以水德王，衣服尚蓝。故军中俱穿蓝，官帽亦用蓝。”
+    move_emperor_to_dynasty("李自成", "大順", None, "水")
+
+    move_emperor_to_dynasty("洪秀全", "太平天國")
+
+    # This line MUST BE before the invokes of add_emperor_from_remark()
+    data_copy.append(row_data)
+
+    # The second emperor is in the remark.
+    # The first emperor and second emperor share a same era.
+    def add_emperor_from_remark(
         first_emperor_name,
         second_emperor_name,
         dynasty_name,
         display_name,
-        second_emperor_title="",
-        first_emperor_last_era_name="",
-        second_emperor_last_era_name="",
-        to_create_second_emperor=False,
         first_regnal_year=None,
         final_regnal_year=None,
         first_era_start=None,
@@ -324,16 +441,9 @@ def handle_other_dynasties(
         second_era_end=None,
     ):
         global dynasty_id, emperor_id
-        nonlocal is_matched, is_from_remark
-        if (
-            (
-                not first_emperor_last_era_name
-                or row_data["name"] == first_emperor_last_era_name
-            )
-            and emperor
-            and emperor["name"] == first_emperor_name
-        ):
-            dynasty = put_emperor_to_dynasty(
+        nonlocal is_from_remark
+        if emperor and emperor["name"] == first_emperor_name:
+            dynasty = move_emperor_to_dynasty(
                 first_emperor_name, dynasty_name, display_name
             )
             # Adjust the following values, because there are more emperors in this "other" dynasty
@@ -342,147 +452,38 @@ def handle_other_dynasties(
                 dynasty["emperors"].append(
                     [
                         emperor["id"] + 1,
-                        ((second_emperor_title + " ") if second_emperor_title else "")
-                        + second_emperor_name,
+                        second_emperor_name,
                     ]
                 )
 
-                if to_create_second_emperor:
-                    is_from_remark = True
-                    row_data["start"] = first_era_start
-                    row_data["end"] = first_era_end
+                is_from_remark = True
+                row_data["start"] = first_era_start
+                row_data["end"] = first_era_end
 
-                    second_emperor = {
-                        "id": emperor["id"] + 1,
-                        "name": second_emperor_name,
-                        "dynasty_id": dynasty_id,
-                        "dynasty_name": dynasty_name,
-                        "first_regnal_year": first_regnal_year,
-                        "final_regnal_year": final_regnal_year,
-                    }
-                    if second_emperor_title:
-                        second_emperor["title"] = second_emperor_title
-                    emperors.append(second_emperor)
+                second_emperor = {
+                    "id": emperor["id"] + 1,
+                    "name": second_emperor_name,
+                    "dynasty_id": dynasty_id,
+                    "dynasty_name": dynasty_name,
+                    "first_regnal_year": first_regnal_year,
+                    "final_regnal_year": final_regnal_year,
+                }
+                emperors.append(second_emperor)
 
-                    emperor_id += 1
-                    dynasty_id += 1
-
-                    d_copy = copy.deepcopy(row_data)
-                    d_copy["start"] = second_era_start
-                    d_copy["end"] = second_era_end
-                    d_copy["emperor_id"] = second_emperor["id"]
-                    data_copy.append(d_copy)
-
-                    return
-
-        if emperor and emperor["name"] == second_emperor_name:
-            is_matched = True
-            if (
-                not is_duplicate_emperor(emperor, emperors)
-                or dynasty_name != emperors[-1]["dynasty_name"]
-            ):
-                emperor["dynasty_id"] = dynasty_id
-                emperor["dynasty_name"] = dynasty_name
-                emperors.append(emperor)
                 emperor_id += 1
-
-            if (
-                not second_emperor_last_era_name
-                or row_data["name"] == second_emperor_last_era_name
-            ):
                 dynasty_id += 1
 
-    put_emperor_to_dynasty("公孫述", "成家")
-    put_emperor_to_dynasty("劉盆子", "漢", "漢（赤眉軍）")
-    put_emperor_to_dynasty("公孫淵", "燕", "燕（公孫淵）")
-    put_emperor_to_dynasty("司馬倫", "晉", "晉（司馬倫）", "金")
-    put_emperor_to_dynasty("劉尼、張昌", "漢", "漢（劉尼）")
-    put_emperor_to_dynasty("司馬保", "晉", "晉（司馬保）", "金")
-    put_emperor_to_dynasty("句渠知", "大秦", "秦（句渠知）")
-    put_emperor_to_dynasty("張琚", "秦", "秦（張琚）")
-    put_emperor_to_dynasty("張育", "蜀", "蜀（張育）")
-    put_emperor_to_dynasty("張大豫", "涼", "涼（張大豫）")
-    put_emperor_to_dynasty("竇衝", "秦", "秦（竇衝）")
-    put_successive_emperors_to_dynasty("翟遼", "翟釗", "魏", "翟魏")
-    put_successive_emperors_to_dynasty("桓玄", "桓謙", "楚", "桓楚")
-    put_emperor_to_dynasty("慕容詳", "燕", "燕（慕容詳）")
-    put_emperor_to_dynasty("慕容麟", "燕", "燕（慕容麟）")
-    put_emperor_to_dynasty("蘭汗", "燕", "燕（蘭汗）")
-    put_emperor_to_dynasty("李寶", "涼", "後西涼")
-    put_emperor_to_dynasty("程道養", "蜀", "蜀（程道養）")
-    put_emperor_to_dynasty("楊難當", "大秦", "秦（楊難當）")
-    put_emperor_to_dynasty("劉渾", "楚", "楚（劉渾）")
-    put_emperor_to_dynasty("劉子勛", "宋", "宋（劉子勛）", "水")
-    put_emperor_to_dynasty("唐㝢之", "吳", "吳（唐㝢之）")
-    put_emperor_to_dynasty("元愉", "魏", "魏（元愉）", "水")
-    put_emperor_to_dynasty("莫折念生", "秦", "秦（莫折念生）")
-    put_emperor_to_dynasty("葛榮", "齊", "齊（葛榮）")
-    put_emperor_to_dynasty("蕭寶夤", "齊", "齊（蕭寶夤）")
-    put_emperor_to_dynasty("邢杲", "漢", "漢（邢杲）")
-    put_emperor_to_dynasty("万俟醜奴", "大趙", "趙（万俟醜奴）")
-    put_emperor_to_dynasty("元顥", "魏", "魏（元顥）", "水")
-    put_emperor_to_dynasty("元悅", "魏", "魏（元悅）", "水")
-    put_emperor_to_dynasty("蕭正德", "梁", "蕭正德", "火")
-    put_emperor_to_dynasty("侯景", "漢", "漢（侯景）")
-    put_emperor_to_dynasty("蕭紀", "梁", "梁（蕭紀）", "火")
-    put_emperor_to_dynasty("蕭莊", "梁", "梁（蕭莊）", "火")
-    put_emperor_to_dynasty("高紹義", "齊", "齊（高紹義）", "木")
-    put_emperor_to_dynasty("林士弘", "楚", "楚（林士弘）")
-    put_emperor_to_dynasty("竇建德", "夏", "夏（竇建德）")
-    put_emperor_to_dynasty("李密", "魏", "魏（李密）")
-    put_emperor_to_dynasty("劉武周", "漢", "漢（劉武周）")
-    put_emperor_to_dynasty("薛舉", "秦", "秦（薛舉）")
-    put_emperor_to_dynasty("李軌", "涼", "涼（李軌）")
-    put_emperor_to_dynasty("蕭銑", "梁", "梁（蕭銑）", "火")
-    put_emperor_to_dynasty("梁師都", "梁", "梁（梁師都）")
-    put_emperor_to_dynasty("宇文化及", "許", "許（宇文化及）")
-    put_emperor_to_dynasty("王世充", "鄭", "鄭（王世充）")
-    put_emperor_to_dynasty("朱粲", "楚", "楚（朱粲）")
-    put_emperor_to_dynasty("高開道", "燕", "燕（高開道）")
-    put_emperor_to_dynasty("沈法興", "梁", "梁（沈法興）")
-    put_emperor_to_dynasty("李子通", "吳", "吳（李子通）")
-    put_emperor_to_dynasty("輔公祏", "宋", "宋（輔公祏）")
-    put_emperor_to_dynasty("李重福", "唐", "唐（李重福）", "土")
-    put_successive_emperors_to_dynasty(
-        "安祿山", "安慶緒", "大燕", "大燕（安祿山）", "", "", "天成"
-    )
-    put_emperor_to_dynasty("段子璋", "梁", "梁（段子璋）")
+                d_copy = copy.deepcopy(row_data)
+                d_copy["start"] = second_era_start
+                d_copy["end"] = second_era_end
+                d_copy["emperor_id"] = second_emperor["id"]
+                data_copy.append(d_copy)
 
-    move_emperor_based_on_dynasty_dicts(
-        "朱泚", {"應天": "秦", "天皇": "漢"}, {"秦": "秦（朱泚）", "漢": "漢（朱泚）"}
-    )
-
-    put_emperor_to_dynasty("李希烈", "楚", "楚（李希烈）")
-    move_emperor_based_on_dynasty_dicts(
-        "黃巢", {"金統": "大齊"}, {"大齊": "大齊（黃巢）"}
-    )
-    put_emperor_to_dynasty("劉守光", "大燕", "大燕（劉守光）")
-    put_emperor_to_dynasty("李熅", "唐", "唐（李熅）", "土")
-    put_emperor_to_dynasty("董昌", "大越羅平國")
-    put_emperor_to_dynasty("徐壽輝", "宋", "宋（徐壽輝）")
-    put_emperor_to_dynasty("張士誠", "大周", "大周（張士誠）")
-    put_successive_emperors_to_dynasty("陳友諒", "陳理", "漢", "陳漢")
-
-    # 大順 （1643年—1646年）
-    # 《甲申纪事》“贼云以水德王，衣服尚蓝。故军中俱穿蓝，官帽亦用蓝。”
-    put_emperor_to_dynasty("李自成", "大順", None, "水")
-
-    put_emperor_to_dynasty("洪秀全", "太平天國")
-
-    # This line MUST BE before the cases
-    # where `move_successive_other_emperors_to_new_dynasty()` is called
-    # with ` to_create_second_emperor` == True
-    data_copy.append(row_data)
-
-    put_successive_emperors_to_dynasty(
+    add_emperor_from_remark(
         "沮渠無諱",
         "沮渠安周",
         "涼",
         "涼（沮渠無諱）",
-        "",
-        "",
-        "",
-        True,
         "444年",
         "460年",
         "443年",
