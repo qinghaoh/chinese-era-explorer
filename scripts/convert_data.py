@@ -423,6 +423,7 @@ def handle_other_dynasties(
     move_emperor_to_dynasty("王均", "大蜀", "蜀（王均）")
     move_emperor_to_dynasty("王則", "安陽")
     move_emperor_based_on_dynasty_dicts("儂智高", {"景瑞": "南天", "啟曆": "大南"}, {})
+    move_emperor_to_dynasty("趙旉", "南宋", "南宋（趙旉）", "火")
     move_emperor_to_dynasty("劉豫", "大齊", "齊（劉豫）")
     move_emperor_to_dynasty("阿謝", "自杞國")
     move_emperor_to_dynasty("耶律留哥", "東遼")
